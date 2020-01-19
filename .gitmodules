@@ -1,0 +1,3 @@
+[submodule "arduino/BioMain/libino"]
+	path = arduino/BioMain/libino
+	url = git://github.com/Hackuarium/libino.git

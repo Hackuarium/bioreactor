@@ -1,0 +1,158 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 14 17
+Title "Bertha"
+Date "2019-12-03"
+Rev ""
+Comp "Hackuarium"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Bertha_main-eagle-import:1503_09 X1401
+U 1 1 5DE64558
+P 5525 3400
+F 0 "X1401" H 5572 2998 59  0000 C CNN
+F 1 "1503_09" H 5572 3103 59  0000 C CNN
+F 2 "" H 5525 3400 50  0001 C CNN
+F 3 "" H 5525 3400 50  0001 C CNN
+	1    5525 3400
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R1404
+U 1 1 5DE6504B
+P 5125 3050
+F 0 "R1404" V 5050 3000 50  0000 L CNN
+F 1 "100" V 5125 2975 50  0000 L CNN
+F 2 "" V 5055 3050 50  0001 C CNN
+F 3 "~" H 5125 3050 50  0001 C CNN
+	1    5125 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R RT1401
+U 1 1 5DE6565D
+P 4775 3200
+F 0 "RT1401" V 4700 3200 50  0000 C CNN
+F 1 "4.7k" V 4775 3200 50  0000 C CNN
+F 2 "" V 4705 3200 50  0001 C CNN
+F 3 "~" H 4775 3200 50  0001 C CNN
+	1    4775 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1401
+U 1 1 5DE6645C
+P 4375 3300
+F 0 "R1401" V 4300 3300 50  0000 C CNN
+F 1 "1k" V 4375 3300 50  0000 C CNN
+F 2 "" V 4305 3300 50  0001 C CNN
+F 3 "~" H 4375 3300 50  0001 C CNN
+	1    4375 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4925 3200 5125 3200
+Wire Wire Line
+	5125 3200 5325 3200
+Connection ~ 5125 3200
+Wire Wire Line
+	4525 3300 4625 3300
+Wire Wire Line
+	4625 3200 4625 3300
+Connection ~ 4625 3300
+Wire Wire Line
+	4625 3300 5325 3300
+$Comp
+L Device:R R1403
+U 1 1 5DE68128
+P 5050 3600
+F 0 "R1403" V 4975 3600 50  0000 C CNN
+F 1 "4.7k" V 5050 3600 50  0000 C CNN
+F 2 "" V 4980 3600 50  0001 C CNN
+F 3 "~" H 5050 3600 50  0001 C CNN
+	1    5050 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 3600 5325 3600
+Text GLabel 5075 2825 0    50   Input ~ 0
+3.3V
+Text GLabel 4175 3300 0    50   Input ~ 0
+A6
+Text GLabel 4825 3600 0    50   Input ~ 0
+GND
+Wire Wire Line
+	4175 3300 4225 3300
+Wire Wire Line
+	4825 3600 4900 3600
+Wire Wire Line
+	5075 2825 5125 2825
+Wire Wire Line
+	5125 2825 5125 2900
+$Comp
+L Bertha_main-eagle-import:DS18B20SMALL U1401
+U 1 1 5DE6C492
+P 5925 4375
+F 0 "U1401" H 5975 4425 50  0001 C CNN
+F 1 "DS18B20SMALL" H 5925 4375 50  0001 C CNN
+F 2 "" H 5925 4375 50  0001 C CNN
+F 3 "" H 5925 4375 50  0001 C CNN
+	1    5925 4375
+	1    0    0    -1  
+$EndComp
+Text GLabel 6400 4475 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6400 4475 6325 4475
+$Comp
+L Device:R RT1402
+U 1 1 5DE70621
+P 4925 4375
+F 0 "RT1402" V 4850 4375 50  0000 C CNN
+F 1 "4.7k" V 4925 4375 50  0000 C CNN
+F 2 "" V 4855 4375 50  0001 C CNN
+F 3 "~" H 4925 4375 50  0001 C CNN
+	1    4925 4375
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1402
+U 1 1 5DE72DD7
+P 4450 4475
+F 0 "R1402" V 4375 4475 50  0000 C CNN
+F 1 "1k" V 4450 4475 50  0000 C CNN
+F 2 "" V 4380 4475 50  0001 C CNN
+F 3 "~" H 4450 4475 50  0001 C CNN
+	1    4450 4475
+	0    1    1    0   
+$EndComp
+Text GLabel 4175 4475 0    50   Input ~ 0
+D12
+Wire Wire Line
+	4300 4475 4175 4475
+Wire Wire Line
+	4600 4475 4775 4475
+Wire Wire Line
+	5075 4375 5225 4375
+Wire Wire Line
+	4775 4375 4775 4475
+Connection ~ 4775 4475
+Wire Wire Line
+	4775 4475 5425 4475
+Text GLabel 5225 4150 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	5225 4150 5225 4375
+Connection ~ 5225 4375
+Wire Wire Line
+	5225 4375 5425 4375
+Text Notes 8050 6975 0    315  ~ 0
+One wire
+$EndSCHEMATC

@@ -1,0 +1,200 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 17
+Title "Bertha"
+Date "2019-12-03"
+Rev ""
+Comp "Hackuarium"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Bertha_main-eagle-import:JP1E JP1101
+U 1 1 5E0D8005
+P 6525 3100
+F 0 "JP1101" V 6504 3228 59  0000 L CNN
+F 1 "JP1E" V 6609 3228 59  0000 L CNN
+F 2 "" H 6525 3100 50  0001 C CNN
+F 3 "" H 6525 3100 50  0001 C CNN
+	1    6525 3100
+	0    1    1    0   
+$EndComp
+Text GLabel 6350 3100 0    55   Input ~ 0
+12V
+Wire Wire Line
+	6350 3100 6400 3100
+$Comp
+L Bertha_main-eagle-import:BSP613P Q1101
+U 1 1 5E0DB35D
+P 6125 3400
+F 0 "Q1101" H 6333 3466 59  0000 L CNN
+F 1 "BSP613P" H 6333 3361 59  0000 L CNN
+F 2 "" H 6125 3400 50  0001 C CNN
+F 3 "" H 6125 3400 50  0001 C CNN
+	1    6125 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6225 3200 6425 3200
+$Comp
+L Bertha_main-eagle-import:LEDCHIP-LED0805 LED1101
+U 1 1 5E0E68D9
+P 6025 3800
+F 0 "LED1101" V 6225 3750 59  0000 C CNN
+F 1 "RED" V 6125 3750 59  0000 C CNN
+F 2 "" H 6025 3800 50  0001 C CNN
+F 3 "" H 6025 3800 50  0001 C CNN
+	1    6025 3800
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R1103
+U 1 1 5E0E957F
+P 5825 3650
+F 0 "R1103" V 5725 3550 50  0000 L CNN
+F 1 "10k" V 5825 3575 50  0000 L CNN
+F 2 "" V 5755 3650 50  0001 C CNN
+F 3 "~" H 5825 3650 50  0001 C CNN
+	1    5825 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5825 3800 5925 3800
+Wire Wire Line
+	6225 3800 6225 3600
+Wire Wire Line
+	6025 3500 5825 3500
+Text GLabel 6350 3800 2    55   Input ~ 0
+GND
+Wire Wire Line
+	6350 3800 6225 3800
+Connection ~ 6225 3800
+$Comp
+L Device:R R1101
+U 1 1 5E0EC8A0
+P 5500 3500
+F 0 "R1101" V 5400 3525 50  0000 C CNN
+F 1 "1k" V 5500 3525 50  0000 C CNN
+F 2 "" V 5430 3500 50  0001 C CNN
+F 3 "~" H 5500 3500 50  0001 C CNN
+	1    5500 3500
+	0    -1   1    0   
+$EndComp
+Text GLabel 5225 3500 0    55   Input ~ 0
+D10
+Wire Wire Line
+	5225 3500 5350 3500
+Wire Wire Line
+	5650 3500 5825 3500
+Connection ~ 5825 3500
+$Comp
+L Bertha_main-eagle-import:JP1E JP1102
+U 1 1 5E105D35
+P 6550 4250
+F 0 "JP1102" V 6529 4378 59  0000 L CNN
+F 1 "JP1E" V 6634 4378 59  0000 L CNN
+F 2 "" H 6550 4250 50  0001 C CNN
+F 3 "" H 6550 4250 50  0001 C CNN
+	1    6550 4250
+	0    1    1    0   
+$EndComp
+Text GLabel 6375 4250 0    55   Input ~ 0
+12V
+$Comp
+L Bertha_main-eagle-import:BSP613P Q1102
+U 1 1 5E105D3E
+P 6150 4550
+F 0 "Q1102" H 6358 4616 59  0000 L CNN
+F 1 "BSP613P" H 6358 4511 59  0000 L CNN
+F 2 "" H 6150 4550 50  0001 C CNN
+F 3 "" H 6150 4550 50  0001 C CNN
+	1    6150 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4350 6450 4350
+$Comp
+L Bertha_main-eagle-import:LEDCHIP-LED0805 LED1102
+U 1 1 5E105D45
+P 6050 4950
+F 0 "LED1102" V 6250 4900 59  0000 C CNN
+F 1 "RED" V 6150 4900 59  0000 C CNN
+F 2 "" H 6050 4950 50  0001 C CNN
+F 3 "" H 6050 4950 50  0001 C CNN
+	1    6050 4950
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R1104
+U 1 1 5E105D4B
+P 5850 4800
+F 0 "R1104" V 5750 4700 50  0000 L CNN
+F 1 "10k" V 5850 4725 50  0000 L CNN
+F 2 "" V 5780 4800 50  0001 C CNN
+F 3 "~" H 5850 4800 50  0001 C CNN
+	1    5850 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4950 5950 4950
+Wire Wire Line
+	6250 4950 6250 4750
+Wire Wire Line
+	6050 4650 5850 4650
+Text GLabel 6375 4950 2    55   Input ~ 0
+GND
+Wire Wire Line
+	6375 4950 6250 4950
+Connection ~ 6250 4950
+$Comp
+L Device:R R1102
+U 1 1 5E105D57
+P 5525 4650
+F 0 "R1102" V 5425 4675 50  0000 C CNN
+F 1 "1k" V 5525 4675 50  0000 C CNN
+F 2 "" V 5455 4650 50  0001 C CNN
+F 3 "~" H 5525 4650 50  0001 C CNN
+	1    5525 4650
+	0    -1   1    0   
+$EndComp
+Text GLabel 5250 4650 0    55   Input ~ 0
+D5
+Wire Wire Line
+	5250 4650 5375 4650
+Wire Wire Line
+	5675 4650 5850 4650
+Connection ~ 5850 4650
+Text GLabel 6400 2950 2    55   Input ~ 0
+IN
+Wire Wire Line
+	6400 2950 6400 3100
+Connection ~ 6400 3100
+Wire Wire Line
+	6400 3100 6425 3100
+Text GLabel 6425 4100 2    55   Input ~ 0
+OUT
+Wire Wire Line
+	6375 4250 6425 4250
+Wire Wire Line
+	6425 4100 6425 4250
+Connection ~ 6425 4250
+Wire Wire Line
+	6425 4250 6450 4250
+Text GLabel 5625 3800 0    55   Input ~ 0
+LDIN
+Wire Wire Line
+	5625 3800 5825 3800
+Connection ~ 5825 3800
+Text GLabel 5625 4950 0    55   Input ~ 0
+LDOUT
+Connection ~ 5850 4950
+Wire Wire Line
+	5625 4950 5850 4950
+Text Notes 8375 7075 0    315  ~ 0
+FOOD
+$EndSCHEMATC

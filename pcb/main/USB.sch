@@ -1,0 +1,102 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 13 17
+Title "Bertha"
+Date "2019-12-03"
+Rev ""
+Comp "Hackuarium"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Bertha_main-eagle-import:MINI-USB-SCHIELD-32005-201 X1301
+U 1 1 5E1262E6
+P 4900 3775
+F 0 "X1301" H 4918 3343 59  0000 C CNN
+F 1 "MINI-USB-SCHIELD-32005-201" V 5300 3475 59  0001 L BNN
+F 2 "" H 4900 3775 50  0001 C CNN
+F 3 "" H 4900 3775 50  0001 C CNN
+	1    4900 3775
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R RUSB1301
+U 1 1 5E1282A8
+P 5375 3775
+F 0 "RUSB1301" V 5300 3775 50  0000 C CNN
+F 1 "22" V 5375 3775 50  0000 C CNN
+F 2 "" V 5305 3775 50  0001 C CNN
+F 3 "~" H 5375 3775 50  0001 C CNN
+	1    5375 3775
+	0    1    1    0   
+$EndComp
+Text Notes 4600 3975 1    55   ~ 0
+MINI-USB
+$Comp
+L Device:R RUSB1302
+U 1 1 5E128890
+P 5375 3875
+F 0 "RUSB1302" V 5425 3650 50  0000 C CNN
+F 1 "22" V 5375 3875 50  0000 C CNN
+F 2 "" V 5305 3875 50  0001 C CNN
+F 3 "~" H 5375 3875 50  0001 C CNN
+	1    5375 3875
+	0    1    1    0   
+$EndComp
+Text GLabel 5600 3775 2    55   Input ~ 0
+USB_P
+Text GLabel 5600 3875 2    55   Input ~ 0
+USB_N
+Wire Wire Line
+	5600 3775 5525 3775
+Wire Wire Line
+	5600 3875 5525 3875
+Wire Wire Line
+	5225 3775 5100 3775
+Wire Wire Line
+	5100 3875 5225 3875
+$Comp
+L Device:C C1301
+U 1 1 5E129F65
+P 6150 3775
+F 0 "C1301" H 6265 3821 50  0000 L CNN
+F 1 "10uF" H 6265 3730 50  0000 L CNN
+F 2 "" H 6188 3625 50  0001 C CNN
+F 3 "~" H 6150 3775 50  0001 C CNN
+	1    6150 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3575 5250 3575
+Wire Wire Line
+	6150 3575 6150 3625
+Wire Wire Line
+	6150 3925 6150 3975
+Wire Wire Line
+	6150 3975 5250 3975
+Text GLabel 5275 3500 2    55   Input ~ 0
+GND
+Text GLabel 5275 4050 2    55   Input ~ 0
+VUSB
+Wire Wire Line
+	5275 3500 5250 3500
+Wire Wire Line
+	5250 3500 5250 3575
+Connection ~ 5250 3575
+Wire Wire Line
+	5250 3575 6150 3575
+Wire Wire Line
+	5275 4050 5250 4050
+Wire Wire Line
+	5250 4050 5250 3975
+Connection ~ 5250 3975
+Wire Wire Line
+	5250 3975 5100 3975
+Text Notes 8425 7025 0    315  ~ 0
+USB
+$EndSCHEMATC

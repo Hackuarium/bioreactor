@@ -1,0 +1,471 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 17
+Title "Bertha"
+Date "2019-12-03"
+Rev ""
+Comp "Hackuarium"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Bertha_main-eagle-import:ATMEGA32U4-AU U1001
+U 1 1 5E02C410
+P 5800 3650
+F 0 "U1001" H 5850 5636 59  0000 C CNN
+F 1 "ATMEGA32U4-AU" H 5850 5531 59  0000 C CNN
+F 2 "" H 5800 3650 50  0001 C CNN
+F 3 "" H 5800 3650 50  0001 C CNN
+	1    5800 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 1950 2    55   Input ~ 0
+A5
+Text GLabel 6950 2050 2    55   Input ~ 0
+A4
+Text GLabel 6950 2150 2    55   Input ~ 0
+A3
+Text GLabel 6950 2250 2    55   Input ~ 0
+A2
+Text GLabel 6950 2350 2    55   Input ~ 0
+A1
+Text GLabel 6950 2450 2    55   Input ~ 0
+A0
+$Comp
+L Device:R R1003
+U 1 1 5E02DBA6
+P 7250 2650
+F 0 "R1003" V 7175 2650 50  0000 C CNN
+F 1 "10k" V 7250 2650 50  0000 C CNN
+F 2 "" V 7180 2650 50  0001 C CNN
+F 3 "~" H 7250 2650 50  0001 C CNN
+	1    7250 2650
+	0    1    1    0   
+$EndComp
+Text GLabel 6850 2575 2    55   Input ~ 0
+HWB
+Wire Wire Line
+	6800 2450 6950 2450
+Wire Wire Line
+	6950 2350 6800 2350
+Wire Wire Line
+	6800 2250 6950 2250
+Wire Wire Line
+	6950 2150 6800 2150
+Wire Wire Line
+	6800 2050 6950 2050
+Wire Wire Line
+	6950 1950 6800 1950
+Wire Wire Line
+	6800 2650 6850 2650
+Wire Wire Line
+	6850 2575 6850 2650
+Connection ~ 6850 2650
+Wire Wire Line
+	6850 2650 7100 2650
+Text GLabel 7475 2650 2    55   Input ~ 0
+GND
+Wire Wire Line
+	7475 2650 7400 2650
+Text GLabel 6950 2750 2    55   Input ~ 0
+D7
+Text GLabel 6950 2950 2    55   Input ~ 0
+D5
+Text GLabel 6950 3050 2    55   Input ~ 0
+D13
+Text GLabel 6950 3250 2    55   Input ~ 0
+D11
+Text GLabel 6950 3350 2    55   Input ~ 0
+D10
+Text GLabel 6950 3450 2    55   Input ~ 0
+D9
+Text GLabel 6950 3550 2    55   Input ~ 0
+D8
+Text GLabel 6950 3650 2    55   Input ~ 0
+MISO
+Text GLabel 6950 3750 2    55   Input ~ 0
+MOSI
+Wire Wire Line
+	6800 2750 6950 2750
+Wire Wire Line
+	6950 2950 6800 2950
+Wire Wire Line
+	6800 3050 6950 3050
+Wire Wire Line
+	6950 3250 6800 3250
+Wire Wire Line
+	6800 3350 6950 3350
+Wire Wire Line
+	6950 3450 6800 3450
+Wire Wire Line
+	6800 3550 6950 3550
+Wire Wire Line
+	6950 3650 6800 3650
+Wire Wire Line
+	6800 3750 6950 3750
+Text GLabel 6950 3850 2    55   Input ~ 0
+SCK
+Text GLabel 6950 3950 2    55   Input ~ 0
+RXLED
+Text GLabel 6950 4150 2    55   Input ~ 0
+D6
+Text GLabel 6950 4250 2    55   Input ~ 0
+D12
+Text GLabel 6950 4350 2    55   Input ~ 0
+TXLED
+Text GLabel 6950 4450 2    55   Input ~ 0
+A6
+Text GLabel 6950 4550 2    55   Input ~ 0
+TX
+Wire Wire Line
+	6950 3850 6800 3850
+Wire Wire Line
+	6800 3950 6950 3950
+Wire Wire Line
+	6950 4150 6800 4150
+Wire Wire Line
+	6800 4250 6950 4250
+Wire Wire Line
+	6950 4350 6800 4350
+Wire Wire Line
+	6800 4450 6950 4450
+Wire Wire Line
+	6950 4550 6800 4550
+Text GLabel 6950 4650 2    55   Input ~ 0
+RX
+Text GLabel 6950 4750 2    55   Input ~ 0
+SDA
+Text GLabel 6950 4850 2    55   Input ~ 0
+SCL
+Wire Wire Line
+	6950 4650 6800 4650
+Wire Wire Line
+	6800 4750 6950 4750
+Wire Wire Line
+	6950 4850 6800 4850
+$Comp
+L Bertha_main-eagle-import:PINHD-1X1 JP1001
+U 1 1 5E03F8E3
+P 6025 5300
+F 0 "JP1001" H 5850 5525 59  0000 L CNN
+F 1 "PINHD-1X1" H 5675 5450 59  0000 L CNN
+F 2 "" H 6025 5300 50  0001 C CNN
+F 3 "" H 6025 5300 50  0001 C CNN
+	1    6025 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 6275 5300 2    55   Input ~ 0
+GND
+Wire Wire Line
+	5925 5300 6275 5300
+Text GLabel 7250 5300 2    55   Input ~ 0
+3.3V
+$Comp
+L Bertha_main-eagle-import:PINHD-1X1 JP1002
+U 1 1 5E049307
+P 6025 5700
+F 0 "JP1002" H 5850 5925 59  0000 L CNN
+F 1 "PINHD-1X1" H 5675 5850 59  0000 L CNN
+F 2 "" H 6025 5700 50  0001 C CNN
+F 3 "" H 6025 5700 50  0001 C CNN
+	1    6025 5700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6275 5700 2    55   Input ~ 0
+12V
+Wire Wire Line
+	5925 5700 6275 5700
+Wire Wire Line
+	6850 5300 7250 5300
+$Comp
+L Bertha_main-eagle-import:PINHD-1X1 JP1003
+U 1 1 5E041434
+P 6950 5300
+F 0 "JP1003" H 6800 5525 59  0000 L CNN
+F 1 "PINHD-1X1" H 6625 5450 59  0000 L CNN
+F 2 "" H 6950 5300 50  0001 C CNN
+F 3 "" H 6950 5300 50  0001 C CNN
+	1    6950 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4775 4600 0    55   Input ~ 0
+GND
+Wire Wire Line
+	4850 4550 4900 4550
+Wire Wire Line
+	4850 4850 4900 4850
+Wire Wire Line
+	4850 4650 4900 4650
+Connection ~ 4850 4650
+Wire Wire Line
+	4850 4650 4850 4600
+Wire Wire Line
+	4900 4750 4850 4750
+Connection ~ 4850 4750
+Wire Wire Line
+	4850 4750 4850 4850
+Wire Wire Line
+	4850 4550 4850 4350
+Wire Wire Line
+	4850 4350 4900 4350
+Connection ~ 4850 4550
+Wire Wire Line
+	4850 4650 4850 4750
+Wire Wire Line
+	4775 4600 4850 4600
+Connection ~ 4850 4600
+Wire Wire Line
+	4850 4600 4850 4550
+$Comp
+L Device:C C1004
+U 1 1 5E060188
+P 4225 5200
+F 0 "C1004" H 4340 5246 50  0000 L CNN
+F 1 "100nF" H 4340 5155 50  0000 L CNN
+F 2 "" H 4263 5050 50  0001 C CNN
+F 3 "~" H 4225 5200 50  0001 C CNN
+	1    4225 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 4225 4950 0    55   Input ~ 0
+AREF
+Text GLabel 4225 5450 0    55   Input ~ 0
+GND
+Wire Wire Line
+	4225 4950 4225 5050
+Wire Wire Line
+	4225 5350 4225 5450
+$Comp
+L Device:R R1002
+U 1 1 5E06947C
+P 4675 3900
+F 0 "R1002" V 4775 3775 50  0000 L CNN
+F 1 "1M" V 4675 3850 50  0000 L CNN
+F 2 "" V 4605 3900 50  0001 C CNN
+F 3 "~" H 4675 3900 50  0001 C CNN
+	1    4675 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:XTALNX6035 X1001
+U 1 1 5E06AC4E
+P 4375 3900
+F 0 "X1001" V 4625 4000 50  0000 R CNN
+F 1 "XTALNX6035" V 4075 4125 50  0000 R CNN
+F 2 "" H 4375 3900 50  0001 C CNN
+F 3 "" H 4375 3900 50  0001 C CNN
+	1    4375 3900
+	0    -1   -1   0   
+$EndComp
+Text Notes 4275 4300 0    55   ~ 0
+8MHz\n
+$Comp
+L Device:C C1001
+U 1 1 5E06D522
+P 3975 3800
+F 0 "C1001" V 3775 3800 50  0000 C CNN
+F 1 "22pF" V 3850 3800 50  0000 C CNN
+F 2 "" H 4013 3650 50  0001 C CNN
+F 3 "~" H 3975 3800 50  0001 C CNN
+	1    3975 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1002
+U 1 1 5E06E8A5
+P 3975 4000
+F 0 "C1002" V 4175 4000 50  0000 C CNN
+F 1 "22pF" V 4100 4025 50  0000 C CNN
+F 2 "" H 4013 3850 50  0001 C CNN
+F 3 "~" H 3975 4000 50  0001 C CNN
+	1    3975 4000
+	0    1    1    0   
+$EndComp
+Text GLabel 3775 3900 0    55   Input ~ 0
+GND
+Wire Wire Line
+	3825 3800 3825 3900
+Wire Wire Line
+	3775 3900 3825 3900
+Connection ~ 3825 3900
+Wire Wire Line
+	3825 3900 3825 4000
+Wire Wire Line
+	4125 3800 4125 3700
+Wire Wire Line
+	4125 3700 4375 3700
+Wire Wire Line
+	4125 4000 4125 4100
+Wire Wire Line
+	4125 4100 4375 4100
+Wire Wire Line
+	4375 3700 4525 3700
+Wire Wire Line
+	4525 3700 4525 3750
+Wire Wire Line
+	4525 3750 4675 3750
+Connection ~ 4375 3700
+Wire Wire Line
+	4375 4100 4525 4100
+Wire Wire Line
+	4525 4100 4525 4050
+Wire Wire Line
+	4525 4050 4675 4050
+Connection ~ 4375 4100
+Wire Wire Line
+	4675 3750 4900 3750
+Connection ~ 4675 3750
+Wire Wire Line
+	4675 4050 4900 4050
+Connection ~ 4675 4050
+Text GLabel 4800 3550 0    55   Input ~ 0
+AREF
+Wire Wire Line
+	4900 3550 4800 3550
+$Comp
+L Device:C C1006
+U 1 1 5E07E1BC
+P 4475 3350
+F 0 "C1006" V 4425 3525 50  0000 C CNN
+F 1 "100nF" V 4525 3525 50  0000 C CNN
+F 2 "" H 4513 3200 50  0001 C CNN
+F 3 "~" H 4475 3350 50  0001 C CNN
+	1    4475 3350
+	0    1    1    0   
+$EndComp
+Text GLabel 4775 3150 0    55   Input ~ 0
+USB_P
+Text GLabel 4775 3050 0    55   Input ~ 0
+USB_N
+Text GLabel 4250 3350 0    55   Input ~ 0
+GND
+Wire Wire Line
+	4250 3350 4325 3350
+Wire Wire Line
+	4625 3350 4900 3350
+Wire Wire Line
+	4775 3150 4900 3150
+Wire Wire Line
+	4900 3050 4775 3050
+Text GLabel 4775 2150 0    55   Input ~ 0
+VUSB
+Wire Wire Line
+	4775 2150 4900 2150
+Text GLabel 4775 2375 0    55   Input ~ 0
+3.3V
+Wire Wire Line
+	4775 2375 4775 2450
+Wire Wire Line
+	4775 2450 4900 2450
+Wire Wire Line
+	4775 2450 4775 2550
+Wire Wire Line
+	4775 2550 4900 2550
+Connection ~ 4775 2450
+Wire Wire Line
+	4775 2550 4775 2650
+Wire Wire Line
+	4775 2650 4900 2650
+Connection ~ 4775 2550
+Wire Wire Line
+	4775 2650 4775 2850
+Wire Wire Line
+	4775 2850 4900 2850
+Connection ~ 4775 2650
+Text GLabel 4675 2575 0    55   Input ~ 0
+3.3V
+$Comp
+L Device:C C1005
+U 1 1 5E0937A1
+P 4475 2750
+F 0 "C1005" V 4675 2750 50  0000 C CNN
+F 1 "100nF" V 4600 2750 50  0000 C CNN
+F 2 "" H 4513 2600 50  0001 C CNN
+F 3 "~" H 4475 2750 50  0001 C CNN
+	1    4475 2750
+	0    1    1    0   
+$EndComp
+Text GLabel 4250 2750 0    55   Input ~ 0
+GND
+Wire Wire Line
+	4625 2750 4675 2750
+Wire Wire Line
+	4675 2575 4675 2750
+Connection ~ 4675 2750
+Wire Wire Line
+	4675 2750 4900 2750
+Wire Wire Line
+	4325 2750 4250 2750
+$Comp
+L Device:C C1003
+U 1 1 5E0A09B6
+P 4150 2100
+F 0 "C1003" H 4000 2025 50  0000 C CNN
+F 1 "100nF" H 4025 2200 50  0000 C CNN
+F 2 "" H 4188 1950 50  0001 C CNN
+F 3 "~" H 4150 2100 50  0001 C CNN
+	1    4150 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Bertha_main-eagle-import:SJ J1001
+U 1 1 5E0A3DEB
+P 3925 2100
+F 0 "J1001" V 3850 1800 59  0000 L CNN
+F 1 "SJ" V 3975 1925 59  0000 L CNN
+F 2 "" H 3925 2100 50  0001 C CNN
+F 3 "" H 3925 2100 50  0001 C CNN
+	1    3925 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 1950 4450 1950
+Wire Wire Line
+	3925 1950 3925 2000
+Connection ~ 4150 1950
+Text GLabel 3925 2325 0    55   Input ~ 0
+GND
+Wire Wire Line
+	3925 2200 3925 2250
+Wire Wire Line
+	4150 2250 3925 2250
+Connection ~ 3925 2250
+Wire Wire Line
+	3925 2250 3925 2325
+$Comp
+L Device:R R1001
+U 1 1 5E0BADDD
+P 3925 1750
+F 0 "R1001" V 4025 1625 50  0000 L CNN
+F 1 "10k" V 3925 1675 50  0000 L CNN
+F 2 "" V 3855 1750 50  0001 C CNN
+F 3 "~" H 3925 1750 50  0001 C CNN
+	1    3925 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 1600 2    55   Input ~ 0
+3.3V
+Wire Wire Line
+	4000 1600 3925 1600
+Wire Wire Line
+	3925 1900 3925 1950
+Connection ~ 3925 1950
+Text GLabel 4500 1875 2    55   Input ~ 0
+RESET
+Wire Wire Line
+	3925 1950 4150 1950
+Wire Wire Line
+	4500 1875 4450 1875
+Wire Wire Line
+	4450 1875 4450 1950
+Connection ~ 4450 1950
+Wire Wire Line
+	4450 1950 4900 1950
+Text Notes 7725 7025 0    315  ~ 0
+ATMega32u4
+$EndSCHEMATC

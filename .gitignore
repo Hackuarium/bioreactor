@@ -1,0 +1,6 @@
+**/*.sch-bak
+**/*.pcb-bak
+.idea
+**/.DS_Store
+**/*.fcstd1
+.vscode

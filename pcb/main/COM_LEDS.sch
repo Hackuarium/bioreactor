@@ -1,0 +1,249 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 16 17
+Title "Bertha"
+Date "2019-12-03"
+Rev ""
+Comp "Hackuarium"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Bertha_main-eagle-import:LEDCHIP-LED0805 LED1605
+U 1 1 5DE8E780
+P 5475 3350
+F 0 "LED1605" V 5675 3300 59  0000 C CNN
+F 1 "LEDCHIP-LED0805" V 5575 3325 59  0000 C CNN
+F 2 "" H 5475 3350 50  0001 C CNN
+F 3 "" H 5475 3350 50  0001 C CNN
+	1    5475 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1605
+U 1 1 5DE8FF3B
+P 6325 3350
+F 0 "R1605" V 6250 3350 50  0000 C CNN
+F 1 "1k" V 6325 3350 50  0000 C CNN
+F 2 "" V 6255 3350 50  0001 C CNN
+F 3 "~" H 6325 3350 50  0001 C CNN
+	1    6325 3350
+	0    1    1    0   
+$EndComp
+Text GLabel 4950 3350 0    50   Input ~ 0
+TXLED
+Wire Wire Line
+	4950 3350 5275 3350
+Wire Wire Line
+	5575 3350 6025 3350
+Text GLabel 6550 3350 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	6550 3350 6475 3350
+Text GLabel 6025 3250 0    50   Input ~ 0
+TX
+Wire Wire Line
+	6025 3250 6025 3350
+Connection ~ 6025 3350
+Wire Wire Line
+	6025 3350 6175 3350
+$Comp
+L Bertha_main-eagle-import:LEDCHIP-LED0805 LED1601
+U 1 1 5DE962A7
+P 5450 3800
+F 0 "LED1601" V 5650 3750 59  0000 C CNN
+F 1 "LEDCHIP-LED0805" V 5550 3775 59  0000 C CNN
+F 2 "" H 5450 3800 50  0001 C CNN
+F 3 "" H 5450 3800 50  0001 C CNN
+	1    5450 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1601
+U 1 1 5DE962AD
+P 6300 3800
+F 0 "R1601" V 6225 3800 50  0000 C CNN
+F 1 "1k" V 6300 3800 50  0000 C CNN
+F 2 "" V 6230 3800 50  0001 C CNN
+F 3 "~" H 6300 3800 50  0001 C CNN
+	1    6300 3800
+	0    1    1    0   
+$EndComp
+Text GLabel 4925 3800 0    50   Input ~ 0
+RXLED
+Wire Wire Line
+	4925 3800 5250 3800
+Wire Wire Line
+	5550 3800 6000 3800
+Text GLabel 6525 3800 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	6525 3800 6450 3800
+Text GLabel 6000 3700 0    50   Input ~ 0
+RXLD
+Wire Wire Line
+	6000 3700 6000 3800
+Connection ~ 6000 3800
+Wire Wire Line
+	6000 3800 6050 3800
+Wire Wire Line
+	6000 3600 6050 3600
+Wire Wire Line
+	6050 3600 6050 3800
+Connection ~ 6050 3800
+Wire Wire Line
+	6050 3800 6150 3800
+Wire Wire Line
+	6000 4050 6050 4050
+Text GLabel 6000 3600 0    50   Input ~ 0
+RX
+$Comp
+L Device:R R1602
+U 1 1 5DE9CEE0
+P 6300 4250
+F 0 "R1602" V 6225 4250 50  0000 C CNN
+F 1 "1k" V 6300 4250 50  0000 C CNN
+F 2 "" V 6230 4250 50  0001 C CNN
+F 3 "~" H 6300 4250 50  0001 C CNN
+	1    6300 4250
+	0    1    1    0   
+$EndComp
+Text GLabel 6525 4250 2    50   Input ~ 0
+D13
+Wire Wire Line
+	6525 4250 6450 4250
+Wire Wire Line
+	6000 4150 6000 4250
+Wire Wire Line
+	6000 4250 6050 4250
+Wire Wire Line
+	6050 4050 6050 4250
+Connection ~ 6050 4250
+Wire Wire Line
+	6050 4250 6150 4250
+Text GLabel 6000 4050 0    50   Input ~ 0
+BLK
+Wire Wire Line
+	6050 4700 6150 4700
+Connection ~ 6050 4700
+Wire Wire Line
+	6050 4500 6050 4700
+Wire Wire Line
+	6000 4700 6050 4700
+Wire Wire Line
+	6000 4600 6000 4700
+Wire Wire Line
+	6525 4700 6450 4700
+Text GLabel 6525 4700 2    50   Input ~ 0
+3.3V
+$Comp
+L Device:R R1603
+U 1 1 5DEA9BE5
+P 6300 4700
+F 0 "R1603" V 6225 4700 50  0000 C CNN
+F 1 "1k" V 6300 4700 50  0000 C CNN
+F 2 "" V 6230 4700 50  0001 C CNN
+F 3 "~" H 6300 4700 50  0001 C CNN
+	1    6300 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 4500 6050 4500
+Connection ~ 6000 4700
+Connection ~ 6000 4250
+$Comp
+L Bertha_main-eagle-import:LEDCHIP-LED0805 LED1603
+U 1 1 5DEA9BDF
+P 5450 4700
+F 0 "LED1603" V 5650 4650 59  0000 C CNN
+F 1 "LEDCHIP-LED0805" V 5550 4675 59  0000 C CNN
+F 2 "" H 5450 4700 50  0001 C CNN
+F 3 "" H 5450 4700 50  0001 C CNN
+	1    5450 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4925 4700 5250 4700
+Wire Wire Line
+	5550 4700 6000 4700
+Text GLabel 6000 4600 0    50   Input ~ 0
+LDSLAVE
+Text GLabel 6000 4500 0    50   Input ~ 0
+LCD
+Text GLabel 6000 4150 0    50   Input ~ 0
+BKLD
+Wire Wire Line
+	5550 4250 6000 4250
+Wire Wire Line
+	4925 4250 5250 4250
+Text GLabel 4925 4250 0    50   Input ~ 0
+GND
+$Comp
+L Bertha_main-eagle-import:LEDCHIP-LED0805 LED1602
+U 1 1 5DE9CEDA
+P 5450 4250
+F 0 "LED1602" V 5650 4200 59  0000 C CNN
+F 1 "LEDCHIP-LED0805" V 5550 4225 59  0000 C CNN
+F 2 "" H 5450 4250 50  0001 C CNN
+F 3 "" H 5450 4250 50  0001 C CNN
+	1    5450 4250
+	0    1    1    0   
+$EndComp
+Text GLabel 4925 4700 0    50   Input ~ 0
+CS_32U4
+Wire Wire Line
+	6000 4975 6050 4975
+$Comp
+L Bertha_main-eagle-import:LEDCHIP-LED0805 LED1604
+U 1 1 5DEBD029
+P 5450 5175
+F 0 "LED1604" V 5650 5125 59  0000 C CNN
+F 1 "LEDCHIP-LED0805" V 5550 5150 59  0000 C CNN
+F 2 "" H 5450 5175 50  0001 C CNN
+F 3 "" H 5450 5175 50  0001 C CNN
+	1    5450 5175
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1604
+U 1 1 5DEBD02F
+P 6300 5175
+F 0 "R1604" V 6225 5175 50  0000 C CNN
+F 1 "1k" V 6300 5175 50  0000 C CNN
+F 2 "" V 6230 5175 50  0001 C CNN
+F 3 "~" H 6300 5175 50  0001 C CNN
+	1    6300 5175
+	0    1    1    0   
+$EndComp
+Text GLabel 4925 5175 0    50   Input ~ 0
+A3
+Wire Wire Line
+	4925 5175 5250 5175
+Wire Wire Line
+	5550 5175 6000 5175
+Text GLabel 6525 5175 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	6525 5175 6450 5175
+Text GLabel 6000 5075 0    50   Input ~ 0
+LDMEM
+Wire Wire Line
+	6000 5075 6000 5175
+Connection ~ 6000 5175
+Wire Wire Line
+	6000 5175 6050 5175
+Wire Wire Line
+	6050 4975 6050 5175
+Connection ~ 6050 5175
+Wire Wire Line
+	6050 5175 6150 5175
+Text GLabel 6000 4975 0    50   Input ~ 0
+Flash
+Text Notes 7875 7025 0    315  ~ 0
+COM_LEDS\n
+$EndSCHEMATC
