@@ -76,46 +76,6 @@ byte wireRead(uint8_t address) {
   return _data;
 }
 
-
-int wireReadTwoBytesToInt(uint8_t address) {
-  int i = 0;
-  int _data = 0;
-  int byteWithMSB;
-  int byteWithLSB;
-
-  Wire.requestFrom(address, (uint8_t)2);
-  while(Wire.available()) {
-    if (i > 2) return 0; // security mechanism
-    else i++;
-    byteWithMSB = Wire.read();
-    byteWithLSB = Wire.read();
-    _data = (byteWithMSB<<8) | byteWithLSB;
-  }  
-  return _data;
-}
-
-
-int wireReadFourBytesToInt(uint8_t address) {
-  int i = 0;
-  unsigned int _data = 0;
-  uint8_t byteWithADD;
-  uint8_t byteWithMSB;
-  uint8_t byteWithLSB;
-  uint8_t byteWithCFG;
-
-  Wire.requestFrom(address, (uint8_t)4);
-  while(Wire.available()) {
-    if (i > 4) return 0; // security mechanism, see if sufficient or not (give false info about the FLUX if the case !!!!)
-    else i++;
-    byteWithMSB = Wire.read();
-    byteWithLSB = Wire.read();
-    byteWithCFG = Wire.read();
-    byteWithADD = Wire.read();
-    _data = (byteWithMSB<<8) | byteWithLSB;
-  }
-  return _data;
-}
-
 void wireInfo(Print* output) {
   //wireUpdateList();
   output->println("I2C");
@@ -206,9 +166,3 @@ boolean wireFlagStatus(byte *aByte, byte address) {
 }
 
 #endif
-
-
-
-
-
-

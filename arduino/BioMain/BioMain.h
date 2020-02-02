@@ -1,12 +1,9 @@
 /**************
   LIBRAIRIES
 **************/
-#include <NilRTOS.h> //MultiThread
-#include <SPI.h>     //Flash SPI
-#include <avr/wdt.h> //Watchdog
 
 
-// #define SHOW_MENU_HELP 1 // if we don't show the help we spare a lot of memory
+#define SHOW_MENU_HELP 1 // if we don't show the help we spare a lot of memory
 
 
 //Pin definition
@@ -25,7 +22,8 @@
 #define D23  23 //weight clock
 
 
-#define STEPPER {8,9}
+#define STEPPER_DIRECTION 8
+#define STEPPER_STEP      9
 
 #define FOOD_CTRL          1
 #define FOOD_IN            D10
@@ -33,55 +31,45 @@
 #define WEIGHT_DATA        D22
 #define WEIGHT_CLK         D23     //need to redefine the calibration parameters and process (see "HX711")
 
+
 #define TEMP_LIQ         D4
 #define TEMP_PCB         D12
 #define TEMP_PID         D6
+
 #define THR_MONITORING     1
 #define MONITORING_LED   D13
-#define LCD_SELECT       D11    //LCD screen SS_SPI
 
-#define TEMPERATURE_CTRL   1
-#define EVENT_LOGGING
+
+// #define EVENT_LOGGING
 
 /******************************
   SERIAL, LOGGER AND DEBUGGERS
 *******************************/
 
-#define THR_LINEAR_LOGS    1
+#define MAX_PARAM       52
 
 //#define DEBUG_LOGS         1
 //#define DEBUG_WEIGHT       1
-//#define DEBUG_LCD          1
-//#define DEBUG_ONEWIRE      1
 //#define DEBUG_PID          1
 
-#ifdef THR_LINEAR_LOGS
+#ifdef THR_SST_LOGGER
 #define FLASH_SELECT A3 //Flash SS_SPI
 #define LOG_INTERVAL 10  //Interval in (s) between logs logger
 #endif
 
 
 
-
-/*******************************
-   CARD DEFINITION (HARD CODED)
- *******************************/
-#ifdef STEPPER
 #define PARAM_STEPPER_SPEED        26   // AA - motor speed, parameter S, IN RPM (v4.5)
 #define PARAM_STEPPER_SECONDS      27   // AB   200 steps per full rotation (see Stepper.ino)
 //      number of seconds before changing direction
-#endif
 
-#ifdef TEMPERATURE_CTRL
 #define PARAM_TEMP_LIQ      0   // temperature of the solution
 #define PARAM_TEMP_PCB      1   // temperature of the heating plate
 #define PARAM_TEMP_PID      2   // heating amount of energy
 #define PARAM_TEMP_TARGET   3   // target temperature of the liquid
-#endif
 
-/*************************************/
 
-#if defined(WEIGHT_DATA) && defined(WEIGHT_CLK)
+
 #define PARAM_WEIGHT                  4  // in unit of the balance
 #define PARAM_WEIGHT_G                5  // in unit of the balance
 #define PARAM_WEIGHT_SINCE_LAST_EVENT 6  // 
@@ -91,7 +79,8 @@
 #define PARAM_FILLED_TIME            32  // AG - MINUTES to stay in the filled state
 #define PARAM_WEIGHT_FACTOR          33  // AH - Weight calibration: conversion factor digital -> gr (weight=FACTOR*dig_unit)
 #define PARAM_WEIGHT_OFFSET          34  // AI - Weight calibration: digital offset value when bioreactor is empty
-#endif
+
+
 
 
 /******************
@@ -107,7 +96,6 @@
 
 #define FLAG_WEIGHT_RANGE_ERROR        5   // the weight is outside range
 #define MASK_WEIGHT_ERROR              0b00100000  // where are the bit for weight error
-
 
 
 #define PARAM_STATUS             25  // currently active service
@@ -127,7 +115,7 @@
 #define FLAG_RELAY_ACID          12
 #define FLAG_RELAY_BASE          13
 
-
+#include "libino/hack.h"
 
 void writeLog(uint16_t event_number, int parameter_value);
 boolean clearParameterBit(byte number, byte bitToClear);
@@ -135,6 +123,3 @@ void setupMemory();
 void recoverLastEntryN();
 uint8_t loadLastEntryToParameters();
 uint16_t findSectorOfN( );
-uint8_t toHex(Print* output, byte value);
-uint8_t toHex(Print* output, int value);
-uint8_t toHex(Print* output, long value);

@@ -1,5 +1,6 @@
-#if defined(FOOD_CTRL) && defined(WEIGHT_DATA) && defined(WEIGHT_CLK)
+#ifdef THR_WEIGHT
 
+#include "libino/HX711/HX711.cpp"
 
 HX711 scale(WEIGHT_DATA, WEIGHT_CLK);
 
@@ -25,7 +26,6 @@ NIL_THREAD(ThreadWeight, arg) {
                Thread Loop
   ********************************************/
   while (true) {
-    setPumps();
     nilThdSleepMilliseconds(1000);
 
     int sinceLastEvent = (int)((millis() - timeLastEvent) / 60000);
@@ -35,8 +35,8 @@ NIL_THREAD(ThreadWeight, arg) {
 
     if (! isRunning(FLAG_FOOD_CONTROL) || // Foold control is currently disabled
         ! isEnabled(FLAG_FOOD_CONTROL)) { // Food control is disabled
-      stop(FLAG_RELAY_FILLING);    //filling  OFF
-      stop(FLAG_RELAY_EMPTYING);   //emptying OFF
+      stopProcess(FLAG_RELAY_FILLING);    //filling  OFF
+      stopProcess(FLAG_RELAY_EMPTYING);   //emptying OFF
       continue;
     }
 
@@ -74,38 +74,38 @@ NIL_THREAD(ThreadWeight, arg) {
       Serial.print(F("Weight disabled:"));
       Serial.println(weight);
 #endif
-      stop(FLAG_RELAY_FILLING);     //filling  OFF
-      stop(FLAG_RELAY_EMPTYING);    //emptying OFF
+      stopProcess(FLAG_RELAY_FILLING);     //filling  OFF
+      stopProcess(FLAG_RELAY_EMPTYING);    //emptying OFF
       continue;
     }
 
 
     if (isRunning(FLAG_SEDIMENTATION)) {
       // just to sure in case more than one flag is active we stop the pumps
-      stop(FLAG_RELAY_EMPTYING);
-      stop(FLAG_RELAY_FILLING);
+      stopProcess(FLAG_RELAY_EMPTYING);
+      stopProcess(FLAG_RELAY_FILLING);
       if (sinceLastEvent >= getParameter(PARAM_SEDIMENTATION_TIME)) {  //switch to Emptying
-        stop(FLAG_SEDIMENTATION);
-        start(FLAG_RELAY_EMPTYING);
+        stopProcess(FLAG_SEDIMENTATION);
+        startProcess(FLAG_RELAY_EMPTYING);
         timeLastEvent = millis();
       }
     } else if (isRunning(FLAG_RELAY_EMPTYING)) {
       // just to sure in case more than one flag is active we stop the pumps
-      stop(FLAG_RELAY_FILLING);
+      stopProcess(FLAG_RELAY_FILLING);
       if ((error > 0 && weight <= getParameter(PARAM_WEIGHT_MIN)) ||
           (error < 0 && weight >= getParameter(PARAM_WEIGHT_MIN))) {      //switch fo Filling
-        stop(FLAG_RELAY_EMPTYING);
-        start(FLAG_RELAY_FILLING);
+        stopProcess(FLAG_RELAY_EMPTYING);
+        startProcess(FLAG_RELAY_FILLING);
       }
     } else if (isRunning(FLAG_RELAY_FILLING)) {
       if ((error > 0 && weight >= getParameter(PARAM_WEIGHT_MAX)) ||
           (error < 0 && weight <= getParameter(PARAM_WEIGHT_MAX))) {
-        stop(FLAG_RELAY_FILLING);
+        stopProcess(FLAG_RELAY_FILLING);
         timeLastEvent = millis();
       }
     } else {
       if (sinceLastEvent >= getParameter(PARAM_FILLED_TIME)) {          //switch to Sedimentation
-        start(FLAG_SEDIMENTATION);
+        startProcess(FLAG_SEDIMENTATION);
         timeLastEvent = millis();
       }
     }
@@ -136,9 +136,9 @@ int getWeight() { // we can not avoid to have some errors measuring the weight
     while (!scale.is_ready()) {
       nilThdSleepMilliseconds(10);
     }
-    protectThread();
+    nilSemWait(&lockTimeCriticalZone);
     long currentWeight = scale.read();
-    unprotectThread();
+    nilSemSignal(&lockTimeCriticalZone);
 
     if ((currentWeight & 0b11111111) != 1) {
       if (weight == 0) {
@@ -199,21 +199,3 @@ void processWeightCommand(char command, char* data, Print * output) {
   }
 }
 #endif
-
-/********************
-    Utilities
-*********************/
-
-void setPumps() {
-  //stop pumping on startup and put down the flags
-#ifdef FOOD_IN
-  pinMode(FOOD_IN, OUTPUT);
-  digitalWrite(FOOD_IN, getStatus(FLAG_RELAY_FILLING));
-#endif
-#ifdef FOOD_OUT
-  pinMode(FOOD_OUT, OUTPUT);
-  digitalWrite(FOOD_OUT, getStatus(FLAG_RELAY_EMPTYING));
-#endif
-}
-
-

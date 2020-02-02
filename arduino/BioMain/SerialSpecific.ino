@@ -1,35 +1,20 @@
+void oneWireInfo(Print* output);
+
 void processSpecificCommand(char* data, char* paramValue, Print* output) {
   switch (data[0]) {
-#ifdef THR_LORA
-    case 'a':
-      processLoraCommand(data[1], paramValue, output);
-      break;
-#endif
-    case 'i':
-#if defined(GAS_CTRL) || defined(PH_CTRL)
-      wireInfo(output);
-#else  //not elsif !!
-      noThread(output);
-#endif
-      break;
-#ifdef THR_LINEAR_LOGS
+#ifdef THR_SST_LOGGER
     case 'l':
       processLoggerCommand(data[1], paramValue, output);
       break;
-#else  //not elsif !!
-      noThread(output);
 #endif
+#if THR_ONEWIRE
     case 'o':
-#if defined(TEMP_LIQ) || defined(TEMP_PCB)
       oneWireInfo(output);
-#else
-      noThread(output);
 #endif
       break;
     case 'p':
       printGeneralParameters(output);
       break;
-
     case 't':
       output->print(F("Status: "));
       output->println(getParameter(PARAM_STATUS));
@@ -53,7 +38,7 @@ void processSpecificCommand(char* data, char* paramValue, Print* output) {
         output->println(getParameterBit(PARAM_ERROR, i));
       }
       break;
-#ifdef FOOD_CTRL
+#ifdef THR_WEIGHT
     case 'w':
       processWeightCommand(data[1], paramValue, output);
       break;
@@ -62,16 +47,15 @@ void processSpecificCommand(char* data, char* paramValue, Print* output) {
 }
 
 void printSpecificHelp(Print* output) {
-  output->println(F("(i)2c"));
-#ifdef THR_LINEAR_LOGS
+#ifdef THR_SST_LOGGER
   output->println(F("(l)og"));
 #endif
+#ifdef THR_ONEWIRE
   output->println(F("(o)ne-wire"));
+#endif
   output->println(F("(p)aram"));
-
-
   output->println(F("s(t)atus"));
-#ifdef FOOD_CTRL
+#ifdef THR_WEIGHT
   output->println(F("(w)eight"));
 #endif
 }
@@ -83,23 +67,10 @@ void printGeneralParameters(Print* output) {
   output->println(now());
   output->print(F("millis:"));
   output->println(millis());
-#ifdef I2C_RELAY_FOOD
-  output->print(F("I2C relay food:"));
-  output->println(I2C_RELAY_FOOD);
-#endif
-#ifdef FLUX
-  output->print(F("I2C Flux:"));
-  output->println(I2C_FLUX);
-#endif
-#ifdef THR_LINEAR_LOGS
+#ifdef THR_SST_LOGGER
   output->print(F("Next log index:"));
   output->println(nextEntryID);
-#endif
-#ifdef THR_LINEAR_LOGS
   output->print(F("FlashID:"));
   sst.printFlashID(output);
 #endif
 }
-
-
-

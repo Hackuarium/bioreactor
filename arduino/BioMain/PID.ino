@@ -1,7 +1,10 @@
-#ifdef TEMP_PID
-#ifdef TEMPERATURE_CTRL
+#ifdef THR_PID
 
-#include <PID_v1.h>
+#include "libino/PID/PID_v1.h"
+
+
+
+#ifdef THR_ONEWIRE
 
 #define SAFETY_MAX_PCB_TEMP 7000  // pcb temperature is max 70°C
 #define SAFETY_MIN_PCB_TEMP 1000  // pcb temperatire is min 10°C

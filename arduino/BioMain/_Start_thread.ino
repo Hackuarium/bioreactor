@@ -1,5 +1,3 @@
-#define MAX_THREADS 10
-boolean threads[MAX_THREADS];
 
 /***********************************************************
                 Watchdog, Autoreboot Thread
@@ -33,36 +31,32 @@ NIL_THREAD(ThreadMonitoring, arg) {
 *****************************************************************/
 NIL_THREADS_TABLE_BEGIN()
 
-#ifdef THR_LORA
-NIL_THREADS_TABLE_ENTRY(NULL, ThreadLora, NULL, waThreadLora, sizeof(waThreadLora))
-#endif
-
 // logger should have priority to prevent any corruption of flash memory
-#ifdef THR_LINEAR_LOGS
+#ifdef THR_SST_LOGGER
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadLogger, NULL, waThreadLogger, sizeof(waThreadLogger))
 #endif
 
-#ifdef STEPPER
+#ifdef THR_STEPPER
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadStepper, NULL, waThreadStepper, sizeof(waThreadStepper))
 #endif
 
-#if defined(FOOD_CTRL) && defined(WEIGHT_DATA) && defined(WEIGHT_CLK)
+#ifdef THR_WEIGHT
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadWeight, NULL, waThreadWeight, sizeof(waThreadWeight))
 #endif
 
-#ifdef TEMPERATURE_CTRL
+#ifdef THR_ONEWIRE
   NIL_THREADS_TABLE_ENTRY(NULL, ThreadTemp, NULL, waThreadTemp, sizeof(waThreadTemp))  
-  #ifdef TEMP_PID                      
+  #ifdef THR_PID
   NIL_THREADS_TABLE_ENTRY(NULL, Thread_PID, NULL, waThread_PID, sizeof(waThread_PID))  
   #endif       
 #endif
 
-#ifdef THR_SERIAL
-NIL_THREADS_TABLE_ENTRY(NULL, ThreadSerial, NULL, waThreadSerial, sizeof(waThreadSerial))
+#ifdef THR_PUMPS
+NIL_THREADS_TABLE_ENTRY(NULL, ThreadPumps, NULL, waThreadPumps, sizeof(waThreadPumps))
 #endif
 
-#ifdef LCD_SELECT
-NIL_THREADS_TABLE_ENTRY(NULL, ThreadLCD, NULL, waThreadLCD, sizeof(waThreadLCD))
+#ifdef THR_SERIAL
+NIL_THREADS_TABLE_ENTRY(NULL, ThreadSerial, NULL, waThreadSerial, sizeof(waThreadSerial))
 #endif
 
 #ifdef THR_MONITORING

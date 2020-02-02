@@ -6,13 +6,13 @@ void resetParameters() {
 
   int active = 0;
 
-#ifdef STEPPER
+#ifdef THR_STEPPER
   active |= 1 << FLAG_STEPPER_CONTROL;
   setAndSaveParameter(PARAM_STEPPER_SPEED, 60);
   setAndSaveParameter(PARAM_STEPPER_SECONDS, 30);
 #endif
 
-#ifdef     TEMPERATURE_CTRL
+#ifdef THR_ONEWIRE
   active |= 1 << FLAG_PID_CONTROL;
   setAndSaveParameter(PARAM_TEMP_LIQ, ERROR_VALUE);
   setAndSaveParameter(PARAM_TEMP_PCB, ERROR_VALUE);

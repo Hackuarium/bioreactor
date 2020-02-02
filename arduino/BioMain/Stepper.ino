@@ -1,4 +1,4 @@
-#ifdef STEPPER
+#ifdef THR_STEPPER
 /****************************
     THREAD STEPPER MOTOR
 
@@ -6,16 +6,17 @@
     an impulsion at a very precise time frame.
  ******************************/
 
-#include <TimerOne.h>
+#include "libino/TimerOne/TimerOne.cpp"
 
 #define MIN_STEPPER_SPEED 5   // RPM
-#define MAX_STEPPER_SPEED 200 // RPM
-
-byte STEPPER_TAB[] = STEPPER;
+#define MAX_STEPPER_SPEED 90 // RPM
 
 //--------------- IS STEPPER STOPPED ---------------//
 
 boolean isStepperStopped() {
+  // temp code to TEST
+  return false;
+
   if (! isRunning(FLAG_STEPPER_CONTROL) || ! isEnabled(FLAG_STEPPER_CONTROL)) { // PID is disabled
     return true;
   }
@@ -38,28 +39,31 @@ NIL_THREAD(ThreadStepper, arg) {
   boolean forward = true;
   uint8_t count = 0;
 
-  pinMode(STEPPER_TAB[0], OUTPUT);
-  pinMode(STEPPER_TAB[1], OUTPUT);
-  Timer1.initialize(5000);  // 5000ms  = 40 Hz
+  pinMode(STEPPER_DIRECTION, OUTPUT);
+  pinMode(STEPPER_STEP, OUTPUT);
+  // The stepper motor recquires 3200 steps in order to do a full rotation
+
+  Timer1.initialize(1000000 / 3200); // 5000ms  = 40 Hz
+  Timer1.pwm(STEPPER_STEP, 512);
   Timer1.stop();
 
   while (true) {
     //first a check is performed on the motor status
 
     if (forward) {
-      digitalWrite(STEPPER_TAB[0], HIGH);
+      digitalWrite(STEPPER_DIRECTION, HIGH);
     } else {
-      digitalWrite(STEPPER_TAB[0], LOW);
+      digitalWrite(STEPPER_DIRECTION, LOW);
     }
     for (int i = 0; i < getParameter(PARAM_STEPPER_SECONDS); i++) {
       int speed = getParameter(PARAM_STEPPER_SPEED);
-      if (speed < MIN_STEPPER_SPEED) setParameter(PARAM_STEPPER_SPEED, 0);
+      if (speed < MIN_STEPPER_SPEED) setParameter(PARAM_STEPPER_SPEED, MIN_STEPPER_SPEED);
       if (speed > MAX_STEPPER_SPEED) setParameter(PARAM_STEPPER_SPEED, MAX_STEPPER_SPEED);
       if (isStepperStopped()) {
         Timer1.stop();
         break;
       }
-      Timer1.pwm(STEPPER_TAB[1], 512, (50 * 60 / getParameter(PARAM_STEPPER_SPEED)) * 100); // second parameter is duty from 0 to 1023
+      Timer1.setPeriod(1000000 / 3200 / getParameter(PARAM_STEPPER_SPEED) * 60);
       Timer1.start();
       nilThdSleepMilliseconds(1000);
     }
@@ -71,6 +75,3 @@ NIL_THREAD(ThreadStepper, arg) {
 }
 
 #endif
-
-
-
