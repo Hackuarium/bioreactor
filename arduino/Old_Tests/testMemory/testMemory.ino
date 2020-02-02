@@ -1,4 +1,4 @@
-#include "SST.h"
+#include <SST.h>
 #include <SPI.h>
 #include <avr/io.h>
 
@@ -6,8 +6,6 @@ SST sst = SST('F', 4); // A3 is F4
 
 
 boolean wr;
-
-boolean verbose=false;
 
 
 
@@ -18,36 +16,35 @@ boolean verbose=false;
 #define LINE_SIZE 64 // should be a divider of the SECTOR_SIZE
 
 
-uint8_t testBytes[LINE_SIZE];
-
-
-
 // ======================================================================================= //
 
 void setup()
 {
-  for (int i = 0; i < LINE_SIZE; i++) {
-    testBytes[i] = random(0, 255);
-  }
   // waiting 10s before starting the FORMATTING
   delay(10000);
   Serial.begin(9600);
   setupMemory(sst);
+  delay(50);
   Serial.print("FlashID: ");
   sst.printFlashID(&Serial);
 
-  Serial.println("Starting test");
+  Serial.println('Starting formatting');
+
+
+
+
 
   for (long i = 0; i < ADDRESS_MAX; i++) {
     if (i % SECTOR_SIZE == 0) { // should erase the sector
-      Serial.print("Formatting and testing sector (4096 bytes): ");
+      Serial.print("Formatting sector: ");
       Serial.println(i / SECTOR_SIZE);
-      sst.flashSectorErase(i);
+      sst.flashSectorErase(i / SECTOR_SIZE);
     }
+
     if (true) { // do we want to write and read the flash ?
-      if (i % LINE_SIZE == 0) printLine(i, false);
+      if (i % LINE_SIZE == 0) printLine(i);
       if (i % LINE_SIZE == 0) writeLine(i);
-      if (i % LINE_SIZE == 0) printLine(i, true);
+      if (i % LINE_SIZE == 0) printLine(i);
     }
   }
 }
@@ -56,60 +53,58 @@ void setup()
 
 
 
-void loop() {}
+void loop()
+{
+
+}
 
 
-void printLine(long address, boolean check) {
-  if (verbose) {
-    Serial.print("Read Address:  ");
-    Serial.print(address);
-    Serial.print(" : ");
-  }
+void printLine(long address) {
+
+  Serial.print("Read Address: ");
+  Serial.print(address);
+  Serial.print(" : ");
   sst.flashReadInit(address);
   for (byte j = 0; j < LINE_SIZE; j++) {
     byte oneByte = sst.flashReadNextInt8();
-    if (check && testBytes[j] != oneByte) {
-      Serial.print(testBytes[j]);
-      Serial.print(" ");
-      Serial.print(oneByte);
-      Serial.print(" ");
-      Serial.println("VERIFICATION ERROR - DONT USE THIS FLASH !!!!");
-    }
-    if (verbose) {
-      if (oneByte < 16) Serial.print("0");
-      Serial.print(oneByte, HEX);
-      Serial.print(" ");
-      address++;
-    }
-  }
-  sst.flashReadFinish();
-  if (verbose) Serial.println("");
-}
-
-void writeLine(long address) {
-  if (verbose) {
-    Serial.print("Write Address: ");
-    Serial.print(address);
-    Serial.print(" : ");
-  }
-  sst.flashWriteInit(address);
-  for (byte j = 0; j < LINE_SIZE; j++) {
-    sst.flashWriteNextInt8(testBytes[j]);
-    if (verbose) {
-      if (testBytes[j] < 16) Serial.print("0");
-      Serial.print(testBytes[j], HEX);
-      Serial.print(" ");
-    }
+    Serial.print(oneByte, HEX);
+    Serial.print(" ");
     address++;
   }
   sst.flashReadFinish();
-  if (verbose) Serial.println("");
+  Serial.println("");
+}
+
+void writeLine(long address) {
+  Serial.print("Write Address: ");
+  Serial.print(address);
+  Serial.print(" : ");
+  sst.flashWriteInit(address);
+  for (byte j = 0; j < LINE_SIZE; j++) {
+    sst.flashWriteNextInt8(j);
+    Serial.print(j, HEX);
+    Serial.print(" ");
+    address++;
+  }
+  sst.flashReadFinish();
+  Serial.println("");
 }
 
 
 
 void setupMemory(SST sst) {
   SPI.begin();
-
+  
   sst.init();
 }
+
+
+
+
+
+
+
+
+
+
+

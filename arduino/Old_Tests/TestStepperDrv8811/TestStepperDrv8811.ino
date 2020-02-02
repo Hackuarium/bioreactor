@@ -18,7 +18,7 @@
 //----------- PARAMETERS DEPENDING ON PAD SHORTAGES -----------//
 
 // NO PAD SHORTED
-
+/*
   // The stepper motor recquires 3200 steps in order to do a full rotation
   // (this means 3200 delays)
   uint16_t stepsPerRotation = 3200;
@@ -28,7 +28,7 @@
   // = 6e7 [us/min] / 3200 [step/rotation] --> divided by RPM --> [us/step]
   uint16_t RPMToStep = 18750;
   uint16_t delayPerStep = RPMToStep/velocity;
-
+*/
 
 // PAD 1 (CLOSEST TO DRIVER) SHORTED
 /*
@@ -60,7 +60,6 @@
 
   // The stepper motor recquires 400 steps in order to do a full rotation
   // (this means 400 delays)
-  /*
   uint16_t stepsPerRotation = 400;
   uint16_t numberSteps(stepsPerRotation);
   
@@ -68,7 +67,7 @@
   // = 6e7 [us/min] / 400 [step/rotation] --> divided by RPM --> [us/step]
   uint32_t RPMToStep = 150000;                 // uint16_t is not enough anymore
   uint32_t delayPerStep = RPMToStep/velocity;
-*/
+
 
 //----------- METHOD WITH DIRECT PORT MANIPULATION -----------//
 

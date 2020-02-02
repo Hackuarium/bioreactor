@@ -1,25 +1,32 @@
-#include <TimerOne.h>
+#include "TimerOne.h"
 
-const int direction = 8;
+const int directionPin = 8;
+byte direction = 0;
 const int pin = 9;
+
+
+// NO PAD SHORTED
+// The stepper motor recquires 3200 steps in order to do a full rotation
+
+
 
 void setup(void)
 {
-  pinMode(direction, OUTPUT);
-  Timer1.initialize(5000);  // 5000ms  = 40 Hz
+  pinMode(directionPin, OUTPUT);
+  Timer1.initialize(312); //  1 tour per second
   Timer1.pwm(pin, 512); // second parameter is duty from 0 to 1023
 }
 
 void loop(void) {
-  digitalWrite(direction, HIGH);
-
- Timer1.setPeriod(5000); // 5000 is 1 rotation per seconds
- delay(1000000);
+  direction = direction == 0 ? direction = 1 : direction = 0;
+  Timer1.start();
   
-  byte rpm = 60;
-  Timer1.setPeriod((50 * 60 / rpm) * 100); // 5000 is 1 rotation per seconds
-  delay(100000);
+  digitalWrite(directionPin, direction);
+
+  // Timer1.setPeriod(5000);
+  delay(5000);
+
+  Timer1.stop();
+  delay(1000);
+
 }
-
-
-
