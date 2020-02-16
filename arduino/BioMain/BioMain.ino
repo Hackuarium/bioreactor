@@ -12,8 +12,6 @@
 #include "A_Parameters.h"
 #include "BioMain.h"
 
-
-
 /*********
    SETUP
  *********/

@@ -26,7 +26,7 @@ NIL_WORKING_AREA(waThread_PID, 120); //tune the allocated mem (here extra is pro
 NIL_THREAD(Thread_PID, arg)
 {
   nilThdSleepMilliseconds(5000);
-  pinMode(TEMP_PID, OUTPUT);
+  pinMode(PID_CONTROL, OUTPUT);
   heatingSetup();
 
   while (TRUE) {
@@ -43,17 +43,17 @@ void pid_ctrl() {
   saveAndLogError(getParameter(PARAM_TEMP_TARGET) < SAFETY_MIN_LIQ_TEMP || getParameter(PARAM_TEMP_TARGET) > SAFETY_MAX_LIQ_TEMP, FLAG_TEMP_TARGET_RANGE_ERROR);
 
   if (! isRunning(FLAG_PID_CONTROL) || ! isEnabled(FLAG_PID_CONTROL)) { // PID is disabled
-    analogWrite(TEMP_PID, 0);
+    analogWrite(PID_CONTROL, 0);
     return;
   }
 
   if (isError()) { // any error we should stop heating !
-    analogWrite(TEMP_PID, 0);
+    analogWrite(PID_CONTROL, 0);
     return;
   }
 
   if (isRunning(FLAG_SEDIMENTATION) || isRunning(FLAG_RELAY_EMPTYING)) { // when it is in sedimentation or emptying mode we stop the heating
-    analogWrite(TEMP_PID, 0);
+    analogWrite(PID_CONTROL, 0);
     return;
   }
 
@@ -62,12 +62,7 @@ void pid_ctrl() {
   heatingRegSetpoint = getParameter(PARAM_TEMP_TARGET);
   heatingRegPID.Compute();                                   // the computation takes only 30ms!
   setParameter(PARAM_TEMP_PID, heatingRegOutput);
-  analogWrite(TEMP_PID, heatingRegOutput);
-
-#ifdef DEBUG_PID
-  Serial.print(F("PID analog value:"));
-  Serial.println(heatingRegOutput);
-#endif
+  analogWrite(PID_CONTROL, heatingRegOutput);
 }
 
 // see the rest of oliver's code for sanity checks

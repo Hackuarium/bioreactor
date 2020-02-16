@@ -1,46 +1,21 @@
-/**************
-  LIBRAIRIES
-**************/
+#define STEPPER_DIRECTION  8
+#define STEPPER_STEP       9
+
+#define FOOD_IN            10
+#define FOOD_OUT           5
+#define WEIGHT_DATA        A1
+#define WEIGHT_CLK         A0     //need to redefine the calibration parameters and process (see "HX711")
 
 
-#define SHOW_MENU_HELP 1 // if we don't show the help we spare a lot of memory
-
-
-//Pin definition
-#define D4   4  //temp probe
-#define D5   5  //food OUT in v4.4
-#define D6   6  //pid
-#define D10  10 //memory select (before 4.4) or food IN in v4.4
-#define D11  11 //slave at32u4 for LCD 
-#define D12  12 //temp control
-#define D13  13 //blink
-#define D18  18 //stepper
-#define D19  19 //stepper
-#define D20  20 //food in (before 4.4)  or LoRa RST in 4.4
-#define D21  21 //food out (before 4.4) or Flash select in 4.4
-#define D22  22 //weight data
-#define D23  23 //weight clock
-
-
-#define STEPPER_DIRECTION 8
-#define STEPPER_STEP      9
-
-#define FOOD_CTRL          1
-#define FOOD_IN            D10
-#define FOOD_OUT           D5
-#define WEIGHT_DATA        D22
-#define WEIGHT_CLK         D23     //need to redefine the calibration parameters and process (see "HX711")
-
-
-#define TEMP_LIQ         D4
-#define TEMP_PCB         D12
-#define TEMP_PID         D6
+#define TEMP_LIQ           7
+#define TEMP_PCB           A2
+#define PID_CONTROL        6
 
 #define THR_MONITORING     1
-#define MONITORING_LED   D13
+#define MONITORING_LED     13
 
 
-// #define EVENT_LOGGING
+#define EVENT_LOGGING  1
 
 /******************************
   SERIAL, LOGGER AND DEBUGGERS
@@ -48,16 +23,10 @@
 
 #define MAX_PARAM       52
 
-//#define DEBUG_LOGS         1
-//#define DEBUG_WEIGHT       1
-//#define DEBUG_PID          1
-
 #ifdef THR_SST_LOGGER
-#define FLASH_SELECT A3 //Flash SS_SPI
-#define LOG_INTERVAL 10  //Interval in (s) between logs logger
+#define FLASH_SELECT      1 //Flash SS_SPI
+#define LOG_INTERVAL      10  //Interval in (s) between logs logger
 #endif
-
-
 
 #define PARAM_STEPPER_SPEED        26   // AA - motor speed, parameter S, IN RPM (v4.5)
 #define PARAM_STEPPER_SECONDS      27   // AB   200 steps per full rotation (see Stepper.ino)

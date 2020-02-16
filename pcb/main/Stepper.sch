@@ -767,9 +767,9 @@ Connection ~ 3550 4175
 Text HLabel 8950 4025 0    59   Input ~ 0
 3.3V
 Text HLabel 3725 3725 0    59   Input ~ 0
-D9
+STEP
 Text HLabel 3725 3825 0    59   Input ~ 0
-D8
+DIR
 NoConn ~ 5575 4125
 Wire Wire Line
 	2950 1625 2875 1625

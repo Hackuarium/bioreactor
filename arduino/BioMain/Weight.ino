@@ -4,13 +4,7 @@
 
 HX711 scale(WEIGHT_DATA, WEIGHT_CLK);
 
-
-#ifdef DEBUG_WEIGHT
-NIL_WORKING_AREA(waThreadWeight, 96);
-#else
 NIL_WORKING_AREA(waThreadWeight, 56); // minimum of 32 !
-#endif
-
 
 NIL_THREAD(ThreadWeight, arg) {
   nilThdSleepMilliseconds(1234); // wait a little bit not everything starts at once
@@ -44,36 +38,14 @@ NIL_THREAD(ThreadWeight, arg) {
 
     int error = (getParameter(PARAM_WEIGHT_MAX) - getParameter(PARAM_WEIGHT_MIN)) / 5;
 
-#ifdef DEBUG_WEIGHT
-    Serial.print(F("Weight allowed error:"));
-    Serial.println(error);
-#endif
-
     if ((error > 0 && ((weight < (getParameter(PARAM_WEIGHT_MIN) - error)) || (weight > (getParameter(PARAM_WEIGHT_MAX) + error)))) ||
         (error < 0 && ((weight > (getParameter(PARAM_WEIGHT_MIN) - error)) || (weight < (getParameter(PARAM_WEIGHT_MAX) + error))))) {
       saveAndLogError(true, FLAG_WEIGHT_RANGE_ERROR);
-#ifdef DEBUG_WEIGHT
-      Serial.print(F("Weight range error:"));
-      Serial.println(error);
-#endif
     } else {
       saveAndLogError(false, FLAG_WEIGHT_RANGE_ERROR);
-#ifdef DEBUG_WEIGHT
-      Serial.print(F("Weight range ok:"));
-      Serial.println(error);
-#endif
     }
 
-#ifdef DEBUG_WEIGHT
-    Serial.print(F("Weight:"));
-    Serial.println(weight);
-#endif
-
     if (isError(MASK_WEIGHT_ERROR)) {  // weight outside range
-#ifdef DEBUG_WEIGHT
-      Serial.print(F("Weight disabled:"));
-      Serial.println(weight);
-#endif
       stopProcess(FLAG_RELAY_FILLING);     //filling  OFF
       stopProcess(FLAG_RELAY_EMPTYING);    //emptying OFF
       continue;

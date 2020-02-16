@@ -19,7 +19,7 @@ void resetParameters() {
   setAndSaveParameter(PARAM_TEMP_TARGET, 3000);
 #endif
 
-#ifdef FOOD_CTRL
+#if defined(FOOD_IN) || defined(FOOD_OUT)
   active |= 1 << FLAG_FOOD_CONTROL;
   setAndSaveParameter(PARAM_WEIGHT_MIN, 32767);
   setAndSaveParameter(PARAM_WEIGHT_MAX, -32768);

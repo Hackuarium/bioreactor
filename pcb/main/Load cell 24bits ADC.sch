@@ -368,9 +368,9 @@ GND
 Text HLabel 3550 5175 2    59   Input ~ 0
 GND
 Text HLabel 7375 3600 2    59   Input ~ 0
-A4
+DATA
 Text HLabel 7375 3800 2    59   Input ~ 0
-A5
+CLK
 Text HLabel 5500 2450 2    59   Input ~ 0
 3.3V
 Text HLabel 6125 2650 1    59   Input ~ 0
