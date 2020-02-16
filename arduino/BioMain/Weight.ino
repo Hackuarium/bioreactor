@@ -86,8 +86,6 @@ NIL_THREAD(ThreadWeight, arg) {
   }
 }
 
-
-
 void printWeightHelp(Print* output) {
   output->println(F("Weight help"));
   output->println(F("(we) Empty (tare)"));

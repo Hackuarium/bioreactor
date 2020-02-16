@@ -28,9 +28,6 @@
 #define EVENT_ERROR_FAILED              6
 #define EVENT_ERROR_RECOVER             7
 
-
-
-
 #define EVENT_MOTOR_START            20
 #define EVENT_MOTOR_STOP             21
 
