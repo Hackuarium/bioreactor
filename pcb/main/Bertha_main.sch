@@ -751,21 +751,6 @@ F 3 "~" H 12025 3000 50  0001 C CNN
 	1    12025 3000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12500 3250 12550 3250
-$Comp
-L Device:R R?
-U 1 1 5E06A1FC
-P 12350 3250
-AR Path="/5E0D7AB3/5E06A1FC" Ref="R?"  Part="1" 
-AR Path="/5E06A1FC" Ref="R8"  Part="1" 
-F 0 "R8" V 12425 3250 50  0000 C CNN
-F 1 "4.7k" V 12350 3250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12280 3250 50  0001 C CNN
-F 3 "~" H 12350 3250 50  0001 C CNN
-	1    12350 3250
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector:AudioJack3_SwitchTR J5
 U 1 1 5E0CDC33
@@ -1829,8 +1814,6 @@ F 3 "" H 12025 3350 50  0001 C CNN
 	1    12025 3350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12025 3250 12200 3250
 $Comp
 L Bertha_main-eagle-import:GND #U03
 U 1 1 5E5AEE08
@@ -1949,4 +1932,6 @@ Wire Wire Line
 	5775 3950 5825 3950
 Wire Wire Line
 	5775 4075 5825 4075
+Wire Wire Line
+	12025 3250 12550 3250
 $EndSCHEMATC
