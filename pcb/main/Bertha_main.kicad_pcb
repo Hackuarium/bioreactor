@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 82)
-    (tracks 1031)
+    (tracks 1030)
     (zones 0)
     (modules 134)
     (nets 110)
@@ -6423,7 +6423,6 @@
   (segment (start 127.884 79.384) (end 127.884 80.892) (width 0.508) (layer F.Cu) (net 24))
   (segment (start 129.032 88.138) (end 131.318 90.424) (width 0.508) (layer F.Cu) (net 24))
   (segment (start 129.032 82.04) (end 129.032 88.138) (width 0.508) (layer F.Cu) (net 24))
-  (segment (start 131.318 90.424) (end 130.81 90.424) (width 0.508) (layer F.Cu) (net 24))
   (segment (start 143.256 90.424) (end 131.318 90.424) (width 0.508) (layer F.Cu) (net 24))
   (segment (start 149.983001 104.254001) (end 147.329 101.6) (width 0.508) (layer F.Cu) (net 25))
   (segment (start 149.983001 106.188999) (end 149.983001 104.254001) (width 0.508) (layer F.Cu) (net 25))
