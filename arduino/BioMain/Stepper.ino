@@ -14,8 +14,6 @@
 //--------------- IS STEPPER STOPPED ---------------//
 
 boolean isStepperStopped() {
-  // temp code to TEST
-  return false;
 
   if (! isRunning(FLAG_STEPPER_CONTROL) || ! isEnabled(FLAG_STEPPER_CONTROL)) { // PID is disabled
     return true;

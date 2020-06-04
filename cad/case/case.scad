@@ -5,6 +5,14 @@ use <./laser-cut-box/pcbbox/box.scad>;
 extend=10;
 thickness=5;
 
+pcbHoles=4.318;
+pcbWidth=100.154;
+pcbHeight=87.007;
+pcbXPos=58;
+pcbYPos=0.5;
+pcbZPos=5;
+
+
 heatingPlateSize=214;
 heatingPlateGap=2;
 heatingPlateThickness=2.2;
@@ -35,16 +43,20 @@ box(
                         // 'bottom' (second element in the array) that is is fully female (2) or male (3).
     holes=[ // relative to the inside of the box
         [
+            // the screws
              [screwDistance,screwDistance,screwDiameter],
              [internalSize-screwDistance,screwDistance,screwDiameter],
              [internalSize-screwDistance,internalSize-screwDistance,screwDiameter],
              [screwDistance,internalSize-screwDistance,screwDiameter],
         ], // top
         [
+            // the screws
              [screwDistance,screwDistance,screwDiameter],
              [internalSize-screwDistance,screwDistance,screwDiameter],
              [internalSize-screwDistance,internalSize-screwDistance,screwDiameter],
              [screwDistance,internalSize-screwDistance,screwDiameter],
+             // PCB screws
+             
         ], // bottom
         [], // left
         [], // right
