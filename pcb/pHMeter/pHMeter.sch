@@ -1,0 +1,1636 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 5
+Title "PHMeter"
+Date "2020-05-12"
+Rev "5.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 11400 1925 1000 1500
+U 5ECFEBAC
+F0 "ATMega32u4" 50
+F1 "ATMega32u4.sch" 50
+$EndSheet
+$Comp
+L Bertha_main-eagle-import:MINI-USB-SCHIELD-32005-201 X?
+U 1 1 5ED00B0D
+P 4350 6150
+F 0 "X?" H 4368 6582 59  0000 C CNN
+F 1 "MINI-USB-SCHIELD-32005-201" V 4750 5850 59  0001 L BNN
+F 2 "" H 4350 6150 50  0001 C CNN
+F 3 "" H 4350 6150 50  0001 C CNN
+	1    4350 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ED01F9F
+P 4900 6150
+F 0 "R?" V 5000 6150 50  0000 C CNN
+F 1 "22" V 4900 6150 50  0000 C CNN
+F 2 "" V 4830 6150 50  0001 C CNN
+F 3 "~" H 4900 6150 50  0001 C CNN
+	1    4900 6150
+	0    1    1    0   
+$EndComp
+Text GLabel 5200 6050 2    50   Input ~ 0
+USB_N
+Text GLabel 5200 6150 2    50   Input ~ 0
+USB_P
+$Comp
+L Device:C C?
+U 1 1 5ED027E7
+P 5750 6150
+F 0 "C?" H 5865 6196 50  0000 L CNN
+F 1 "10u" H 5865 6105 50  0000 L CNN
+F 2 "" H 5788 6000 50  0001 C CNN
+F 3 "~" H 5750 6150 50  0001 C CNN
+	1    5750 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5950 4650 5950
+Wire Wire Line
+	5750 5950 5750 6000
+Wire Wire Line
+	5750 6300 5750 6350
+Wire Wire Line
+	5750 6350 5150 6350
+Connection ~ 5150 6350
+Wire Wire Line
+	5150 6350 4550 6350
+Wire Wire Line
+	5150 6400 5150 6350
+$Comp
+L Bertha_main-eagle-import:GND ?
+U 1 1 5ED034F6
+P 5150 6500
+F 0 "?" H 5200 6550 50  0001 C CNN
+F 1 "GND" H 5253 6538 42  0000 L CNN
+F 2 "" H 5150 6500 50  0001 C CNN
+F 3 "" H 5150 6500 50  0001 C CNN
+	1    5150 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 6150 4750 6150
+Wire Wire Line
+	5050 6150 5200 6150
+Wire Wire Line
+	5050 6050 5200 6050
+Wire Wire Line
+	4550 6050 4750 6050
+$Comp
+L Device:R R?
+U 1 1 5ED01CE1
+P 4900 6050
+F 0 "R?" V 4850 5850 50  0000 C CNN
+F 1 "22" V 4900 6050 50  0000 C CNN
+F 2 "" V 4830 6050 50  0001 C CNN
+F 3 "~" H 4900 6050 50  0001 C CNN
+	1    4900 6050
+	0    1    1    0   
+$EndComp
+$Sheet
+S 9025 2075 1050 1000
+U 5ED0DFF6
+F0 "3.3V LDO" 50
+F1 "3.sch" 50
+F2 "VIN" I L 9025 2425 50 
+F3 "3.3V" O R 10075 2475 50 
+F4 "GND" I L 9025 2625 50 
+$EndSheet
+Text GLabel 8875 2425 0    50   Input ~ 0
+VDD
+$Comp
+L Bertha_main-eagle-import:GND ?
+U 1 1 5ED0F364
+P 8875 2825
+F 0 "?" H 8925 2875 50  0001 C CNN
+F 1 "GND" H 8978 2863 42  0000 L CNN
+F 2 "" H 8875 2825 50  0001 C CNN
+F 3 "" H 8875 2825 50  0001 C CNN
+	1    8875 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8875 2725 8875 2625
+Wire Wire Line
+	8875 2625 9025 2625
+Wire Wire Line
+	8875 2425 9025 2425
+Text GLabel 10175 2475 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	10075 2475 10175 2475
+$Comp
+L Connector:Conn_Coaxial_Power J?
+U 1 1 5ED1AC60
+P 7475 6125
+F 0 "J?" V 7700 6075 50  0000 C CNN
+F 1 "Conn_Coaxial_Power" V 7609 6075 50  0000 C CNN
+F 2 "" H 7475 6075 50  0001 C CNN
+F 3 "~" H 7475 6075 50  0001 C CNN
+	1    7475 6125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Bertha_main-eagle-import:GND ?
+U 1 1 5ED1C1AE
+P 7775 6425
+F 0 "?" H 7825 6475 50  0001 C CNN
+F 1 "GND" H 7878 6463 42  0000 L CNN
+F 2 "" H 7775 6425 50  0001 C CNN
+F 3 "" H 7775 6425 50  0001 C CNN
+	1    7775 6425
+	1    0    0    -1  
+$EndComp
+Text GLabel 7025 6125 0    50   Input ~ 0
+12V
+Wire Wire Line
+	7025 6125 7125 6125
+Wire Wire Line
+	7675 6125 7775 6125
+Wire Wire Line
+	7775 6125 7775 6325
+$Comp
+L Bertha_main-eagle-import:TLV6004PW U?
+U 1 1 5ED3B50E
+P 2425 4225
+F 0 "U?" H 2425 4592 50  0000 C CNN
+F 1 "TLV6004PW" H 2425 4501 50  0000 C CNN
+F 2 "Package_DFN_QFN:Texas_S-PX2QFN-14" H 2425 4225 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 2475 4425 50  0001 C CNN
+	1    2425 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:TLV6004PW U?
+U 2 1 5ED3C0C3
+P 2425 3325
+F 0 "U?" H 2425 3692 50  0000 C CNN
+F 1 "TLV6004PW" H 2425 3601 50  0000 C CNN
+F 2 "Package_DFN_QFN:Texas_S-PX2QFN-14" H 2425 3325 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 2475 3525 50  0001 C CNN
+	2    2425 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5ED3EFCC
+P 1425 4375
+F 0 "C?" H 1540 4421 50  0000 L CNN
+F 1 "100n" H 1540 4330 50  0000 L CNN
+F 2 "" H 1463 4225 50  0001 C CNN
+F 3 "~" H 1425 4375 50  0001 C CNN
+	1    1425 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2125 4325 2025 4325
+Wire Wire Line
+	2025 4325 2025 4525
+Wire Wire Line
+	2025 4525 2825 4525
+Wire Wire Line
+	2825 4525 2825 4225
+Wire Wire Line
+	2825 4225 2725 4225
+$Comp
+L Device:R R?
+U 1 1 5ED3F6BA
+P 1775 4375
+F 0 "R?" H 1845 4421 50  0000 L CNN
+F 1 "10k" H 1845 4330 50  0000 L CNN
+F 2 "" V 1705 4375 50  0001 C CNN
+F 3 "~" H 1775 4375 50  0001 C CNN
+	1    1775 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1775 4125 1775 4225
+Wire Wire Line
+	1775 4125 1975 4125
+Wire Wire Line
+	1425 4225 1425 4125
+Connection ~ 1775 4125
+Wire Wire Line
+	1425 4125 1775 4125
+$Comp
+L Device:R R?
+U 1 1 5ED3F955
+P 1775 3875
+F 0 "R?" H 1705 3829 50  0000 R CNN
+F 1 "10k" H 1705 3920 50  0000 R CNN
+F 2 "" V 1705 3875 50  0001 C CNN
+F 3 "~" H 1775 3875 50  0001 C CNN
+	1    1775 3875
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1775 4025 1775 4125
+Wire Wire Line
+	1775 3725 1775 3625
+$Comp
+L Bertha_main-eagle-import:GND ?
+U 1 1 5ED57052
+P 1425 4725
+F 0 "?" H 1475 4775 50  0001 C CNN
+F 1 "GND" H 1528 4763 42  0000 L CNN
+F 2 "" H 1425 4725 50  0001 C CNN
+F 3 "" H 1425 4725 50  0001 C CNN
+	1    1425 4725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:GND ?
+U 1 1 5ED57417
+P 1775 4725
+F 0 "?" H 1825 4775 50  0001 C CNN
+F 1 "GND" H 1878 4763 42  0000 L CNN
+F 2 "" H 1775 4725 50  0001 C CNN
+F 3 "" H 1775 4725 50  0001 C CNN
+	1    1775 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1775 4625 1775 4525
+Wire Wire Line
+	1425 4625 1425 4525
+$Comp
+L Connector:Conn_Coaxial_Power J?
+U 1 1 5ED5904C
+P 3125 3925
+F 0 "J?" V 2908 3875 50  0000 C CNN
+F 1 "Conn_Coaxial_Power" V 2999 3875 50  0000 C CNN
+F 2 "" H 3125 3875 50  0001 C CNN
+F 3 "~" H 3125 3875 50  0001 C CNN
+	1    3125 3925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2125 3425 2075 3425
+Wire Wire Line
+	2075 3425 2075 3625
+Wire Wire Line
+	2075 3625 2825 3625
+Wire Wire Line
+	2825 3625 2825 3325
+Wire Wire Line
+	2825 3325 2725 3325
+Wire Wire Line
+	2125 3225 1975 3225
+Wire Wire Line
+	1975 3225 1975 4125
+Connection ~ 1975 4125
+Wire Wire Line
+	1975 4125 2125 4125
+$Comp
+L Bertha_main-eagle-import:TLV6004PW U?
+U 3 1 5ED5F260
+P 3775 4025
+F 0 "U?" H 3775 4392 50  0000 C CNN
+F 1 "TLV6004PW" H 3775 4301 50  0000 C CNN
+F 2 "Package_DFN_QFN:Texas_S-PX2QFN-14" H 3775 4025 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 3825 4225 50  0001 C CNN
+	3    3775 4025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3475 4125 3375 4125
+Wire Wire Line
+	3375 4125 3375 4325
+Wire Wire Line
+	3375 4325 4175 4325
+Wire Wire Line
+	4175 4325 4175 4025
+Wire Wire Line
+	4175 4025 4075 4025
+Wire Wire Line
+	3475 3925 3225 3925
+Wire Wire Line
+	2925 3925 2825 3925
+Wire Wire Line
+	2825 3925 2825 4225
+Connection ~ 2825 4225
+$Comp
+L Device:R R?
+U 1 1 5ED63B6D
+P 4425 4025
+F 0 "R?" V 4218 4025 50  0000 C CNN
+F 1 "56.2k" V 4309 4025 50  0000 C CNN
+F 2 "" V 4355 4025 50  0001 C CNN
+F 3 "~" H 4425 4025 50  0001 C CNN
+	1    4425 4025
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5ED6460A
+P 4675 3725
+F 0 "R?" H 4745 3771 50  0000 L CNN
+F 1 "10k" H 4745 3680 50  0000 L CNN
+F 2 "" V 4605 3725 50  0001 C CNN
+F 3 "~" H 4675 3725 50  0001 C CNN
+	1    4675 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5ED64AA5
+P 4675 4275
+F 0 "C?" H 4790 4321 50  0000 L CNN
+F 1 "22u" H 4790 4230 50  0000 L CNN
+F 2 "" H 4713 4125 50  0001 C CNN
+F 3 "~" H 4675 4275 50  0001 C CNN
+	1    4675 4275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4275 4025 4175 4025
+Connection ~ 4175 4025
+Wire Wire Line
+	4575 4025 4675 4025
+Wire Wire Line
+	4675 4025 4675 4125
+Wire Wire Line
+	4675 3875 4675 4025
+Connection ~ 4675 4025
+Text GLabel 4975 4025 2    50   Input ~ 0
+B+
+Wire Wire Line
+	4975 4025 4675 4025
+Wire Wire Line
+	2825 3325 4675 3325
+Wire Wire Line
+	4675 3325 4675 3575
+Connection ~ 2825 3325
+Text GLabel 4975 3325 2    50   Input ~ 0
+B-
+Wire Wire Line
+	4975 3325 4675 3325
+Connection ~ 4675 3325
+$Comp
+L Bertha_main-eagle-import:TLV6004PW U?
+U 5 1 5ED6E924
+P 1125 3975
+F 0 "U?" H 1083 4021 50  0000 L CNN
+F 1 "TLV6004PW" H 1083 3930 50  0000 L CNN
+F 2 "Package_DFN_QFN:Texas_S-PX2QFN-14" H 1125 3975 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 1175 4175 50  0001 C CNN
+	5    1125 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:GND ?
+U 1 1 5ED72EDE
+P 1025 4525
+F 0 "?" H 1075 4575 50  0001 C CNN
+F 1 "GND" H 1128 4563 42  0000 L CNN
+F 2 "" H 1025 4525 50  0001 C CNN
+F 3 "" H 1025 4525 50  0001 C CNN
+	1    1025 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1025 3675 1025 3575
+Wire Wire Line
+	1025 4425 1025 4325
+$Comp
+L Device:C C?
+U 1 1 5EDAD519
+P 725 3975
+F 0 "C?" H 840 4021 50  0000 L CNN
+F 1 "100n" H 840 3930 50  0000 L CNN
+F 2 "" H 763 3825 50  0001 C CNN
+F 3 "~" H 725 3975 50  0001 C CNN
+	1    725  3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1025 3575 725  3575
+Wire Wire Line
+	725  3575 725  3825
+Connection ~ 1025 3575
+Wire Wire Line
+	1025 3575 1025 3525
+Wire Wire Line
+	725  4125 725  4325
+Wire Wire Line
+	725  4325 1025 4325
+Connection ~ 1025 4325
+Wire Wire Line
+	1025 4325 1025 4275
+$Comp
+L Bertha_main-eagle-import:GND U?
+U 1 1 5EDB9D48
+P 4675 4675
+F 0 "U?" H 4725 4725 50  0001 C CNN
+F 1 "GND" H 4778 4713 42  0000 L CNN
+F 2 "" H 4675 4675 50  0001 C CNN
+F 3 "" H 4675 4675 50  0001 C CNN
+	1    4675 4675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4675 4425 4675 4575
+$Comp
+L Device:R R?
+U 1 1 5EDC7F53
+P 7900 3750
+F 0 "R?" H 7970 3796 50  0000 L CNN
+F 1 "10k" H 7970 3705 50  0000 L CNN
+F 2 "" V 7830 3750 50  0001 C CNN
+F 3 "~" H 7900 3750 50  0001 C CNN
+	1    7900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EDC8DAC
+P 7350 3750
+F 0 "R?" H 7420 3796 50  0000 L CNN
+F 1 "10k" H 7420 3705 50  0000 L CNN
+F 2 "" V 7280 3750 50  0001 C CNN
+F 3 "~" H 7350 3750 50  0001 C CNN
+	1    7350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3600 7900 3500
+Wire Wire Line
+	7625 3500 7625 3600
+Wire Wire Line
+	7350 3600 7350 3500
+$Comp
+L Bertha_main-eagle-import:LED LED?
+U 1 1 5EDD30A3
+P 7900 4100
+F 0 "LED?" H 7978 4103 59  0000 L CNN
+F 1 "LED" H 7978 3998 59  0000 L CNN
+F 2 "" H 7900 4100 50  0001 C CNN
+F 3 "" H 7900 4100 50  0001 C CNN
+	1    7900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:LED LED?
+U 1 1 5EDD60F5
+P 7350 4100
+F 0 "LED?" H 7400 4250 59  0000 L CNN
+F 1 "LED" H 7400 4150 59  0000 L CNN
+F 2 "" H 7350 4100 50  0001 C CNN
+F 3 "" H 7350 4100 50  0001 C CNN
+	1    7350 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3900 7900 4000
+Wire Wire Line
+	7625 4000 7625 3900
+Wire Wire Line
+	7350 3900 7350 4000
+Text GLabel 7350 4400 3    50   Input ~ 0
+TXLED
+Text GLabel 7900 4400 3    50   Input ~ 0
+D10
+Wire Wire Line
+	7900 4300 7900 4400
+Wire Wire Line
+	7625 4300 7625 4400
+Wire Wire Line
+	7350 4300 7350 4400
+$Comp
+L Device:R R?
+U 1 1 5EE6A253
+P 5650 3750
+F 0 "R?" H 5720 3796 50  0000 L CNN
+F 1 "10k" H 5720 3705 50  0000 L CNN
+F 2 "" V 5580 3750 50  0001 C CNN
+F 3 "~" H 5650 3750 50  0001 C CNN
+	1    5650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:LED LED?
+U 1 1 5EE6A756
+P 5650 4100
+F 0 "LED?" H 5728 4103 59  0000 L CNN
+F 1 "LED" H 5728 3998 59  0000 L CNN
+F 2 "" H 5650 4100 50  0001 C CNN
+F 3 "" H 5650 4100 50  0001 C CNN
+	1    5650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:GND U?
+U 1 1 5EE6AE22
+P 5650 4500
+F 0 "U?" H 5700 4550 50  0001 C CNN
+F 1 "GND" H 5753 4538 42  0000 L CNN
+F 2 "" H 5650 4500 50  0001 C CNN
+F 3 "" H 5650 4500 50  0001 C CNN
+	1    5650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4000 5650 3900
+Wire Wire Line
+	5650 4300 5650 4400
+Wire Wire Line
+	5650 3450 5650 3600
+Text GLabel 10275 3925 2    50   Input ~ 0
+A5
+Text GLabel 10275 4025 2    50   Input ~ 0
+D7
+Wire Wire Line
+	10275 3925 10125 3925
+Wire Wire Line
+	10275 4025 10125 4025
+Text GLabel 8825 3900 0    50   Input ~ 0
+B+
+Text GLabel 8825 4000 0    50   Input ~ 0
+B-
+Wire Wire Line
+	8825 3900 8975 3900
+Wire Wire Line
+	8825 4000 8975 4000
+Wire Wire Line
+	8825 3625 8825 3725
+Wire Wire Line
+	8825 3725 8975 3725
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J?
+U 1 1 5ED39CB2
+P 1175 6250
+F 0 "J?" H 1225 6567 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 1225 6476 50  0000 C CNN
+F 2 "" H 1175 6250 50  0001 C CNN
+F 3 "~" H 1175 6250 50  0001 C CNN
+	1    1175 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:JP1E JP?
+U 1 1 5ED3A976
+P 925 5600
+F 0 "JP?" V 904 5728 59  0000 L CNN
+F 1 "JP1E" V 1009 5728 59  0000 L CNN
+F 2 "" H 925 5600 50  0001 C CNN
+F 3 "" H 925 5600 50  0001 C CNN
+	1    925  5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Bertha_main-eagle-import:JP1E JP?
+U 1 1 5ED3B9E9
+P 1575 5600
+F 0 "JP?" V 1554 5728 59  0000 L CNN
+F 1 "JP1E" V 1659 5728 59  0000 L CNN
+F 2 "" H 1575 5600 50  0001 C CNN
+F 3 "" H 1575 5600 50  0001 C CNN
+	1    1575 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Bertha_main-eagle-import:GND ?
+U 1 1 5ED47ED4
+P 725 5850
+F 0 "?" H 775 5900 50  0001 C CNN
+F 1 "GND" H 828 5888 42  0000 L CNN
+F 2 "" H 725 5850 50  0001 C CNN
+F 3 "" H 725 5850 50  0001 C CNN
+	1    725  5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:GND ?
+U 1 1 5ED48994
+P 1375 5850
+F 0 "?" H 1425 5900 50  0001 C CNN
+F 1 "GND" H 1478 5888 42  0000 L CNN
+F 2 "" H 1375 5850 50  0001 C CNN
+F 3 "" H 1375 5850 50  0001 C CNN
+	1    1375 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	825  5600 725  5600
+Wire Wire Line
+	725  5600 725  5550
+Wire Wire Line
+	725  5750 725  5700
+Wire Wire Line
+	725  5700 825  5700
+Wire Wire Line
+	1475 5600 1375 5600
+Wire Wire Line
+	1375 5600 1375 5550
+Wire Wire Line
+	1375 5750 1375 5700
+Wire Wire Line
+	1375 5700 1475 5700
+Text GLabel 875  6150 0    50   Input ~ 0
+MISO
+Text GLabel 875  6250 0    50   Input ~ 0
+SCK
+Text GLabel 875  6350 0    50   Input ~ 0
+RESET
+Text GLabel 1575 6250 2    50   Input ~ 0
+MOSI
+$Comp
+L Bertha_main-eagle-import:GND U?
+U 1 1 5ED64754
+P 1575 6500
+F 0 "U?" H 1625 6550 50  0001 C CNN
+F 1 "GND" H 1678 6538 42  0000 L CNN
+F 2 "" H 1575 6500 50  0001 C CNN
+F 3 "" H 1575 6500 50  0001 C CNN
+	1    1575 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 5ED6533E
+P 1925 6150
+F 0 "D?" H 1925 5933 50  0000 C CNN
+F 1 "D_Schottky" H 1925 6024 50  0000 C CNN
+F 2 "" H 1925 6150 50  0001 C CNN
+F 3 "~" H 1925 6150 50  0001 C CNN
+	1    1925 6150
+	-1   0    0    1   
+$EndComp
+Text GLabel 2275 5950 1    50   Input ~ 0
+VDD
+Wire Wire Line
+	1575 6250 1475 6250
+Wire Wire Line
+	1475 6350 1575 6350
+Wire Wire Line
+	1575 6350 1575 6400
+Wire Wire Line
+	975  6350 875  6350
+Wire Wire Line
+	975  6250 875  6250
+Wire Wire Line
+	875  6150 975  6150
+Wire Wire Line
+	1475 6150 1775 6150
+Wire Wire Line
+	2075 6150 2275 6150
+Wire Wire Line
+	2275 6150 2275 5950
+$Comp
+L Device:D_Schottky D?
+U 1 1 5ED7C315
+P 1975 6650
+F 0 "D?" H 1975 6433 50  0000 C CNN
+F 1 "D_Schottky" H 1975 6524 50  0000 C CNN
+F 2 "" H 1975 6650 50  0001 C CNN
+F 3 "~" H 1975 6650 50  0001 C CNN
+	1    1975 6650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 5ED7CFEE
+P 2575 6350
+F 0 "D?" H 2575 6567 50  0000 C CNN
+F 1 "D_Schottky" H 2575 6476 50  0000 C CNN
+F 2 "" H 2575 6350 50  0001 C CNN
+F 3 "~" H 2575 6350 50  0001 C CNN
+	1    2575 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2425 6350 2275 6350
+Wire Wire Line
+	2275 6350 2275 6150
+Connection ~ 2275 6150
+Wire Wire Line
+	2125 6650 2275 6650
+Wire Wire Line
+	2275 6650 2275 6350
+Connection ~ 2275 6350
+Text GLabel 1725 6650 0    50   Input ~ 0
+VUSB
+Wire Wire Line
+	1825 6650 1725 6650
+$Comp
+L Device:C C?
+U 1 1 5ED893AD
+P 2975 6550
+F 0 "C?" H 3090 6596 50  0000 L CNN
+F 1 "100n" H 3090 6505 50  0000 L CNN
+F 2 "" H 3013 6400 50  0001 C CNN
+F 3 "~" H 2975 6550 50  0001 C CNN
+	1    2975 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5ED89E70
+P 3375 6550
+F 0 "C?" H 3490 6596 50  0000 L CNN
+F 1 "10u" H 3490 6505 50  0000 L CNN
+F 2 "" H 3413 6400 50  0001 C CNN
+F 3 "~" H 3375 6550 50  0001 C CNN
+	1    3375 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:GND ?
+U 1 1 5EDD7BFE
+P 2975 6900
+F 0 "?" H 3025 6950 50  0001 C CNN
+F 1 "GND" H 3078 6938 42  0000 L CNN
+F 2 "" H 2975 6900 50  0001 C CNN
+F 3 "" H 2975 6900 50  0001 C CNN
+	1    2975 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:GND ?
+U 1 1 5EDD81B4
+P 3375 6900
+F 0 "?" H 3425 6950 50  0001 C CNN
+F 1 "GND" H 3478 6938 42  0000 L CNN
+F 2 "" H 3375 6900 50  0001 C CNN
+F 3 "" H 3375 6900 50  0001 C CNN
+	1    3375 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3375 6700 3375 6800
+Wire Wire Line
+	2975 6800 2975 6700
+Wire Wire Line
+	2725 6350 2975 6350
+Wire Wire Line
+	3375 6350 3375 6400
+Wire Wire Line
+	2975 6400 2975 6350
+Connection ~ 2975 6350
+Wire Wire Line
+	2975 6350 3375 6350
+Wire Wire Line
+	3375 6200 3375 6350
+Connection ~ 3375 6350
+Text Notes 2625 5400 0    100  ~ 0
+3.3 V Protect
+$Comp
+L Bertha_main-eagle-import:+12V #P+?
+U 1 1 5EE002BC
+P 7125 5875
+F 0 "#P+?" H 7125 5875 50  0001 C CNN
+F 1 "+12V" H 7125 6005 59  0000 C CNN
+F 2 "" H 7125 5875 50  0001 C CNN
+F 3 "" H 7125 5875 50  0001 C CNN
+	1    7125 5875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7125 5975 7125 6125
+Connection ~ 7125 6125
+Wire Wire Line
+	7125 6125 7375 6125
+Text GLabel 3375 6200 1    50   Input ~ 0
+12V
+Text GLabel 1375 5550 1    50   Input ~ 0
+12V
+Text GLabel 725  5550 1    50   Input ~ 0
+3.3V
+Text GLabel 8825 3625 1    50   Input ~ 0
+3.3V
+Text GLabel 1025 3525 1    50   Input ~ 0
+3.3V
+Text GLabel 1775 3625 1    50   Input ~ 0
+3.3V
+Text GLabel 7900 3500 1    50   Input ~ 0
+3.3V
+Text GLabel 7350 3500 1    50   Input ~ 0
+3.3V
+Text GLabel 5650 3450 1    50   Input ~ 0
+12V
+Text GLabel 4800 5850 2    50   Input ~ 0
+VUSB
+Wire Wire Line
+	4800 5850 4650 5850
+Wire Wire Line
+	4650 5850 4650 5950
+Connection ~ 4650 5950
+Wire Wire Line
+	4650 5950 5750 5950
+Text Notes 6300 4525 1    50   ~ 0
+3.3 V está visible en el esquemático \nde conversión.
+$Sheet
+S 8975 3600 1150 825 
+U 5EE698D8
+F0 "24bits ADC" 50
+F1 "24bits ADC.sch" 50
+F2 "GND" I L 8975 4275 50 
+F3 "3.3V" I L 8975 3725 50 
+F4 "B+" I L 8975 3900 50 
+F5 "B-" I L 8975 4000 50 
+F6 "A+" I L 8975 4100 50 
+F7 "PD_SCK" I R 10125 3925 50 
+F8 "DOUT" I R 10125 4025 50 
+$EndSheet
+Wire Wire Line
+	8975 4275 8825 4275
+Wire Wire Line
+	8825 4275 8825 4325
+$Comp
+L Bertha_main-eagle-import:GND ?
+U 1 1 5EEA81E5
+P 8825 4425
+F 0 "?" H 8875 4475 50  0001 C CNN
+F 1 "GND" H 8650 4475 42  0000 L CNN
+F 2 "" H 8825 4425 50  0001 C CNN
+F 3 "" H 8825 4425 50  0001 C CNN
+	1    8825 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EEB4D04
+P 1675 925
+F 0 "C?" V 1423 925 50  0000 C CNN
+F 1 "100n" V 1514 925 50  0000 C CNN
+F 2 "" H 1713 775 50  0001 C CNN
+F 3 "~" H 1675 925 50  0001 C CNN
+	1    1675 925 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EEB520E
+P 950 1400
+F 0 "C?" H 835 1354 50  0000 R CNN
+F 1 "100n" H 835 1445 50  0000 R CNN
+F 2 "" H 988 1250 50  0001 C CNN
+F 3 "~" H 950 1400 50  0001 C CNN
+	1    950  1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EEB5882
+P 2050 2425
+F 0 "C?" V 2302 2425 50  0000 C CNN
+F 1 "100n" V 2211 2425 50  0000 C CNN
+F 2 "" H 2088 2275 50  0001 C CNN
+F 3 "~" H 2050 2425 50  0001 C CNN
+	1    2050 2425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EEB619D
+P 4050 1625
+F 0 "C?" V 4302 1625 50  0000 C CNN
+F 1 "100n" V 4211 1625 50  0000 C CNN
+F 2 "" H 4088 1475 50  0001 C CNN
+F 3 "~" H 4050 1625 50  0001 C CNN
+	1    4050 1625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EEB6522
+P 6350 2200
+F 0 "C?" H 6235 2154 50  0000 R CNN
+F 1 "100n" H 6235 2245 50  0000 R CNN
+F 2 "" H 6388 2050 50  0001 C CNN
+F 3 "~" H 6350 2200 50  0001 C CNN
+	1    6350 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EEB6C41
+P 625 1400
+F 0 "R?" H 695 1446 50  0000 L CNN
+F 1 "1k" H 695 1355 50  0000 L CNN
+F 2 "" V 555 1400 50  0001 C CNN
+F 3 "~" H 625 1400 50  0001 C CNN
+	1    625  1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	625  1250 625  1175
+Wire Wire Line
+	625  1175 950  1175
+Wire Wire Line
+	950  1175 950  1250
+Wire Wire Line
+	625  1550 625  1625
+Wire Wire Line
+	625  1625 950  1625
+Wire Wire Line
+	950  1625 950  1550
+$Comp
+L Bertha_main-eagle-import:GND U?
+U 1 1 5EEC647B
+P 625 1800
+F 0 "U?" H 675 1850 50  0001 C CNN
+F 1 "GND" H 728 1838 42  0000 L CNN
+F 2 "" H 625 1800 50  0001 C CNN
+F 3 "" H 625 1800 50  0001 C CNN
+	1    625  1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	625  1700 625  1625
+Connection ~ 625  1625
+$Comp
+L Bertha_main-eagle-import:TLV6004PW U?
+U 1 1 5EECD8E4
+P 1800 1525
+F 0 "U?" H 1800 1892 50  0000 C CNN
+F 1 "TLV6004PW" H 1800 1801 50  0000 C CNN
+F 2 "Package_DFN_QFN:Texas_S-PX2QFN-14" H 1800 1525 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 1850 1725 50  0001 C CNN
+	1    1800 1525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1625 950  1625
+Connection ~ 950  1625
+Wire Wire Line
+	1500 1625 1450 1625
+Wire Wire Line
+	1500 1425 1450 1425
+Wire Wire Line
+	1450 1425 1450 1175
+Wire Wire Line
+	1450 1175 950  1175
+Connection ~ 950  1175
+$Comp
+L Device:R R?
+U 1 1 5EF05E64
+P 2050 925
+F 0 "R?" V 1843 925 50  0000 C CNN
+F 1 "1k" V 1934 925 50  0000 C CNN
+F 2 "" V 1980 925 50  0001 C CNN
+F 3 "~" H 2050 925 50  0001 C CNN
+	1    2050 925 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1525 925  1450 925 
+Wire Wire Line
+	1450 925  1450 1175
+Connection ~ 1450 1175
+Wire Wire Line
+	1825 925  1900 925 
+Wire Wire Line
+	2200 925  2250 925 
+Wire Wire Line
+	2250 925  2250 1525
+Wire Wire Line
+	2250 1525 2100 1525
+$Comp
+L Device:R R?
+U 1 1 5EF17FA3
+P 1850 1975
+F 0 "R?" V 1643 1975 50  0000 C CNN
+F 1 "22k" V 1734 1975 50  0000 C CNN
+F 2 "" V 1780 1975 50  0001 C CNN
+F 3 "~" H 1850 1975 50  0001 C CNN
+	1    1850 1975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 1525 2250 1975
+Wire Wire Line
+	2250 1975 2000 1975
+Connection ~ 2250 1525
+Wire Wire Line
+	1700 1975 1450 1975
+Wire Wire Line
+	1450 1975 1450 1625
+Connection ~ 1450 1625
+Wire Wire Line
+	1450 1625 1400 1625
+Wire Wire Line
+	2250 2425 2250 1975
+Connection ~ 2250 1975
+Wire Wire Line
+	2200 2425 2250 2425
+$Comp
+L Device:D D?
+U 1 1 5EF4DB1E
+P 1650 2250
+F 0 "D?" H 1650 2467 50  0000 C CNN
+F 1 "D" H 1650 2376 50  0000 C CNN
+F 2 "" H 1650 2250 50  0001 C CNN
+F 3 "~" H 1650 2250 50  0001 C CNN
+	1    1650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5EF4E138
+P 1650 2575
+F 0 "D?" H 1650 2358 50  0000 C CNN
+F 1 "D" H 1650 2449 50  0000 C CNN
+F 2 "" H 1650 2575 50  0001 C CNN
+F 3 "~" H 1650 2575 50  0001 C CNN
+	1    1650 2575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 2425 1850 2425
+Wire Wire Line
+	1850 2425 1850 2250
+Wire Wire Line
+	1850 2250 1800 2250
+Wire Wire Line
+	1800 2575 1850 2575
+Wire Wire Line
+	1850 2575 1850 2425
+Connection ~ 1850 2425
+Wire Wire Line
+	1500 2250 1450 2250
+Wire Wire Line
+	1450 2250 1450 1975
+Connection ~ 1450 1975
+Wire Wire Line
+	1500 2575 1450 2575
+Wire Wire Line
+	1450 2575 1450 2250
+Connection ~ 1450 2250
+$Comp
+L Device:R R?
+U 1 1 5EFA5C61
+P 2450 1525
+F 0 "R?" V 2243 1525 50  0000 C CNN
+F 1 "1k" V 2334 1525 50  0000 C CNN
+F 2 "" V 2380 1525 50  0001 C CNN
+F 3 "~" H 2450 1525 50  0001 C CNN
+	1    2450 1525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EFA6002
+P 2650 1725
+F 0 "R?" H 2580 1679 50  0000 R CNN
+F 1 "1k" H 2580 1770 50  0000 R CNN
+F 2 "" V 2580 1725 50  0001 C CNN
+F 3 "~" H 2650 1725 50  0001 C CNN
+	1    2650 1725
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial_Power J?
+U 1 1 5EFB0A39
+P 3000 1900
+F 0 "J?" V 2925 1950 50  0000 C CNN
+F 1 "Conn_Coaxial_Power" V 3125 1850 50  0000 C CNN
+F 2 "" H 3000 1850 50  0001 C CNN
+F 3 "~" H 3000 1850 50  0001 C CNN
+	1    3000 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:GND U?
+U 1 1 5EFB60E0
+P 2650 2075
+F 0 "U?" H 2700 2125 50  0001 C CNN
+F 1 "GND" H 2475 2125 42  0000 L CNN
+F 2 "" H 2650 2075 50  0001 C CNN
+F 3 "" H 2650 2075 50  0001 C CNN
+	1    2650 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:GND U?
+U 1 1 5EFB6F0A
+P 3000 2275
+F 0 "U?" H 3050 2325 50  0001 C CNN
+F 1 "GND" H 3050 2325 42  0000 L CNN
+F 2 "" H 3000 2275 50  0001 C CNN
+F 3 "" H 3000 2275 50  0001 C CNN
+	1    3000 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1875 2650 1975
+Wire Wire Line
+	2650 1575 2650 1525
+Wire Wire Line
+	2650 1525 2600 1525
+Wire Wire Line
+	2300 1525 2250 1525
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5EFDABD8
+P 2650 1450
+F 0 "TP?" H 2708 1568 50  0000 L CNN
+F 1 "TestPoint" H 2708 1477 50  0000 L CNN
+F 2 "" H 2850 1450 50  0001 C CNN
+F 3 "~" H 2850 1450 50  0001 C CNN
+	1    2650 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1450 2650 1525
+Connection ~ 2650 1525
+$Comp
+L Bertha_main-eagle-import:TLV6004PW U?
+U 2 1 5EFECEC1
+P 3475 1625
+F 0 "U?" H 3475 1992 50  0000 C CNN
+F 1 "TLV6004PW" H 3475 1901 50  0000 C CNN
+F 2 "Package_DFN_QFN:Texas_S-PX2QFN-14" H 3475 1625 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 3525 1825 50  0001 C CNN
+	2    3475 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1525 3175 1525
+Wire Wire Line
+	3000 2175 3000 2100
+Wire Wire Line
+	3000 1800 3000 1725
+Wire Wire Line
+	3000 1725 3125 1725
+$Comp
+L Device:R R?
+U 1 1 5F07E6A9
+P 3425 2050
+F 0 "R?" V 3218 2050 50  0000 C CNN
+F 1 "1k" V 3309 2050 50  0000 C CNN
+F 2 "" V 3355 2050 50  0001 C CNN
+F 3 "~" H 3425 2050 50  0001 C CNN
+	1    3425 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3275 2050 3125 2050
+Wire Wire Line
+	3125 2050 3125 1725
+Connection ~ 3125 1725
+Wire Wire Line
+	3125 1725 3175 1725
+Wire Wire Line
+	3575 2050 3825 2050
+Wire Wire Line
+	3825 2050 3825 1625
+Wire Wire Line
+	3825 1625 3775 1625
+$Comp
+L Bertha_main-eagle-import:TLV6004PW U?
+U 5 1 5F096049
+P 6150 1175
+F 0 "U?" H 6108 1221 50  0000 L CNN
+F 1 "TLV6004PW" H 6108 1130 50  0000 L CNN
+F 2 "Package_DFN_QFN:Texas_S-PX2QFN-14" H 6150 1175 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 6200 1375 50  0001 C CNN
+	5    6150 1175
+	1    0    0    -1  
+$EndComp
+Text GLabel 6050 775  1    50   Input ~ 0
+3.3V
+$Comp
+L Device:C C?
+U 1 1 5F0C5D3A
+P 5675 1175
+F 0 "C?" H 5790 1221 50  0000 L CNN
+F 1 "100n" H 5790 1130 50  0000 L CNN
+F 2 "" H 5713 1025 50  0001 C CNN
+F 3 "~" H 5675 1175 50  0001 C CNN
+	1    5675 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:GND U?
+U 1 1 5F0E5CE4
+P 6050 1675
+F 0 "U?" H 6100 1725 50  0001 C CNN
+F 1 "GND" H 6153 1713 42  0000 L CNN
+F 2 "" H 6050 1675 50  0001 C CNN
+F 3 "" H 6050 1675 50  0001 C CNN
+	1    6050 1675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1575 6050 1525
+Wire Wire Line
+	6050 875  6050 825 
+Wire Wire Line
+	5675 1025 5675 825 
+Wire Wire Line
+	5675 825  6050 825 
+Connection ~ 6050 825 
+Wire Wire Line
+	6050 825  6050 775 
+Wire Wire Line
+	5675 1325 5675 1525
+Wire Wire Line
+	5675 1525 6050 1525
+Connection ~ 6050 1525
+Wire Wire Line
+	6050 1525 6050 1475
+$Comp
+L Device:R R?
+U 1 1 5F10FED3
+P 4275 1825
+F 0 "R?" H 4205 1779 50  0000 R CNN
+F 1 "1k" H 4205 1870 50  0000 R CNN
+F 2 "" V 4205 1825 50  0001 C CNN
+F 3 "~" H 4275 1825 50  0001 C CNN
+	1    4275 1825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 1625 3825 1625
+Connection ~ 3825 1625
+Wire Wire Line
+	4200 1625 4275 1625
+Wire Wire Line
+	4275 1625 4275 1675
+$Comp
+L Bertha_main-eagle-import:TLV6004PW U?
+U 3 1 5F14CF60
+P 5075 1725
+F 0 "U?" H 5075 2092 50  0000 C CNN
+F 1 "TLV6004PW" H 5075 2001 50  0000 C CNN
+F 2 "Package_DFN_QFN:Texas_S-PX2QFN-14" H 5075 1725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 5125 1925 50  0001 C CNN
+	3    5075 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F14EE0A
+P 4500 2025
+F 0 "R?" H 4430 1979 50  0000 R CNN
+F 1 "1k" H 4430 2070 50  0000 R CNN
+F 2 "" V 4430 2025 50  0001 C CNN
+F 3 "~" H 4500 2025 50  0001 C CNN
+	1    4500 2025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4775 1625 4275 1625
+Connection ~ 4275 1625
+Wire Wire Line
+	4775 1825 4725 1825
+Wire Wire Line
+	4500 1825 4500 1875
+$Comp
+L Bertha_main-eagle-import:GND U?
+U 1 1 5F16E9C2
+P 4275 2175
+F 0 "U?" H 4325 2225 50  0001 C CNN
+F 1 "GND" H 4325 2225 42  0000 L CNN
+F 2 "" H 4275 2175 50  0001 C CNN
+F 3 "" H 4275 2175 50  0001 C CNN
+	1    4275 2175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:GND U?
+U 1 1 5F16F735
+P 4500 2350
+F 0 "U?" H 4550 2400 50  0001 C CNN
+F 1 "GND" H 4550 2400 42  0000 L CNN
+F 2 "" H 4500 2350 50  0001 C CNN
+F 3 "" H 4500 2350 50  0001 C CNN
+	1    4500 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2250 4500 2175
+Wire Wire Line
+	4275 2075 4275 1975
+$Comp
+L Diode_Bridge:MB2S D?
+U 1 1 5F1851F5
+P 5375 2200
+F 0 "D?" H 5125 2375 50  0000 L CNN
+F 1 "MB2S" H 5525 2375 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-269AA" H 5525 2325 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/88661/mb2s.pdf" H 5375 2200 50  0001 C CNN
+	1    5375 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 1825 4725 2200
+Wire Wire Line
+	4725 2200 5075 2200
+Connection ~ 4725 1825
+Wire Wire Line
+	4725 1825 4500 1825
+$Comp
+L Device:R R?
+U 1 1 5F1C2C2E
+P 6050 2200
+F 0 "R?" H 5980 2154 50  0000 R CNN
+F 1 "1k" H 5980 2245 50  0000 R CNN
+F 2 "" V 5980 2200 50  0001 C CNN
+F 3 "~" H 6050 2200 50  0001 C CNN
+	1    6050 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5675 2200 5750 2200
+Wire Wire Line
+	5750 2200 5750 1725
+Wire Wire Line
+	5750 1725 5375 1725
+Wire Wire Line
+	5375 1900 5375 1850
+Wire Wire Line
+	5375 1850 6050 1850
+Wire Wire Line
+	6050 1850 6050 2050
+Wire Wire Line
+	6350 2050 6350 1850
+Wire Wire Line
+	6350 1850 6050 1850
+Connection ~ 6050 1850
+Wire Wire Line
+	5375 2500 5375 2550
+Wire Wire Line
+	5375 2550 6050 2550
+Wire Wire Line
+	6350 2550 6350 2350
+Wire Wire Line
+	6050 2350 6050 2550
+Connection ~ 6050 2550
+Wire Wire Line
+	6050 2550 6350 2550
+$Comp
+L Device:R R?
+U 1 1 5F22EBC5
+P 6350 1650
+F 0 "R?" H 6280 1604 50  0000 R CNN
+F 1 "1k" H 6280 1695 50  0000 R CNN
+F 2 "" V 6280 1650 50  0001 C CNN
+F 3 "~" H 6350 1650 50  0001 C CNN
+	1    6350 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F22F421
+P 6725 2200
+F 0 "R?" H 6655 2154 50  0000 R CNN
+F 1 "1k" H 6655 2245 50  0000 R CNN
+F 2 "" V 6655 2200 50  0001 C CNN
+F 3 "~" H 6725 2200 50  0001 C CNN
+	1    6725 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Bertha_main-eagle-import:TLV6004PW U?
+U 4 1 5F2306B2
+P 7100 1525
+F 0 "U?" H 7100 1892 50  0000 C CNN
+F 1 "TLV6004PW" H 7100 1801 50  0000 C CNN
+F 2 "Package_DFN_QFN:Texas_S-PX2QFN-14" H 7100 1525 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 7150 1725 50  0001 C CNN
+	4    7100 1525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1425 6350 1425
+Wire Wire Line
+	6350 1425 6350 1500
+Wire Wire Line
+	6350 1800 6350 1850
+Connection ~ 6350 1850
+Wire Wire Line
+	6800 1625 6725 1625
+Wire Wire Line
+	6725 1625 6725 1975
+Wire Wire Line
+	6725 2350 6725 2550
+Wire Wire Line
+	6725 2550 6350 2550
+Connection ~ 6350 2550
+$Comp
+L Device:R R?
+U 1 1 5F2D8970
+P 7150 1975
+F 0 "R?" V 7357 1975 50  0000 C CNN
+F 1 "1k" V 7266 1975 50  0000 C CNN
+F 2 "" V 7080 1975 50  0001 C CNN
+F 3 "~" H 7150 1975 50  0001 C CNN
+	1    7150 1975
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 1975 6725 1975
+Connection ~ 6725 1975
+Wire Wire Line
+	6725 1975 6725 2050
+Wire Wire Line
+	7300 1975 7475 1975
+Wire Wire Line
+	7475 1975 7475 1525
+Wire Wire Line
+	7475 1525 7400 1525
+Text GLabel 7550 1525 2    50   Input ~ 0
+A+
+Wire Wire Line
+	7550 1525 7475 1525
+Connection ~ 7475 1525
+$Comp
+L Device:R R?
+U 1 1 5EEB704D
+P 1250 1625
+F 0 "R?" V 1150 1625 50  0000 C CNN
+F 1 "10k" V 1075 1625 50  0000 C CNN
+F 2 "" V 1180 1625 50  0001 C CNN
+F 3 "~" H 1250 1625 50  0001 C CNN
+	1    1250 1625
+	0    1    -1   0   
+$EndComp
+$Sheet
+S 9200 1125 750  525 
+U 5ED99FB6
+F0 "Memory" 50
+F1 "Memory.sch" 50
+F2 "CE" I L 9200 1375 50 
+F3 "MISO" I R 9950 1250 50 
+F4 "3.3V" I L 9200 1200 50 
+F5 "GND" I L 9200 1550 50 
+F6 "SCK" I R 9950 1500 50 
+F7 "MOSI" I R 9950 1375 50 
+$EndSheet
+Text GLabel 9075 1075 1    50   Input ~ 0
+3.3V
+$Comp
+L Bertha_main-eagle-import:GND U?
+U 1 1 5EDBD34B
+P 9075 1725
+F 0 "U?" H 9125 1775 50  0001 C CNN
+F 1 "GND" H 9178 1763 42  0000 L CNN
+F 2 "" H 9075 1725 50  0001 C CNN
+F 3 "" H 9075 1725 50  0001 C CNN
+	1    9075 1725
+	-1   0    0    -1  
+$EndComp
+Text GLabel 9050 1375 0    50   Input ~ 0
+D10
+Wire Wire Line
+	9200 1200 9075 1200
+Wire Wire Line
+	9075 1200 9075 1075
+Wire Wire Line
+	9200 1375 9050 1375
+Wire Wire Line
+	9200 1550 9075 1550
+Wire Wire Line
+	9075 1550 9075 1625
+Text GLabel 10050 1250 2    50   Input ~ 0
+MISO
+Text GLabel 10050 1375 2    50   Input ~ 0
+MOSI
+Text GLabel 10050 1500 2    50   Input ~ 0
+SCK
+Wire Wire Line
+	9950 1250 10050 1250
+Wire Wire Line
+	10050 1375 9950 1375
+Wire Wire Line
+	9950 1500 10050 1500
+Text Notes 1150 3100 0    100  ~ 0
+pH
+Text Notes 3050 850  0    100  ~ 0
+Conductometer
+Wire Notes Line
+	475  2800 8275 2800
+Wire Notes Line
+	5425 5025 5425 2800
+Text Notes 6900 3075 0    100  ~ 0
+COM LEDs
+Text Notes 5500 3050 0    100  ~ 0
+POWER LED
+Text GLabel 7075 3500 1    50   Input ~ 0
+3.3V
+Wire Wire Line
+	7075 4300 7075 4400
+Text GLabel 7075 4400 3    50   Input ~ 0
+RXLED
+Wire Wire Line
+	7075 4000 7075 3900
+$Comp
+L Bertha_main-eagle-import:LED LED?
+U 1 1 5EDD6922
+P 7075 4100
+F 0 "LED?" H 7125 3925 59  0000 L CNN
+F 1 "LED" H 7125 3825 59  0000 L CNN
+F 2 "" H 7075 4100 50  0001 C CNN
+F 3 "" H 7075 4100 50  0001 C CNN
+	1    7075 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7075 3500 7075 3600
+$Comp
+L Device:R R?
+U 1 1 5EDC90A6
+P 7075 3750
+F 0 "R?" H 7145 3796 50  0000 L CNN
+F 1 "10k" H 7145 3705 50  0000 L CNN
+F 2 "" V 7005 3750 50  0001 C CNN
+F 3 "~" H 7075 3750 50  0001 C CNN
+	1    7075 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4300 6800 4400
+$Comp
+L Bertha_main-eagle-import:GND ?
+U 1 1 5EDDEC2E
+P 6800 4500
+F 0 "?" H 6850 4550 50  0001 C CNN
+F 1 "GND" H 6903 4538 42  0000 L CNN
+F 2 "" H 6800 4500 50  0001 C CNN
+F 3 "" H 6800 4500 50  0001 C CNN
+	1    6800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3900 6800 4000
+$Comp
+L Bertha_main-eagle-import:LED LED?
+U 1 1 5EDD6CC2
+P 6800 4100
+F 0 "LED?" H 6850 4250 59  0000 L CNN
+F 1 "LED" H 6850 4150 59  0000 L CNN
+F 2 "" H 6800 4100 50  0001 C CNN
+F 3 "" H 6800 4100 50  0001 C CNN
+	1    6800 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3600 6800 3500
+Text GLabel 6800 3500 1    50   Input ~ 0
+D13
+$Comp
+L Device:R R?
+U 1 1 5EDC949B
+P 6800 3750
+F 0 "R?" H 6870 3796 50  0000 L CNN
+F 1 "10k" H 6870 3705 50  0000 L CNN
+F 2 "" V 6730 3750 50  0001 C CNN
+F 3 "~" H 6800 3750 50  0001 C CNN
+	1    6800 3750
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	475  5025 8275 5025
+Text GLabel 7625 3500 1    50   Input ~ 0
+3.3V
+Text GLabel 7625 4400 3    50   Input ~ 0
+CS_32U4
+$Comp
+L Bertha_main-eagle-import:LED LED?
+U 1 1 5EDD5B15
+P 7625 4100
+F 0 "LED?" H 7675 3925 59  0000 L CNN
+F 1 "LED" H 7675 3825 59  0000 L CNN
+F 2 "" H 7625 4100 50  0001 C CNN
+F 3 "" H 7625 4100 50  0001 C CNN
+	1    7625 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EDC8A60
+P 7625 3750
+F 0 "R?" H 7695 3796 50  0000 L CNN
+F 1 "10k" H 7695 3705 50  0000 L CNN
+F 2 "" V 7555 3750 50  0001 C CNN
+F 3 "~" H 7625 3750 50  0001 C CNN
+	1    7625 3750
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3850 7075 3850 5025
+Wire Notes Line
+	6500 2800 6500 7075
+Wire Notes Line
+	8275 475  8275 7075
+Wire Notes Line
+	475  7075 8275 7075
+Text Notes 4975 5400 0    100  ~ 0
+USB
+Text Notes 6975 5375 0    100  ~ 0
+Power Source
+$EndSCHEMATC

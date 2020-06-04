@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name Bertha_main-eagle-import)(type Legacy)(uri /home/andres/Git/Bioreactor_v4/Kicad/Bertha_main/Bertha_main-eagle-import.lib)(options "")(descr ""))
+  (lib (name ACT4088)(type Legacy)(uri ${KIPRJMOD}/symbols/ACT4088.lib)(options "")(descr ""))
+  (lib (name BSP75)(type Legacy)(uri ${KIPRJMOD}/symbols/BSP75.lib)(options "")(descr ""))
+  (lib (name Bertha_main-rescue)(type Legacy)(uri ${KIPRJMOD}/Bertha_main-rescue.lib)(options "")(descr ""))
+)

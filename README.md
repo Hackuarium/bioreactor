@@ -6,7 +6,7 @@ This project uses SUBMODULES.
 
 In order to clone it use:
 
-`git clone --recurse-submodules https://github.com/hackuarium/simple-spectro`
+`git clone --recurse-submodules https://github.com/Hackuarium/bioreactor.git`
 
 To update the submodules:
 
