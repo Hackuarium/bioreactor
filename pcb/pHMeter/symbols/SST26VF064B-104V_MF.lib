@@ -1,0 +1,34 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# SST26VF064B-104V/MF
+#
+DEF SST26VF064B-104V/MF IC 0 40 Y Y 1 L N
+F0 "IC" -401 601 50 H V L BNN
+F1 "SST26VF064B-104V/MF" -401 -701 50 H V L BNN
+F2 "DFN600X500X75-8N" 0 0 50 H I L BNN
+F3 "Unavailable" 0 0 50 H I L BNN
+F4 "SST26VF064B-104V/MF" 0 0 50 H I L BNN
+F5 "Memory; SDI, SPI, SQI; TDFN8; 2.3÷3.6V; Memory: Serial Flash; 64Mbit" 0 0 50 H I L BNN
+F6 "WDFN-8 Microchip" 0 0 50 H I L BNN
+F7 "Microchip" 0 0 50 H I L BNN
+F8 "None" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 400 500 400 -500 N
+P 2 0 0 10 400 -500 -400 -500 N
+P 2 0 0 10 -400 -500 -400 500 N
+P 2 0 0 10 -400 500 400 500 N
+X ~CE~ 1 -600 200 200 R 40 40 0 0 I 
+X ~WP~ 3 -600 100 200 R 40 40 0 0 I 
+X HOLD 7 -600 0 200 R 40 40 0 0 I 
+X SCK 6 -600 -100 200 R 40 40 0 0 I C
+X SI 5 -600 -200 200 R 40 40 0 0 I 
+X SO 2 600 -200 200 L 40 40 0 0 O 
+X VDD 8 600 400 200 L 40 40 0 0 W 
+X VSS 4 600 -400 200 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
