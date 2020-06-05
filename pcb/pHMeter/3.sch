@@ -259,4 +259,136 @@ F 3 "~" H 5125 3950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 2525 2150
+$Comp
+L Device:C C?
+U 1 1 5EDC3622
+P 3650 6000
+F 0 "C?" H 3765 6046 50  0000 L CNN
+F 1 "10u" H 3765 5955 50  0000 L CNN
+F 2 "" H 3688 5850 50  0001 C CNN
+F 3 "~" H 3650 6000 50  0001 C CNN
+	1    3650 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 6000 3900 6000
+Wire Wire Line
+	3900 6000 3900 5800
+Wire Wire Line
+	3900 5800 3950 5800
+Wire Wire Line
+	3900 5800 3650 5800
+Wire Wire Line
+	3650 5800 3650 5850
+Connection ~ 3900 5800
+Wire Wire Line
+	3650 5800 3600 5800
+Connection ~ 3650 5800
+Wire Wire Line
+	3650 6225 3650 6150
+Wire Wire Line
+	4350 6200 4350 6275
+Text HLabel 3600 5800 0    50   Input ~ 0
+VIN
+Text HLabel 3650 6225 0    50   Input ~ 0
+GND
+Text HLabel 4350 6275 0    50   Input ~ 0
+GND
+$Comp
+L Device:C C?
+U 1 1 5EDCC8A2
+P 4975 5900
+F 0 "C?" V 4723 5900 50  0000 C CNN
+F 1 "100n" V 4814 5900 50  0000 C CNN
+F 2 "" H 5013 5750 50  0001 C CNN
+F 3 "~" H 4975 5900 50  0001 C CNN
+	1    4975 5900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 5900 4825 5900
+Wire Wire Line
+	5125 5900 5200 5900
+Wire Wire Line
+	5200 5900 5200 5800
+Wire Wire Line
+	5200 5800 4750 5800
+$Comp
+L Device:L L?
+U 1 1 5EDCF040
+P 5400 5800
+F 0 "L?" V 5590 5800 50  0000 C CNN
+F 1 "3.9u" V 5499 5800 50  0000 C CNN
+F 2 "" H 5400 5800 50  0001 C CNN
+F 3 "~" H 5400 5800 50  0001 C CNN
+	1    5400 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 5800 5200 5800
+Connection ~ 5200 5800
+Wire Wire Line
+	5550 5800 5600 5800
+Wire Wire Line
+	5600 5800 5600 6000
+Wire Wire Line
+	5600 6000 4750 6000
+$Comp
+L Device:C C?
+U 1 1 5EDD102F
+P 5725 6000
+F 0 "C?" H 5610 5954 50  0000 R CNN
+F 1 "22u" H 5610 6045 50  0000 R CNN
+F 2 "" H 5763 5850 50  0001 C CNN
+F 3 "~" H 5725 6000 50  0001 C CNN
+	1    5725 6000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5725 5850 5725 5800
+Wire Wire Line
+	5725 5800 5600 5800
+Connection ~ 5600 5800
+Wire Wire Line
+	5725 6150 5725 6225
+Text HLabel 5725 6225 0    50   Input ~ 0
+GND
+Text HLabel 6200 5800 2    50   Output ~ 0
+3.3V
+Wire Wire Line
+	6200 5800 6075 5800
+Connection ~ 5725 5800
+$Comp
+L Device:C C?
+U 1 1 5EDE0CF8
+P 6075 6000
+F 0 "C?" H 5960 5954 50  0000 R CNN
+F 1 "22u" H 5960 6045 50  0000 R CNN
+F 2 "" H 6113 5850 50  0001 C CNN
+F 3 "~" H 6075 6000 50  0001 C CNN
+	1    6075 6000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6075 5850 6075 5800
+Connection ~ 6075 5800
+Wire Wire Line
+	6075 5800 5725 5800
+Text HLabel 6075 6225 0    50   Input ~ 0
+GND
+Wire Wire Line
+	6075 6150 6075 6225
+Text Notes 3425 6575 0    50   ~ 0
+The inductor’s DC resistance should be less than 100mΩ.\n \nThe  input  capacitor,  electrolytic,  or  ceramics  with  low  ESR  should  be  used.
+$Comp
+L bioreactor:AP63203WU-7 U?
+U 1 1 5EDBF789
+P 4350 5900
+F 0 "U?" H 4350 6267 50  0000 C CNN
+F 1 "AP63203WU-7" H 4350 6176 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 4350 5000 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/AP65111A.pdf" H 4350 5900 50  0001 C CNN
+	1    4350 5900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

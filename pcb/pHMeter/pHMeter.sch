@@ -508,45 +508,6 @@ Wire Wire Line
 	7625 4300 7625 4400
 Wire Wire Line
 	7350 4300 7350 4400
-$Comp
-L Device:R R?
-U 1 1 5EE6A253
-P 5650 3750
-F 0 "R?" H 5720 3796 50  0000 L CNN
-F 1 "10k" H 5720 3705 50  0000 L CNN
-F 2 "" V 5580 3750 50  0001 C CNN
-F 3 "~" H 5650 3750 50  0001 C CNN
-	1    5650 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Bertha_main-eagle-import:LED LED?
-U 1 1 5EE6A756
-P 5650 4100
-F 0 "LED?" H 5728 4103 59  0000 L CNN
-F 1 "LED" H 5728 3998 59  0000 L CNN
-F 2 "" H 5650 4100 50  0001 C CNN
-F 3 "" H 5650 4100 50  0001 C CNN
-	1    5650 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Bertha_main-eagle-import:GND U?
-U 1 1 5EE6AE22
-P 5650 4500
-F 0 "U?" H 5700 4550 50  0001 C CNN
-F 1 "GND" H 5753 4538 42  0000 L CNN
-F 2 "" H 5650 4500 50  0001 C CNN
-F 3 "" H 5650 4500 50  0001 C CNN
-	1    5650 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 4000 5650 3900
-Wire Wire Line
-	5650 4300 5650 4400
-Wire Wire Line
-	5650 3450 5650 3600
 Text GLabel 10275 3925 2    50   Input ~ 0
 A5
 Text GLabel 10275 4025 2    50   Input ~ 0
@@ -818,8 +779,6 @@ Text GLabel 7900 3500 1    50   Input ~ 0
 3.3V
 Text GLabel 7350 3500 1    50   Input ~ 0
 3.3V
-Text GLabel 5650 3450 1    50   Input ~ 0
-12V
 Text GLabel 4800 5850 2    50   Input ~ 0
 VUSB
 Wire Wire Line
@@ -829,8 +788,6 @@ Wire Wire Line
 Connection ~ 4650 5950
 Wire Wire Line
 	4650 5950 5750 5950
-Text Notes 6300 4525 1    50   ~ 0
-3.3 V está visible en el esquemático \nde conversión.
 $Sheet
 S 8975 3600 1150 825 
 U 5EE698D8
@@ -1633,4 +1590,47 @@ Text Notes 4975 5400 0    100  ~ 0
 USB
 Text Notes 6975 5375 0    100  ~ 0
 Power Source
+Text Notes 6150 4750 1    50   ~ 0
+Power LED for 3.3 V is place into 3.sch.
+Text GLabel 5650 3450 1    50   Input ~ 0
+12V
+Wire Wire Line
+	5650 3450 5650 3600
+Wire Wire Line
+	5650 4300 5650 4400
+Wire Wire Line
+	5650 4000 5650 3900
+$Comp
+L Bertha_main-eagle-import:GND U?
+U 1 1 5EE6AE22
+P 5650 4500
+F 0 "U?" H 5700 4550 50  0001 C CNN
+F 1 "GND" H 5753 4538 42  0000 L CNN
+F 2 "" H 5650 4500 50  0001 C CNN
+F 3 "" H 5650 4500 50  0001 C CNN
+	1    5650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Bertha_main-eagle-import:LED LED?
+U 1 1 5EE6A756
+P 5650 4100
+F 0 "LED?" H 5728 4103 59  0000 L CNN
+F 1 "LED" H 5728 3998 59  0000 L CNN
+F 2 "" H 5650 4100 50  0001 C CNN
+F 3 "" H 5650 4100 50  0001 C CNN
+	1    5650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EE6A253
+P 5650 3750
+F 0 "R?" H 5720 3796 50  0000 L CNN
+F 1 "10k" H 5720 3705 50  0000 L CNN
+F 2 "" V 5580 3750 50  0001 C CNN
+F 3 "~" H 5650 3750 50  0001 C CNN
+	1    5650 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
