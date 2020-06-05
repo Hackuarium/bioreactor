@@ -1,6 +1,6 @@
 #ifdef THR_WEIGHT
 
-#include "libino/HX711/HX711.cpp"
+#include "../lib/HX711/HX711.cpp"
 
 HX711 scale(WEIGHT_DATA, WEIGHT_CLK);
 

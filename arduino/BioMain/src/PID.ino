@@ -1,6 +1,6 @@
 #ifdef THR_PID
 
-#include "libino/PID/PID_v1.h"
+#include "../lib/PID/PID_v1.h"
 
 
 

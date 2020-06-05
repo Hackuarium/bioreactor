@@ -6,7 +6,7 @@
     an impulsion at a very precise time frame.
  ******************************/
 
-#include "libino/TimerOne/TimerOne.cpp"
+#include "../lib/TimerOne/TimerOne.cpp"
 
 #define MIN_STEPPER_SPEED 5   // RPM
 #define MAX_STEPPER_SPEED 90 // RPM

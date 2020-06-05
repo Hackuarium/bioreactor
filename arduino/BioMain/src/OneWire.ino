@@ -22,7 +22,7 @@
     4. Read the next two bytes which represent the temperature
  *********************************************/
 
-#include "libino/onewire/OneWire.cpp"
+#include "../lib/onewire/OneWire.cpp"
 
 byte oneWireAddress[8];
 

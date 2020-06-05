@@ -10,7 +10,7 @@
 #define I2C_SLOWMODE 1
 
 #if I2C_HARDWARE == 1
-#include "../Wire/Wire.cpp"
+#include "Wire.cpp"
 TwoWire WireM = TwoWire();
 #else
 // WireM.available returns a wrong value with SoftWire when device unplugged
