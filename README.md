@@ -5,9 +5,14 @@
 This project uses SUBMODULES.
 
 In order to clone it use:
-
 `git clone --recurse-submodules https://github.com/Hackuarium/bioreactor.git`
 
-To update the submodules:
+## Pull and update submodules
 
+You should run this commande every time you want to pull:
+`git pull --recurse-submodules`
+
+## Submodules update only
+
+To update the submodules:
 `git submodule update --recursive --remote`
