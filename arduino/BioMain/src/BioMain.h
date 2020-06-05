@@ -84,7 +84,7 @@
 #define FLAG_RELAY_ACID          12
 #define FLAG_RELAY_BASE          13
 
-#include "libino/hack.h"
+#include "../lib/hack.h"
 
 void writeLog(uint16_t event_number, int parameter_value);
 boolean clearParameterBit(byte number, byte bitToClear);
