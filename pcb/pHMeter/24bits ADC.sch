@@ -178,17 +178,6 @@ Wire Wire Line
 	7225 4000 7300 4000
 Wire Wire Line
 	6125 2650 6125 2800
-$Comp
-L Bertha_main-eagle-import:HX711HX711 U?
-U 1 1 5E3C27D4
-P 6725 3500
-F 0 "U?" H 6675 4486 59  0000 C CNN
-F 1 "HX711HX711" H 6675 4381 59  0000 C CNN
-F 2 "Package_SO:STC_SOP-16_3.9x9.9mm_P1.27mm" H 6725 3500 50  0001 C CNN
-F 3 "" H 6725 3500 50  0001 C CNN
-	1    6725 3500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6050 4000 6125 4000
 Wire Wire Line
@@ -256,4 +245,16 @@ Text HLabel 7325 3800 2    50   Input ~ 0
 PD_SCK
 Text HLabel 7325 3600 2    50   Input ~ 0
 DOUT
+NoConn ~ 6125 3000
+$Comp
+L bioreactor:HX711 U?
+U 1 1 5EDF981C
+P 6725 3500
+F 0 "U?" H 6675 4486 59  0000 C CNN
+F 1 "HX711" H 6675 4381 59  0000 C CNN
+F 2 "Package_SO:SOP-16_3.9x9.9mm_P1.27mm" H 6725 2450 50  0001 C CNN
+F 3 "https://components101.com/sites/default/files/component_datasheet/HX711%20Datasheet.pdf" H 6725 3500 50  0001 C CNN
+	1    6725 3500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
