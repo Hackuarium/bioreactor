@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Bertha_main-eagle-import:JUMPER-PAD-2-NC_BY_TRACE SJ?
+L Bertha_main-eagle-import:JUMPER-PAD-2-NC_BY_TRACE SJ1
 U 1 1 5E3C27B4
 P 3550 4900
-F 0 "SJ?" H 3650 5025 59  0000 R CNN
+F 0 "SJ1" H 3650 5025 59  0000 R CNN
 F 1 "JUMPER-PAD-2-NC_BY_TRACE" H 4375 5150 59  0000 R CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3550 4900 50  0001 C CNN
 F 3 "" H 3550 4900 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "" H 3550 4900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C26
 U 1 1 5E3C27BA
 P 3800 4875
-F 0 "C?" H 3925 4925 50  0000 L CNN
+F 0 "C26" H 3925 4925 50  0000 L CNN
 F 1 "100nF" H 3825 4775 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3838 4725 50  0001 C CNN
 F 3 "~" H 3800 4875 50  0001 C CNN
@@ -36,10 +36,10 @@ F 3 "~" H 3800 4875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C27
 U 1 1 5E3C27C0
 P 4125 4875
-F 0 "C?" H 4250 4925 50  0000 L CNN
+F 0 "C27" H 4250 4925 50  0000 L CNN
 F 1 "10uF" H 4150 4775 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4163 4725 50  0001 C CNN
 F 3 "~" H 4125 4875 50  0001 C CNN
@@ -53,10 +53,10 @@ Wire Wire Line
 Wire Wire Line
 	3550 4600 3550 4700
 $Comp
-L Device:C C?
+L Device:C C30
 U 1 1 5E3C27FC
 P 5875 3700
-F 0 "C?" V 6025 3600 50  0000 L CNN
+F 0 "C30" V 6025 3600 50  0000 L CNN
 F 1 "100nF" V 5750 3575 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5913 3550 50  0001 C CNN
 F 3 "~" H 5875 3700 50  0001 C CNN
@@ -64,10 +64,10 @@ F 3 "~" H 5875 3700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C28
 U 1 1 5E3C280F
 P 4825 3400
-F 0 "C?" H 4875 3475 50  0000 L CNN
+F 0 "C28" H 4875 3475 50  0000 L CNN
 F 1 "100nF" H 4850 3300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4863 3250 50  0001 C CNN
 F 3 "~" H 4825 3400 50  0001 C CNN
@@ -75,10 +75,10 @@ F 3 "~" H 4825 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C29
 U 1 1 5E3C2815
 P 5150 3400
-F 0 "C?" H 5200 3475 50  0000 L CNN
+F 0 "C29" H 5200 3475 50  0000 L CNN
 F 1 "10uF" H 5175 3300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5188 3250 50  0001 C CNN
 F 3 "~" H 5150 3400 50  0001 C CNN
@@ -107,10 +107,10 @@ Default: Closed - Data rate set to 10SPS\n\nOpen jumper to set to 80SPS\nIncreas
 Text Notes 4775 4950 0    55   ~ 0
 VCC: 2.7 - 5.5V\nIO: 2.7 - 5.5V\n
 $Comp
-L Bertha_main-eagle-import:SJ J?
+L Bertha_main-eagle-import:SJ J8
 U 1 1 5E3C285D
 P 7725 3000
-F 0 "J?" H 7725 2900 59  0000 C CNN
+F 0 "J8" H 7725 2900 59  0000 C CNN
 F 1 "SJ" H 7725 3100 59  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7725 3000 50  0001 C CNN
 F 3 "" H 7725 3000 50  0001 C CNN
@@ -187,10 +187,10 @@ LGND
 Text HLabel 6050 4200 0    50   Input ~ 0
 A+
 $Comp
-L Device:R R?
+L Device:R R36
 U 1 1 5E3C2866
 P 7475 2800
-F 0 "R?" V 7575 2700 50  0000 L CNN
+F 0 "R36" V 7575 2700 50  0000 L CNN
 F 1 "10k" V 7475 2725 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7405 2800 50  0001 C CNN
 F 3 "~" H 7475 2800 50  0001 C CNN
@@ -247,10 +247,10 @@ Text HLabel 7325 3600 2    50   Input ~ 0
 DOUT
 NoConn ~ 6125 3000
 $Comp
-L bioreactor:HX711 U?
+L bioreactor:HX711 U6
 U 1 1 5EDF981C
 P 6725 3500
-F 0 "U?" H 6675 4486 59  0000 C CNN
+F 0 "U6" H 6675 4486 59  0000 C CNN
 F 1 "HX711" H 6675 4381 59  0000 C CNN
 F 2 "Package_SO:SOP-16_3.9x9.9mm_P1.27mm" H 6725 2450 50  0001 C CNN
 F 3 "https://components101.com/sites/default/files/component_datasheet/HX711%20Datasheet.pdf" H 6725 3500 50  0001 C CNN

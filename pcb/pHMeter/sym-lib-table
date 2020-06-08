@@ -4,4 +4,5 @@
   (lib (name BSP75)(type Legacy)(uri ${KIPRJMOD}/symbols/BSP75.lib)(options "")(descr ""))
   (lib (name Bertha_main-rescue)(type Legacy)(uri ${KIPRJMOD}/Bertha_main-rescue.lib)(options "")(descr ""))
   (lib (name bioreactor)(type Legacy)(uri ${KIPRJMOD}/library/bioreactor.lib)(options "")(descr ""))
+  (lib (name pHMeter-rescue)(type Legacy)(uri ${KIPRJMOD}/pHMeter-rescue.lib)(options "")(descr ""))
 )
