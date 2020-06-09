@@ -19,7 +19,7 @@ U 1 1 5E3C27B4
 P 3550 4900
 F 0 "SJ1" H 3650 5025 59  0000 R CNN
 F 1 "JUMPER-PAD-2-NC_BY_TRACE" H 4375 5150 59  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3550 4900 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3550 4900 50  0001 C CNN
 F 3 "" H 3550 4900 50  0001 C CNN
 	1    3550 4900
 	0    -1   -1   0   
@@ -112,7 +112,7 @@ U 1 1 5E3C285D
 P 7725 3000
 F 0 "J8" H 7725 2900 59  0000 C CNN
 F 1 "SJ" H 7725 3100 59  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7725 3000 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7725 3000 50  0001 C CNN
 F 3 "" H 7725 3000 50  0001 C CNN
 	1    7725 3000
 	-1   0    0    1   

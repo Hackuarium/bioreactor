@@ -1,10 +1,10 @@
-ERC report (lun 08 jun 2020 18:30:40 -05, Encoding UTF8 )
+ERC report (mar 09 jun 2020 09:22:35 -05, Encoding UTF8 )
 
 ***** Sheet /
 ErrType(3): Pin connected to other pins, but not driven by any pin
-    @(172,72 mm, 200,03 mm): Pin 2 (Power input) of component DS1 is not driven (Net 7).
+    @(374,65 mm, 214,00 mm): Pin 2 (Passive) of component R40 is not driven (Net 34).
 ErrType(3): Pin connected to other pins, but not driven by any pin
-    @(185,42 mm, 212,72 mm): Pin 2 (Passive) of component R40 is not driven (Net 35).
+    @(361,95 mm, 198,75 mm): Pin 3 (Passive) of component Q3 is not driven (Net 36).
 
 ***** Sheet /ATMega32u4/
 ErrType(8): Global label not connected to any other global label
@@ -13,18 +13,18 @@ ErrType(8): Global label not connected to any other global label
     @(154,94 mm, 35,56 mm): Global label A3 is not connected to any other global label.
 ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
     @(151,13 mm, 35,56 mm): Pin 39 (Bidirectional) of component U3 is unconnected.
-ErrType(8): Global label not connected to any other global label
-    @(154,94 mm, 96,52 mm): Global label TX is not connected to any other global label.
 ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
     @(151,13 mm, 96,52 mm): Pin 21 (Bidirectional) of component U3 is unconnected.
+ErrType(8): Global label not connected to any other global label
+    @(154,94 mm, 96,52 mm): Global label TX is not connected to any other global label.
 ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
     @(151,13 mm, 38,10 mm): Pin 38 (Bidirectional) of component U3 is unconnected.
 ErrType(8): Global label not connected to any other global label
     @(154,94 mm, 38,10 mm): Global label A2 is not connected to any other global label.
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(151,13 mm, 40,64 mm): Pin 37 (Bidirectional) of component U3 is unconnected.
 ErrType(8): Global label not connected to any other global label
     @(154,94 mm, 40,64 mm): Global label A1 is not connected to any other global label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(151,13 mm, 40,64 mm): Pin 37 (Bidirectional) of component U3 is unconnected.
 ErrType(8): Global label not connected to any other global label
     @(154,94 mm, 43,18 mm): Global label A0 is not connected to any other global label.
 ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
@@ -40,7 +40,7 @@ ErrType(3): Pin connected to other pins, but not driven by any pin
 
 ***** Sheet /24bits ADC/
 ErrType(3): Pin connected to other pins, but not driven by any pin
-    @(155,57 mm, 91,44 mm): Pin 5 (Power input) of component U6 is not driven (Net 96).
+    @(155,57 mm, 91,44 mm): Pin 5 (Power input) of component U6 is not driven (Net 98).
 
 ***** Sheet /Memory/
 
