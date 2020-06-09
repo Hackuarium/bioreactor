@@ -187,10 +187,10 @@ LGND
 Text HLabel 6050 4200 0    50   Input ~ 0
 A+
 $Comp
-L Device:R R36
+L Device:R R41
 U 1 1 5E3C2866
 P 7475 2800
-F 0 "R36" V 7575 2700 50  0000 L CNN
+F 0 "R41" V 7575 2700 50  0000 L CNN
 F 1 "10k" V 7475 2725 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7405 2800 50  0001 C CNN
 F 3 "~" H 7475 2800 50  0001 C CNN
@@ -252,7 +252,7 @@ U 1 1 5EDF981C
 P 6725 3500
 F 0 "U6" H 6675 4486 59  0000 C CNN
 F 1 "HX711" H 6675 4381 59  0000 C CNN
-F 2 "Package_SO:SOP-16_3.9x9.9mm_P1.27mm" H 6725 2450 50  0001 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 6725 2450 50  0001 C CNN
 F 3 "https://components101.com/sites/default/files/component_datasheet/HX711%20Datasheet.pdf" H 6725 3500 50  0001 C CNN
 	1    6725 3500
 	1    0    0    -1  

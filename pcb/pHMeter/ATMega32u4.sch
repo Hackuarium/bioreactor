@@ -26,10 +26,10 @@ A1
 Text GLabel 6100 1700 2    50   Input ~ 0
 A0
 $Comp
-L Device:R R31
+L Device:R R36
 U 1 1 5E02DBA6
 P 6400 1900
-F 0 "R31" V 6325 1900 50  0000 C CNN
+F 0 "R36" V 6325 1900 50  0000 C CNN
 F 1 "10k" V 6400 1900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6330 1900 50  0001 C CNN
 F 3 "~" H 6400 1900 50  0001 C CNN
@@ -185,28 +185,17 @@ GND
 Wire Wire Line
 	3375 4600 3375 4700
 $Comp
-L Device:R R30
+L Device:R R35
 U 1 1 5E06947C
 P 3825 3150
-F 0 "R30" V 3925 3025 50  0000 L CNN
+F 0 "R35" V 3925 3025 50  0000 L CNN
 F 1 "1M" V 3825 3100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3755 3150 50  0001 C CNN
 F 3 "~" H 3825 3150 50  0001 C CNN
 	1    3825 3150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Bertha_main-eagle-import:XTALNX6035 X2
-U 1 1 5E06AC4E
-P 3525 3150
-F 0 "X2" V 3775 3250 50  0000 R CNN
-F 1 "XTALNX6035" V 3225 3375 50  0000 R CNN
-F 2 "Crystal:Crystal_SMD_0603-2Pin_6.0x3.5mm_HandSoldering" H 3525 3150 50  0001 C CNN
-F 3 "" H 3525 3150 50  0001 C CNN
-	1    3525 3150
-	0    -1   -1   0   
-$EndComp
-Text Notes 3425 3550 0    55   ~ 0
+Text Notes 3400 3275 1    55   ~ 0
 8MHz\n
 $Comp
 L Device:C C13
@@ -240,27 +229,9 @@ Connection ~ 2975 3150
 Wire Wire Line
 	2975 3150 2975 3250
 Wire Wire Line
-	3275 3050 3275 2950
-Wire Wire Line
-	3275 2950 3525 2950
-Wire Wire Line
-	3275 3250 3275 3350
-Wire Wire Line
-	3275 3350 3525 3350
-Wire Wire Line
-	3525 2950 3675 2950
-Wire Wire Line
-	3675 2950 3675 3000
-Wire Wire Line
 	3675 3000 3825 3000
-Connection ~ 3525 2950
-Wire Wire Line
-	3525 3350 3675 3350
-Wire Wire Line
-	3675 3350 3675 3300
 Wire Wire Line
 	3675 3300 3825 3300
-Connection ~ 3525 3350
 Wire Wire Line
 	3825 3000 4050 3000
 Connection ~ 3825 3000
@@ -366,10 +337,10 @@ Wire Wire Line
 Text GLabel 3150 850  2    50   Input ~ 0
 3.3V
 $Comp
-L Device:R R29
+L Device:R R34
 U 1 1 5E0BADDD
 P 3075 1000
-F 0 "R29" V 3175 875 50  0000 L CNN
+F 0 "R34" V 3175 875 50  0000 L CNN
 F 1 "10k" V 3075 925 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3005 1000 50  0001 C CNN
 F 3 "~" H 3075 1000 50  0001 C CNN
@@ -394,7 +365,7 @@ $Comp
 L Bertha_main-eagle-import:SJ J7
 U 1 1 5E0A3DEB
 P 3075 1350
-F 0 "J7" V 3000 1050 59  0000 L CNN
+F 0 "J7" V 3000 1175 59  0000 L CNN
 F 1 "SJ" V 3125 1175 59  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3075 1350 50  0001 C CNN
 F 3 "" H 3075 1350 50  0001 C CNN
@@ -442,4 +413,37 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega
 	1    4950 2900
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3525 2925 3675 2925
+Wire Wire Line
+	3675 2925 3675 3000
+Wire Wire Line
+	3525 3375 3675 3375
+Wire Wire Line
+	3675 3375 3675 3300
+Wire Wire Line
+	3525 2925 3275 2925
+Wire Wire Line
+	3275 2925 3275 3050
+Connection ~ 3525 2925
+Wire Wire Line
+	3275 3375 3525 3375
+Wire Wire Line
+	3275 3250 3275 3375
+Connection ~ 3525 3375
+$Comp
+L Device:Crystal Y1
+U 1 1 5EEA6FAA
+P 3525 3150
+F 0 "Y1" V 3375 3025 50  0000 L CNN
+F 1 "Crystal" V 3825 3025 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_0603-2Pin_6.0x3.5mm_HandSoldering" H 3525 3150 50  0001 C CNN
+F 3 "~" H 3525 3150 50  0001 C CNN
+	1    3525 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3525 2925 3525 3000
+Wire Wire Line
+	3525 3300 3525 3375
 $EndSCHEMATC
