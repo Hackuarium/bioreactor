@@ -29,21 +29,23 @@
 #endif
 
 #define PARAM_STEPPER_SPEED        26   // AA - motor speed, parameter S, IN RPM (v4.5)
-#define PARAM_STEPPER_SECONDS      27   // AB   200 steps per full rotation (see Stepper.ino)
-//      number of seconds before changing direction
-
-#define PARAM_TEMP_LIQ      0   // temperature of the solution
-#define PARAM_TEMP_PCB      1   // temperature of the heating plate
-#define PARAM_TEMP_PID      2   // heating amount of energy
-#define PARAM_TEMP_TARGET   3   // target temperature of the liquid
+#define PARAM_STEPPER_SECONDS      27   // AB   number of seconds before changing direction
+#define PARAM_STEPPER_WAIT         28   // AC   wait time in seconds between change of direction
 
 
+#define PARAM_TEMP_LIQ      0   // A - temperature of the solution
 
-#define PARAM_WEIGHT                  4  // in unit of the balance
-#define PARAM_WEIGHT_G                5  // in unit of the balance
-#define PARAM_WEIGHT_SINCE_LAST_EVENT 6  // 
-#define PARAM_WEIGHT_MIN              7  // 
-#define PARAM_WEIGHT_MAX              8  // 
+#define PARAM_TEMP_PCB      1   // B - temperature of the heating plate
+#define PARAM_TEMP_PID      2   // C - heating amount of energy
+#define PARAM_TEMP_TARGET   3   // D - target temperature of the liquid
+
+
+
+#define PARAM_WEIGHT                  4  // D - in unit of the balance
+#define PARAM_WEIGHT_G                5  // E - in unit of the balance
+#define PARAM_WAIT_SINCE_LAST_EVENT 6  // F
+#define PARAM_WEIGHT_MIN              7  // G
+#define PARAM_WEIGHT_MAX              8  // H
 #define PARAM_SEDIMENTATION_TIME     31  // AF - MINUTES to wait without rotation before emptying
 #define PARAM_FILLED_TIME            32  // AG - MINUTES to stay in the filled state
 #define PARAM_WEIGHT_FACTOR          33  // AH - Weight calibration: conversion factor digital -> gr (weight=FACTOR*dig_unit)
@@ -55,7 +57,7 @@
 /******************
    FLAG DEFINITION
  ******************/
-#define PARAM_ERROR        24
+#define PARAM_ERROR        24              // Y - errors
 #define FLAG_TEMP_PCB_PROBE_ERROR      0   // pcb probe failed (one wire not answering)
 #define FLAG_TEMP_LIQ_PROBE_ERROR      1   // liquid probe failed (one wire not answering)
 #define FLAG_TEMP_PCB_RANGE_ERROR      2   // temperature of pcb is outside range
@@ -67,8 +69,8 @@
 #define MASK_WEIGHT_ERROR              0b00100000  // where are the bit for weight error
 
 
-#define PARAM_STATUS             25  // currently active service
-#define PARAM_ENABLED            51  // enabled service (set by user)
+#define PARAM_STATUS             25  // Z - currently active service
+#define PARAM_ENABLED            51  // AZ - enabled service (set by user)
 #define FLAG_STEPPER_CONTROL     0   //0 to stop engine
 #define FLAG_FOOD_CONTROL        1   //1 for food ctrl
 #define FLAG_PID_CONTROL         2   //0 to stop PID

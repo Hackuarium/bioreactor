@@ -68,7 +68,9 @@ NIL_THREAD(ThreadStepper, arg) {
     Timer1.stop();
 
     forward = !forward;
-    nilThdSleepMilliseconds(1000);
+    for (int i = 0; i < getParameter(PARAM_STEPPER_WAIT); i++) {
+      nilThdSleepMilliseconds(1000);
+    }
   }
 }
 

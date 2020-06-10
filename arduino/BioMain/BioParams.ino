@@ -10,6 +10,7 @@ void resetParameters() {
   active |= 1 << FLAG_STEPPER_CONTROL;
   setAndSaveParameter(PARAM_STEPPER_SPEED, 60);
   setAndSaveParameter(PARAM_STEPPER_SECONDS, 30);
+  setAndSaveParameter(PARAM_STEPPER_WAIT, 5);
 #endif
 
 #ifdef THR_ONEWIRE

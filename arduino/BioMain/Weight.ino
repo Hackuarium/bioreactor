@@ -14,7 +14,7 @@ NIL_THREAD(ThreadWeight, arg) {
   ********************************************/
   int weight;
 
-  long timeLastEvent = millis() - getParameter(PARAM_WEIGHT_SINCE_LAST_EVENT) * 60000;
+  long timeLastEvent = millis() - getParameter(PARAM_WAIT_SINCE_LAST_EVENT) * 60000;
 
   /********************************************
                Thread Loop
@@ -82,7 +82,7 @@ NIL_THREAD(ThreadWeight, arg) {
       }
     }
 
-    setParameter(PARAM_WEIGHT_SINCE_LAST_EVENT, sinceLastEvent);
+    setParameter(PARAM_WAIT_SINCE_LAST_EVENT, sinceLastEvent);
   }
 }
 

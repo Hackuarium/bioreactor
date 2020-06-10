@@ -20,16 +20,13 @@ void setup() {
   Serial.begin(9600);
   delay(1000);
   setupParameters();
-  Serial.println("a");
 
 #ifdef FLASH_SELECT
-  Serial.println("b");
   pinMode(FLASH_SELECT, OUTPUT);
   setupMemory();
   recoverLastEntryN();
   loadLastEntryToParameters();   //get back the previous config
 #endif
-  Serial.println("c");
 
   nilSysBegin();
 }
