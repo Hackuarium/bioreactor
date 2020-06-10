@@ -508,17 +508,6 @@ F 3 "~" H 1175 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Bertha_main-eagle-import:JP1E JP1
-U 1 1 5ED3A976
-P 1100 5575
-F 0 "JP1" V 1079 5703 59  0000 L CNN
-F 1 "JP1E" V 1184 5703 59  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1100 5575 50  0001 C CNN
-F 3 "" H 1100 5575 50  0001 C CNN
-	1    1100 5575
-	0    1    1    0   
-$EndComp
-$Comp
 L Bertha_main-eagle-import:JP1E JP2
 U 1 1 5ED3B9E9
 P 1750 5575
@@ -2315,4 +2304,15 @@ F 3 "" H 7300 6650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7300 6550 7300 6475
+$Comp
+L Bertha_main-eagle-import:JP1E JP1
+U 1 1 5ED3A976
+P 1100 5575
+F 0 "JP1" V 1079 5703 59  0000 L CNN
+F 1 "JP1E" V 1184 5703 59  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1100 5575 50  0001 C CNN
+F 3 "" H 1100 5575 50  0001 C CNN
+	1    1100 5575
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

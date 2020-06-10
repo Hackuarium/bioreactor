@@ -102,7 +102,7 @@ F 1 "10µF" H 3890 3855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3813 3750 50  0001 C CNN
 F 3 "~" H 3775 3900 50  0001 C CNN
 	1    3775 3900
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3775 3750 3775 3700
@@ -121,7 +121,6 @@ F 3 "~" H 4775 4100 50  0001 C CNN
 	1    4775 4100
 	0    1    1    0   
 $EndComp
-NoConn ~ 4025 4150
 Text Notes 6700 3425 0    118  ~ 0
 Power LEDS
 $Comp
@@ -221,7 +220,7 @@ GND
 Wire Wire Line
 	5575 4300 5575 4500
 Wire Wire Line
-	4025 3700 3775 3700
+	4025 3700 3975 3700
 Connection ~ 3775 3700
 $Comp
 L Device:LED D15
@@ -262,12 +261,12 @@ NoConn ~ 2525 2150
 $Comp
 L Device:C C19
 U 1 1 5EDC3622
-P 3650 6000
-F 0 "C19" H 3765 6046 50  0000 L CNN
-F 1 "10u" H 3765 5955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3688 5850 50  0001 C CNN
-F 3 "~" H 3650 6000 50  0001 C CNN
-	1    3650 6000
+P 3625 6000
+F 0 "C19" H 3740 6046 50  0000 L CNN
+F 1 "10u" H 3740 5955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3663 5850 50  0001 C CNN
+F 3 "~" H 3625 6000 50  0001 C CNN
+	1    3625 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -277,20 +276,17 @@ Wire Wire Line
 Wire Wire Line
 	3900 5800 3950 5800
 Wire Wire Line
-	3900 5800 3650 5800
+	3625 5800 3625 5850
 Wire Wire Line
-	3650 5800 3650 5850
-Connection ~ 3900 5800
+	3625 5800 3575 5800
+Connection ~ 3625 5800
 Wire Wire Line
-	3650 5800 3600 5800
-Connection ~ 3650 5800
-Wire Wire Line
-	3650 6225 3650 6150
+	3625 6225 3625 6150
 Wire Wire Line
 	4350 6200 4350 6275
-Text HLabel 3600 5800 0    50   Input ~ 0
+Text HLabel 3575 5800 0    50   Input ~ 0
 VIN
-Text HLabel 3650 6225 0    50   Input ~ 0
+Text HLabel 3625 6225 0    50   Input ~ 0
 GND
 Text HLabel 4350 6275 0    50   Input ~ 0
 GND
@@ -391,4 +387,14 @@ F 3 "https://www.diodes.com/assets/Datasheets/AP65111A.pdf" H 4350 5900 50  0001
 	1    4350 5900
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4025 4150 3975 4150
+Wire Wire Line
+	3975 4150 3975 3700
+Connection ~ 3975 3700
+Wire Wire Line
+	3975 3700 3775 3700
+Wire Wire Line
+	3625 5800 3900 5800
+Connection ~ 3900 5800
 $EndSCHEMATC
