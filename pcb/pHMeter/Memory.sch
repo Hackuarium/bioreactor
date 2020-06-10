@@ -108,17 +108,6 @@ Text Notes 4825 1075 0    50   ~ 0
 (Pull up on  COM LED)
 Text Notes 5025 950  0    50   ~ 0
 64 Mbit SPI
-$Comp
-L bioreactor:SST25VF064C U7
-U 1 1 5EDC79A8
-P 5250 2325
-F 0 "U7" H 4950 2700 50  0000 L CNN
-F 1 "SST25VF064C" H 5300 1950 50  0000 L CNN
-F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 5250 1625 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005045C.pdf" H 5200 2875 50  0001 C CNN
-	1    5250 2325
-	1    0    0    -1  
-$EndComp
 Text HLabel 4700 2525 0    50   Input ~ 0
 3.3V
 Wire Wire Line
@@ -130,4 +119,15 @@ Wire Wire Line
 Connection ~ 4800 2525
 Wire Wire Line
 	4800 2525 4700 2525
+$Comp
+L bioreactor:SST26VF064B U7
+U 1 1 5EE1E2FB
+P 5250 2325
+F 0 "U7" H 5694 2371 50  0000 L CNN
+F 1 "SST26VF064B" H 5694 2280 50  0000 L CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 5250 1625 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SST26VF064B-SST26VF064BA-2.5V-3.0V-64-Mbit-Serial-Quad-IO-Flash-Memory-Data-Sheet-DS20005119J.pdf" H 5200 2875 50  0001 C CNN
+	1    5250 2325
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

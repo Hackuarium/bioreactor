@@ -30,6 +30,12 @@ K Flash
 F https://www.microchip.com/wwwproducts/en/SST25VF064C
 $ENDCMP
 #
+$CMP SST26VF064B
+D 64 Mbit SPI Serial Dual I/O Flash
+K Flash
+F http://ww1.microchip.com/downloads/en/DeviceDoc/SST26VF064B-SST26VF064BA-2.5V-3.0V-64-Mbit-Serial-Quad-IO-Flash-Memory-Data-Sheet-DS20005119J.pdf
+$ENDCMP
+#
 $CMP TLV6004PW
 D Low-Power, Quad-Operational Amplifiers, Texas S-PX2QFN-14
 K quad opamp
