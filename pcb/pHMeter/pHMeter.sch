@@ -162,17 +162,6 @@ Wire Wire Line
 Wire Wire Line
 	7775 6125 7775 6325
 $Comp
-L Bertha_main-eagle-import:TLV6004PW U2
-U 1 1 5ED3B50E
-P 2425 4225
-F 0 "U2" H 2425 4592 50  0000 C CNN
-F 1 "TLV6004PW" H 2425 4501 50  0000 C CNN
-F 2 "Package_DFN_QFN:Texas_S-PX2QFN-14" H 2425 4225 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 2475 4425 50  0001 C CNN
-	1    2425 4225
-	1    0    0    -1  
-$EndComp
-$Comp
 L Bertha_main-eagle-import:TLV6004PW U1
 U 2 1 5ED3C0C3
 P 2425 3325
@@ -204,17 +193,6 @@ Wire Wire Line
 	2825 4525 2825 4225
 Wire Wire Line
 	2825 4225 2725 4225
-$Comp
-L Device:R R4
-U 1 1 5ED3F6BA
-P 1775 4375
-F 0 "R4" H 1845 4421 50  0000 L CNN
-F 1 "10k" H 1845 4330 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1705 4375 50  0001 C CNN
-F 3 "~" H 1775 4375 50  0001 C CNN
-	1    1775 4375
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1775 4125 1775 4225
 Wire Wire Line
@@ -475,7 +453,7 @@ Wire Wire Line
 Text GLabel 7350 4400 3    50   Input ~ 0
 TXLED
 Text GLabel 7900 4400 3    50   Input ~ 0
-D10
+TX
 Wire Wire Line
 	7900 4300 7900 4400
 Wire Wire Line
@@ -862,12 +840,12 @@ Connection ~ 625  1625
 $Comp
 L Bertha_main-eagle-import:TLV6004PW U1
 U 1 1 5EECD8E4
-P 1800 1525
-F 0 "U1" H 1800 1892 50  0000 C CNN
-F 1 "TLV6004PW" H 1800 1801 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 1800 1525 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 1850 1725 50  0001 C CNN
-	1    1800 1525
+P 2425 4225
+F 0 "U1" H 2425 4592 50  0000 C CNN
+F 1 "TLV6004PW" H 2425 4501 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2425 4225 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 2475 4425 50  0001 C CNN
+	1    2425 4225
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1046,7 +1024,7 @@ U 1 1 5EFDABD8
 P 2650 1450
 F 0 "TP1" H 2708 1568 50  0000 L CNN
 F 1 "TestPoint" H 2708 1477 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2850 1450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2850 1450 50  0001 C CNN
 F 3 "~" H 2850 1450 50  0001 C CNN
 	1    2650 1450
 	1    0    0    -1  
@@ -1060,7 +1038,7 @@ U 2 1 5EFECEC1
 P 3475 1625
 F 0 "U2" H 3475 1992 50  0000 C CNN
 F 1 "TLV6004PW" H 3475 1901 50  0000 C CNN
-F 2 "Package_DFN_QFN:Texas_S-PX2QFN-14" H 3475 1625 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3475 1625 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 3525 1825 50  0001 C CNN
 	2    3475 1625
 	1    0    0    -1  
@@ -1103,7 +1081,7 @@ U 5 1 5F096049
 P 6150 1175
 F 0 "U2" H 6108 1221 50  0000 L CNN
 F 1 "TLV6004PW" H 6108 1130 50  0000 L CNN
-F 2 "Package_DFN_QFN:Texas_S-PX2QFN-14" H 6150 1175 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6150 1175 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 6200 1375 50  0001 C CNN
 	5    6150 1175
 	1    0    0    -1  
@@ -1174,7 +1152,7 @@ U 3 1 5F14CF60
 P 5075 1725
 F 0 "U2" H 5075 2092 50  0000 C CNN
 F 1 "TLV6004PW" H 5075 2001 50  0000 C CNN
-F 2 "Package_DFN_QFN:Texas_S-PX2QFN-14" H 5075 1725 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5075 1725 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 5125 1925 50  0001 C CNN
 	3    5075 1725
 	1    0    0    -1  
@@ -1393,7 +1371,7 @@ F 3 "" H 11450 2825 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text GLabel 11425 2475 0    50   Input ~ 0
-D10
+TX
 Wire Wire Line
 	11575 2300 11450 2300
 Wire Wire Line
@@ -1426,8 +1404,6 @@ Wire Notes Line
 	5425 5025 5425 2800
 Text Notes 6900 3075 0    100  ~ 0
 COM LEDs
-Text Notes 5500 3050 0    100  ~ 0
-POWER LED
 Text GLabel 7075 3500 1    50   Input ~ 0
 3.3V
 Wire Wire Line
@@ -1666,7 +1642,7 @@ U 1 1 5F052016
 P 7125 6225
 F 0 "TP2" H 7183 6343 50  0000 L CNN
 F 1 "TestPoint" H 7183 6252 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7325 6225 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7325 6225 50  0001 C CNN
 F 3 "~" H 7325 6225 50  0001 C CNN
 	1    7125 6225
 	-1   0    0    1   
@@ -2019,7 +1995,7 @@ Wire Wire Line
 Wire Wire Line
 	13750 9325 13850 9325
 Text GLabel 13750 9325 0    50   Input ~ 0
-A4
+D10
 Text GLabel 13750 9225 0    50   Input ~ 0
 D5
 Text GLabel 13750 9125 0    50   Input ~ 0
@@ -2314,5 +2290,29 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1100 5575 50 
 F 3 "" H 1100 5575 50  0001 C CNN
 	1    1100 5575
 	0    1    1    0   
+$EndComp
+Text Notes 5500 3050 0    100  ~ 0
+POWER LED
+$Comp
+L Bertha_main-eagle-import:TLV6004PW U2
+U 1 1 5ED3B50E
+P 1800 1525
+F 0 "U2" H 1800 1892 50  0000 C CNN
+F 1 "TLV6004PW" H 1800 1801 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 1800 1525 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 1850 1725 50  0001 C CNN
+	1    1800 1525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5ED3F6BA
+P 1775 4375
+F 0 "R4" H 1845 4421 50  0000 L CNN
+F 1 "10k" H 1845 4330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1705 4375 50  0001 C CNN
+F 3 "~" H 1775 4375 50  0001 C CNN
+	1    1775 4375
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
