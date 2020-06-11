@@ -1,6 +1,6 @@
 # bioreactor
 
-Please refer to the [documentation](hackuarium.github.io/bioreactor/) for all useful information.
+Please refer to the [documentation](https://hackuarium.github.io/bioreactor/) for all useful information.
 
 ## Cloning the project
 
