@@ -1,5 +1,7 @@
 # bioreactor
 
+Please refer to the [documentation](hackuarium.github.io/bioreactor/) for all useful information.
+
 ## Cloning the project
 
 This project uses SUBMODULES.
