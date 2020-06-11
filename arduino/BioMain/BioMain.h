@@ -71,6 +71,8 @@
 
 #define PARAM_STATUS             25  // Z - currently active service
 #define PARAM_ENABLED            51  // AZ - enabled service (set by user)
+
+// the following flags are defined for PARAM_STATUS and PARAM_ENABLED
 #define FLAG_STEPPER_CONTROL     0   //0 to stop engine
 #define FLAG_FOOD_CONTROL        1   //1 for food ctrl
 #define FLAG_PID_CONTROL         2   //0 to stop PID
@@ -78,6 +80,7 @@
 #define FLAG_PH_CONTROL          3   //0 to to stop ph
 #define FLAG_GAS_CONTROL         4   //0 to stop gas
 
+// the following flags are only defined for PARAM_STATUS
 #define FLAG_SEDIMENTATION       7
 #define FLAG_RELAY_FILLING       8
 #define FLAG_RELAY_EMPTYING      9
