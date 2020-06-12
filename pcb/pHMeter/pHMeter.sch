@@ -1281,10 +1281,10 @@ F 3 "~" H 6725 2200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Bertha_main-eagle-import:TLV6004PW U1
+L Bertha_main-eagle-import:TLV6004PW U2
 U 4 1 5F2306B2
 P 7100 1525
-F 0 "U1" H 7100 1892 50  0000 C CNN
+F 0 "U2" H 7100 1892 50  0000 C CNN
 F 1 "TLV6004PW" H 7100 1801 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7100 1525 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 7150 1725 50  0001 C CNN

@@ -53,17 +53,6 @@ Wire Wire Line
 Wire Wire Line
 	3550 4600 3550 4700
 $Comp
-L Device:C C30
-U 1 1 5E3C27FC
-P 5875 3700
-F 0 "C30" V 6025 3600 50  0000 L CNN
-F 1 "100nF" V 5750 3575 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5913 3550 50  0001 C CNN
-F 3 "~" H 5875 3700 50  0001 C CNN
-	1    5875 3700
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C C28
 U 1 1 5E3C280F
 P 4825 3400
@@ -85,8 +74,6 @@ F 3 "~" H 5150 3400 50  0001 C CNN
 	1    5150 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6025 3700 6125 3700
 Wire Wire Line
 	4825 3050 4825 3250
 Connection ~ 4825 3050
@@ -153,18 +140,9 @@ Wire Wire Line
 	5150 3700 5500 3700
 Wire Wire Line
 	5500 3400 5500 3700
-Connection ~ 5500 3700
-Wire Wire Line
-	5500 3700 5650 3700
-Wire Wire Line
-	5650 3600 5650 3700
 Connection ~ 5650 3700
 Wire Wire Line
-	5650 3700 5725 3700
-Wire Wire Line
 	7225 4200 7300 4200
-Wire Wire Line
-	6125 3700 6125 3800
 Wire Wire Line
 	5650 3600 6125 3600
 Wire Wire Line
@@ -179,11 +157,7 @@ Wire Wire Line
 Wire Wire Line
 	6125 2650 6125 2800
 Wire Wire Line
-	6050 4000 6125 4000
-Wire Wire Line
 	6050 4200 6125 4200
-Text Label 6050 4000 2    50   ~ 0
-LGND
 Text HLabel 6050 4200 0    50   Input ~ 0
 A+
 $Comp
@@ -257,4 +231,30 @@ F 3 "https://components101.com/sites/default/files/component_datasheet/HX711%20D
 	1    6725 3500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6025 3800 6125 3800
+Wire Wire Line
+	5650 3800 5725 3800
+$Comp
+L Device:C C30
+U 1 1 5E3C27FC
+P 5875 3800
+F 0 "C30" V 6025 3700 50  0000 L CNN
+F 1 "100nF" V 5750 3675 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5913 3650 50  0001 C CNN
+F 3 "~" H 5875 3800 50  0001 C CNN
+	1    5875 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5650 3700 5650 3800
+Connection ~ 5500 3700
+Wire Wire Line
+	5500 3700 5650 3700
+Wire Wire Line
+	5650 3600 5650 3700
+Text Label 5650 4000 2    50   ~ 0
+LGND
+Wire Wire Line
+	5650 4000 6125 4000
 $EndSCHEMATC
