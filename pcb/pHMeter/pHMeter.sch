@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title "PHMeter"
 Date "2020-05-12"
 Rev "5.1"
@@ -13,12 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 13775 3025 1000 1500
-U 5ECFEBAC
-F0 "ATMega32u4" 50
-F1 "ATMega32u4.sch" 50
-$EndSheet
 $Comp
 L Bertha_main-eagle-import:MINI-USB-SCHIELD-32005-201 X1
 U 1 1 5ED00B0D
@@ -100,37 +94,37 @@ F 3 "~" H 4900 6050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Sheet
-S 11400 3175 1050 1000
+S 4500 8500 1050 1000
 U 5ED0DFF6
 F0 "3.3V LDO" 50
 F1 "3.sch" 50
-F2 "VIN" I L 11400 3525 50 
-F3 "3.3V" O R 12450 3575 50 
-F4 "GND" I L 11400 3725 50 
+F2 "VIN" I L 4500 8850 50 
+F3 "3.3V" O R 5550 8900 50 
+F4 "GND" I L 4500 9050 50 
 $EndSheet
-Text GLabel 11250 3525 0    50   Input ~ 0
+Text GLabel 4350 8850 0    50   Input ~ 0
 VDD
 $Comp
 L Bertha_main-eagle-import:GND #015
 U 1 1 5ED0F364
-P 11250 3925
-F 0 "#015" H 11300 3975 50  0001 C CNN
-F 1 "GND" H 11353 3963 42  0000 L CNN
-F 2 "" H 11250 3925 50  0001 C CNN
-F 3 "" H 11250 3925 50  0001 C CNN
-	1    11250 3925
+P 4350 9250
+F 0 "#015" H 4400 9300 50  0001 C CNN
+F 1 "GND" H 4453 9288 42  0000 L CNN
+F 2 "" H 4350 9250 50  0001 C CNN
+F 3 "" H 4350 9250 50  0001 C CNN
+	1    4350 9250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11250 3825 11250 3725
+	4350 9150 4350 9050
 Wire Wire Line
-	11250 3725 11400 3725
+	4350 9050 4500 9050
 Wire Wire Line
-	11250 3525 11400 3525
-Text GLabel 12550 3575 2    50   Input ~ 0
+	4350 8850 4500 8850
+Text GLabel 5650 8900 2    50   Input ~ 0
 3.3V
 Wire Wire Line
-	12450 3575 12550 3575
+	5550 8900 5650 8900
 $Comp
 L Connector:Conn_Coaxial_Power J4
 U 1 1 5ED1AC60
@@ -161,265 +155,6 @@ Wire Wire Line
 	7675 6125 7775 6125
 Wire Wire Line
 	7775 6125 7775 6325
-$Comp
-L Bertha_main-eagle-import:TLV6004PW U1
-U 2 1 5ED3C0C3
-P 2425 3325
-F 0 "U1" H 2425 3692 50  0000 C CNN
-F 1 "TLV6004PW" H 2425 3601 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2425 3325 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 2475 3525 50  0001 C CNN
-	2    2425 3325
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C3
-U 1 1 5ED3EFCC
-P 1425 4375
-F 0 "C3" H 1540 4421 50  0000 L CNN
-F 1 "100n" H 1540 4330 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1463 4225 50  0001 C CNN
-F 3 "~" H 1425 4375 50  0001 C CNN
-	1    1425 4375
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2125 4325 2025 4325
-Wire Wire Line
-	2025 4325 2025 4525
-Wire Wire Line
-	2025 4525 2825 4525
-Wire Wire Line
-	2825 4525 2825 4225
-Wire Wire Line
-	2825 4225 2725 4225
-Wire Wire Line
-	1775 4125 1775 4225
-Wire Wire Line
-	1775 4125 1975 4125
-Wire Wire Line
-	1425 4225 1425 4125
-Connection ~ 1775 4125
-Wire Wire Line
-	1425 4125 1775 4125
-$Comp
-L Device:R R3
-U 1 1 5ED3F955
-P 1775 3875
-F 0 "R3" H 1705 3829 50  0000 R CNN
-F 1 "10k" H 1705 3920 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1705 3875 50  0001 C CNN
-F 3 "~" H 1775 3875 50  0001 C CNN
-	1    1775 3875
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1775 4025 1775 4125
-Wire Wire Line
-	1775 3725 1775 3625
-$Comp
-L Bertha_main-eagle-import:GND #04
-U 1 1 5ED57052
-P 1425 4725
-F 0 "#04" H 1475 4775 50  0001 C CNN
-F 1 "GND" H 1528 4763 42  0000 L CNN
-F 2 "" H 1425 4725 50  0001 C CNN
-F 3 "" H 1425 4725 50  0001 C CNN
-	1    1425 4725
-	1    0    0    -1  
-$EndComp
-$Comp
-L Bertha_main-eagle-import:GND #07
-U 1 1 5ED57417
-P 1775 4725
-F 0 "#07" H 1825 4775 50  0001 C CNN
-F 1 "GND" H 1878 4763 42  0000 L CNN
-F 2 "" H 1775 4725 50  0001 C CNN
-F 3 "" H 1775 4725 50  0001 C CNN
-	1    1775 4725
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1775 4625 1775 4525
-Wire Wire Line
-	1425 4625 1425 4525
-$Comp
-L Connector:Conn_Coaxial_Power J3
-U 1 1 5ED5904C
-P 3125 3925
-F 0 "J3" V 2908 3875 50  0000 C CNN
-F 1 "Conn_Coaxial_Power" V 2999 3875 50  0000 C CNN
-F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 3125 3875 50  0001 C CNN
-F 3 "~" H 3125 3875 50  0001 C CNN
-	1    3125 3925
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2125 3425 2075 3425
-Wire Wire Line
-	2075 3425 2075 3625
-Wire Wire Line
-	2075 3625 2825 3625
-Wire Wire Line
-	2825 3625 2825 3325
-Wire Wire Line
-	2825 3325 2725 3325
-Wire Wire Line
-	2125 3225 1975 3225
-Wire Wire Line
-	1975 3225 1975 4125
-Connection ~ 1975 4125
-Wire Wire Line
-	1975 4125 2125 4125
-$Comp
-L Bertha_main-eagle-import:TLV6004PW U1
-U 3 1 5ED5F260
-P 3775 4025
-F 0 "U1" H 3775 4392 50  0000 C CNN
-F 1 "TLV6004PW" H 3775 4301 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3775 4025 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 3825 4225 50  0001 C CNN
-	3    3775 4025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3475 4125 3375 4125
-Wire Wire Line
-	3375 4125 3375 4325
-Wire Wire Line
-	3375 4325 4175 4325
-Wire Wire Line
-	4175 4325 4175 4025
-Wire Wire Line
-	4175 4025 4075 4025
-Wire Wire Line
-	3475 3925 3225 3925
-Wire Wire Line
-	2925 3925 2825 3925
-Wire Wire Line
-	2825 3925 2825 4225
-Connection ~ 2825 4225
-$Comp
-L Device:R R11
-U 1 1 5ED63B6D
-P 4425 4025
-F 0 "R11" V 4218 4025 50  0000 C CNN
-F 1 "56.2k" V 4309 4025 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4355 4025 50  0001 C CNN
-F 3 "~" H 4425 4025 50  0001 C CNN
-	1    4425 4025
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R13
-U 1 1 5ED6460A
-P 4675 3725
-F 0 "R13" H 4745 3771 50  0000 L CNN
-F 1 "10k" H 4745 3680 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4605 3725 50  0001 C CNN
-F 3 "~" H 4675 3725 50  0001 C CNN
-	1    4675 3725
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 5ED64AA5
-P 4675 4275
-F 0 "C9" H 4790 4321 50  0000 L CNN
-F 1 "22u" H 4790 4230 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4713 4125 50  0001 C CNN
-F 3 "~" H 4675 4275 50  0001 C CNN
-	1    4675 4275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4275 4025 4175 4025
-Connection ~ 4175 4025
-Wire Wire Line
-	4575 4025 4675 4025
-Wire Wire Line
-	4675 4025 4675 4125
-Wire Wire Line
-	4675 3875 4675 4025
-Connection ~ 4675 4025
-Text GLabel 4975 4025 2    50   Input ~ 0
-B+
-Wire Wire Line
-	4975 4025 4675 4025
-Wire Wire Line
-	2825 3325 4675 3325
-Wire Wire Line
-	4675 3325 4675 3575
-Connection ~ 2825 3325
-Text GLabel 4975 3325 2    50   Input ~ 0
-B-
-Wire Wire Line
-	4975 3325 4675 3325
-Connection ~ 4675 3325
-$Comp
-L Bertha_main-eagle-import:TLV6004PW U1
-U 5 1 5ED6E924
-P 1125 3975
-F 0 "U1" H 1083 4021 50  0000 L CNN
-F 1 "TLV6004PW" H 1083 3930 50  0000 L CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 1125 3975 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 1175 4175 50  0001 C CNN
-	5    1125 3975
-	1    0    0    -1  
-$EndComp
-$Comp
-L Bertha_main-eagle-import:GND #02
-U 1 1 5ED72EDE
-P 1025 4525
-F 0 "#02" H 1075 4575 50  0001 C CNN
-F 1 "GND" H 1128 4563 42  0000 L CNN
-F 2 "" H 1025 4525 50  0001 C CNN
-F 3 "" H 1025 4525 50  0001 C CNN
-	1    1025 4525
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1025 3675 1025 3575
-Wire Wire Line
-	1025 4425 1025 4325
-$Comp
-L Device:C C1
-U 1 1 5EDAD519
-P 725 3975
-F 0 "C1" H 840 4021 50  0000 L CNN
-F 1 "100n" H 840 3930 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 763 3825 50  0001 C CNN
-F 3 "~" H 725 3975 50  0001 C CNN
-	1    725  3975
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1025 3575 725  3575
-Wire Wire Line
-	725  3575 725  3825
-Connection ~ 1025 3575
-Wire Wire Line
-	1025 3575 1025 3525
-Wire Wire Line
-	725  4125 725  4325
-Wire Wire Line
-	725  4325 1025 4325
-Connection ~ 1025 4325
-Wire Wire Line
-	1025 4325 1025 4275
-$Comp
-L Bertha_main-eagle-import:GND #U08
-U 1 1 5EDB9D48
-P 4675 4675
-F 0 "#U08" H 4725 4725 50  0001 C CNN
-F 1 "GND" H 4778 4713 42  0000 L CNN
-F 2 "" H 4675 4675 50  0001 C CNN
-F 3 "" H 4675 4675 50  0001 C CNN
-	1    4675 4675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4675 4425 4675 4575
 $Comp
 L Device:R R24
 U 1 1 5EDC7F53
@@ -458,22 +193,22 @@ Wire Wire Line
 	7900 4300 7900 4400
 Wire Wire Line
 	7350 4300 7350 4400
-Text GLabel 12675 5025 2    50   Input ~ 0
+Text GLabel 5775 10350 2    50   Input ~ 0
 A5
-Text GLabel 12675 5125 2    50   Input ~ 0
+Text GLabel 5775 10450 2    50   Input ~ 0
 D7
-Text GLabel 11200 5000 0    50   Input ~ 0
+Text GLabel 4300 10325 0    50   Input ~ 0
 B+
-Text GLabel 11200 5100 0    50   Input ~ 0
+Text GLabel 4300 10425 0    50   Input ~ 0
 B-
 Wire Wire Line
-	11200 5000 11350 5000
+	4300 10325 4450 10325
 Wire Wire Line
-	11200 5100 11350 5100
+	4300 10425 4450 10425
 Wire Wire Line
-	11200 4725 11200 4825
+	4300 10050 4300 10150
 Wire Wire Line
-	11200 4825 11350 4825
+	4300 10150 4450 10150
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J1
 U 1 1 5ED39CB2
@@ -698,11 +433,7 @@ Text GLabel 1550 5525 1    50   Input ~ 0
 12V
 Text GLabel 825  5575 0    50   Input ~ 0
 3.3V
-Text GLabel 11200 4725 1    50   Input ~ 0
-3.3V
-Text GLabel 1025 3525 1    50   Input ~ 0
-3.3V
-Text GLabel 1775 3625 1    50   Input ~ 0
+Text GLabel 4300 10050 1    50   Input ~ 0
 3.3V
 Text GLabel 7900 3500 1    50   Input ~ 0
 3.3V
@@ -718,686 +449,33 @@ Connection ~ 4650 5950
 Wire Wire Line
 	4650 5950 5750 5950
 $Sheet
-S 11350 4700 1150 825 
+S 4450 10025 1150 825 
 U 5EE698D8
 F0 "24bits ADC" 50
 F1 "24bits ADC.sch" 50
-F2 "GND" I L 11350 5375 50 
-F3 "3.3V" I L 11350 4825 50 
-F4 "B+" I L 11350 5000 50 
-F5 "B-" I L 11350 5100 50 
-F6 "A+" I L 11350 5200 50 
-F7 "PD_SCK" I R 12500 5125 50 
-F8 "DOUT" I R 12500 5025 50 
+F2 "GND" I L 4450 10700 50 
+F3 "3.3V" I L 4450 10150 50 
+F4 "B+" I L 4450 10325 50 
+F5 "B-" I L 4450 10425 50 
+F6 "A+" I L 4450 10525 50 
+F7 "PD_SCK" I R 5600 10450 50 
+F8 "DOUT" I R 5600 10350 50 
 $EndSheet
 Wire Wire Line
-	11350 5375 11200 5375
+	4450 10700 4300 10700
 Wire Wire Line
-	11200 5375 11200 5425
+	4300 10700 4300 10750
 $Comp
 L Bertha_main-eagle-import:GND #014
 U 1 1 5EEA81E5
-P 11200 5525
-F 0 "#014" H 11250 5575 50  0001 C CNN
-F 1 "GND" H 11025 5575 42  0000 L CNN
-F 2 "" H 11200 5525 50  0001 C CNN
-F 3 "" H 11200 5525 50  0001 C CNN
-	1    11200 5525
+P 4300 10850
+F 0 "#014" H 4350 10900 50  0001 C CNN
+F 1 "GND" H 4125 10900 42  0000 L CNN
+F 2 "" H 4300 10850 50  0001 C CNN
+F 3 "" H 4300 10850 50  0001 C CNN
+	1    4300 10850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C4
-U 1 1 5EEB4D04
-P 1675 925
-F 0 "C4" V 1423 925 50  0000 C CNN
-F 1 "100n" V 1514 925 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1713 775 50  0001 C CNN
-F 3 "~" H 1675 925 50  0001 C CNN
-	1    1675 925 
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5EEB520E
-P 950 1400
-F 0 "C2" H 835 1354 50  0000 R CNN
-F 1 "100n" H 835 1445 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 988 1250 50  0001 C CNN
-F 3 "~" H 950 1400 50  0001 C CNN
-	1    950  1400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C5
-U 1 1 5EEB5882
-P 2050 2425
-F 0 "C5" V 2302 2425 50  0000 C CNN
-F 1 "100n" V 2211 2425 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2088 2275 50  0001 C CNN
-F 3 "~" H 2050 2425 50  0001 C CNN
-	1    2050 2425
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C8
-U 1 1 5EEB619D
-P 4050 1625
-F 0 "C8" V 4302 1625 50  0000 C CNN
-F 1 "100n" V 4211 1625 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4088 1475 50  0001 C CNN
-F 3 "~" H 4050 1625 50  0001 C CNN
-	1    4050 1625
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C12
-U 1 1 5EEB6522
-P 6350 2200
-F 0 "C12" H 6235 2154 50  0000 R CNN
-F 1 "100n" H 6235 2245 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6388 2050 50  0001 C CNN
-F 3 "~" H 6350 2200 50  0001 C CNN
-	1    6350 2200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5EEB6C41
-P 625 1400
-F 0 "R1" H 695 1446 50  0000 L CNN
-F 1 "1k" H 695 1355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 555 1400 50  0001 C CNN
-F 3 "~" H 625 1400 50  0001 C CNN
-	1    625  1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	625  1250 625  1175
-Wire Wire Line
-	625  1175 950  1175
-Wire Wire Line
-	950  1175 950  1250
-Wire Wire Line
-	625  1550 625  1625
-Wire Wire Line
-	625  1625 950  1625
-Wire Wire Line
-	950  1625 950  1550
-$Comp
-L Bertha_main-eagle-import:GND #U01
-U 1 1 5EEC647B
-P 625 1800
-F 0 "#U01" H 675 1850 50  0001 C CNN
-F 1 "GND" H 728 1838 42  0000 L CNN
-F 2 "" H 625 1800 50  0001 C CNN
-F 3 "" H 625 1800 50  0001 C CNN
-	1    625  1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	625  1700 625  1625
-Connection ~ 625  1625
-$Comp
-L Bertha_main-eagle-import:TLV6004PW U1
-U 1 1 5EECD8E4
-P 2425 4225
-F 0 "U1" H 2425 4592 50  0000 C CNN
-F 1 "TLV6004PW" H 2425 4501 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2425 4225 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 2475 4425 50  0001 C CNN
-	1    2425 4225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 1625 950  1625
-Connection ~ 950  1625
-Wire Wire Line
-	1500 1625 1450 1625
-Wire Wire Line
-	1500 1425 1450 1425
-Wire Wire Line
-	1450 1425 1450 1175
-Wire Wire Line
-	1450 1175 950  1175
-Connection ~ 950  1175
-$Comp
-L Device:R R6
-U 1 1 5EF05E64
-P 2050 925
-F 0 "R6" V 1843 925 50  0000 C CNN
-F 1 "1k" V 1934 925 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1980 925 50  0001 C CNN
-F 3 "~" H 2050 925 50  0001 C CNN
-	1    2050 925 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1525 925  1450 925 
-Wire Wire Line
-	1450 925  1450 1175
-Connection ~ 1450 1175
-Wire Wire Line
-	1825 925  1900 925 
-Wire Wire Line
-	2200 925  2250 925 
-Wire Wire Line
-	2250 925  2250 1525
-Wire Wire Line
-	2250 1525 2100 1525
-$Comp
-L Device:R R5
-U 1 1 5EF17FA3
-P 1850 1975
-F 0 "R5" V 1643 1975 50  0000 C CNN
-F 1 "22k" V 1734 1975 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1780 1975 50  0001 C CNN
-F 3 "~" H 1850 1975 50  0001 C CNN
-	1    1850 1975
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 1525 2250 1975
-Wire Wire Line
-	2250 1975 2000 1975
-Connection ~ 2250 1525
-Wire Wire Line
-	1700 1975 1450 1975
-Wire Wire Line
-	1450 1975 1450 1625
-Connection ~ 1450 1625
-Wire Wire Line
-	1450 1625 1400 1625
-Wire Wire Line
-	2250 2425 2250 1975
-Connection ~ 2250 1975
-Wire Wire Line
-	2200 2425 2250 2425
-$Comp
-L Device:D D1
-U 1 1 5EF4DB1E
-P 1650 2250
-F 0 "D1" H 1650 2467 50  0000 C CNN
-F 1 "D" H 1650 2376 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 1650 2250 50  0001 C CNN
-F 3 "~" H 1650 2250 50  0001 C CNN
-	1    1650 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D2
-U 1 1 5EF4E138
-P 1650 2575
-F 0 "D2" H 1650 2358 50  0000 C CNN
-F 1 "D" H 1650 2449 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 1650 2575 50  0001 C CNN
-F 3 "~" H 1650 2575 50  0001 C CNN
-	1    1650 2575
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1900 2425 1850 2425
-Wire Wire Line
-	1850 2425 1850 2250
-Wire Wire Line
-	1850 2250 1800 2250
-Wire Wire Line
-	1800 2575 1850 2575
-Wire Wire Line
-	1850 2575 1850 2425
-Connection ~ 1850 2425
-Wire Wire Line
-	1500 2250 1450 2250
-Wire Wire Line
-	1450 2250 1450 1975
-Connection ~ 1450 1975
-Wire Wire Line
-	1500 2575 1450 2575
-Wire Wire Line
-	1450 2575 1450 2250
-Connection ~ 1450 2250
-$Comp
-L Device:R R7
-U 1 1 5EFA5C61
-P 2450 1525
-F 0 "R7" V 2243 1525 50  0000 C CNN
-F 1 "1k" V 2334 1525 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2380 1525 50  0001 C CNN
-F 3 "~" H 2450 1525 50  0001 C CNN
-	1    2450 1525
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 5EFA6002
-P 2650 1725
-F 0 "R8" H 2580 1679 50  0000 R CNN
-F 1 "1k" H 2580 1770 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2580 1725 50  0001 C CNN
-F 3 "~" H 2650 1725 50  0001 C CNN
-	1    2650 1725
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_Coaxial_Power J2
-U 1 1 5EFB0A39
-P 3000 1900
-F 0 "J2" V 2925 1950 50  0000 C CNN
-F 1 "Conn_Coaxial_Power" V 3125 1850 50  0000 C CNN
-F 2 "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical" H 3000 1850 50  0001 C CNN
-F 3 "~" H 3000 1850 50  0001 C CNN
-	1    3000 1900
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Bertha_main-eagle-import:GND #U04
-U 1 1 5EFB60E0
-P 2650 2075
-F 0 "#U04" H 2700 2125 50  0001 C CNN
-F 1 "GND" H 2475 2125 42  0000 L CNN
-F 2 "" H 2650 2075 50  0001 C CNN
-F 3 "" H 2650 2075 50  0001 C CNN
-	1    2650 2075
-	1    0    0    -1  
-$EndComp
-$Comp
-L Bertha_main-eagle-import:GND #U05
-U 1 1 5EFB6F0A
-P 3000 2275
-F 0 "#U05" H 3050 2325 50  0001 C CNN
-F 1 "GND" H 3050 2325 42  0000 L CNN
-F 2 "" H 3000 2275 50  0001 C CNN
-F 3 "" H 3000 2275 50  0001 C CNN
-	1    3000 2275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 1875 2650 1975
-Wire Wire Line
-	2650 1575 2650 1525
-Wire Wire Line
-	2650 1525 2600 1525
-Wire Wire Line
-	2300 1525 2250 1525
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5EFDABD8
-P 2650 1450
-F 0 "TP1" H 2708 1568 50  0000 L CNN
-F 1 "TestPoint" H 2708 1477 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 2850 1450 50  0001 C CNN
-F 3 "~" H 2850 1450 50  0001 C CNN
-	1    2650 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 1450 2650 1525
-Connection ~ 2650 1525
-$Comp
-L Bertha_main-eagle-import:TLV6004PW U2
-U 2 1 5EFECEC1
-P 3475 1625
-F 0 "U2" H 3475 1992 50  0000 C CNN
-F 1 "TLV6004PW" H 3475 1901 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3475 1625 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 3525 1825 50  0001 C CNN
-	2    3475 1625
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 1525 3175 1525
-Wire Wire Line
-	3000 2175 3000 2100
-Wire Wire Line
-	3000 1800 3000 1725
-Wire Wire Line
-	3000 1725 3125 1725
-$Comp
-L Device:R R9
-U 1 1 5F07E6A9
-P 3425 2050
-F 0 "R9" V 3218 2050 50  0000 C CNN
-F 1 "1k" V 3309 2050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3355 2050 50  0001 C CNN
-F 3 "~" H 3425 2050 50  0001 C CNN
-	1    3425 2050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3275 2050 3125 2050
-Wire Wire Line
-	3125 2050 3125 1725
-Connection ~ 3125 1725
-Wire Wire Line
-	3125 1725 3175 1725
-Wire Wire Line
-	3575 2050 3825 2050
-Wire Wire Line
-	3825 2050 3825 1625
-Wire Wire Line
-	3825 1625 3775 1625
-$Comp
-L Bertha_main-eagle-import:TLV6004PW U2
-U 5 1 5F096049
-P 6150 1175
-F 0 "U2" H 6108 1221 50  0000 L CNN
-F 1 "TLV6004PW" H 6108 1130 50  0000 L CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6150 1175 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 6200 1375 50  0001 C CNN
-	5    6150 1175
-	1    0    0    -1  
-$EndComp
-Text GLabel 6050 775  1    50   Input ~ 0
-3.3V
-$Comp
-L Device:C C10
-U 1 1 5F0C5D3A
-P 5675 1175
-F 0 "C10" H 5790 1221 50  0000 L CNN
-F 1 "100n" H 5790 1130 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5713 1025 50  0001 C CNN
-F 3 "~" H 5675 1175 50  0001 C CNN
-	1    5675 1175
-	1    0    0    -1  
-$EndComp
-$Comp
-L Bertha_main-eagle-import:GND #U010
-U 1 1 5F0E5CE4
-P 6050 1675
-F 0 "#U010" H 6100 1725 50  0001 C CNN
-F 1 "GND" H 6153 1713 42  0000 L CNN
-F 2 "" H 6050 1675 50  0001 C CNN
-F 3 "" H 6050 1675 50  0001 C CNN
-	1    6050 1675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 1575 6050 1525
-Wire Wire Line
-	6050 875  6050 825 
-Wire Wire Line
-	5675 1025 5675 825 
-Wire Wire Line
-	5675 825  6050 825 
-Connection ~ 6050 825 
-Wire Wire Line
-	6050 825  6050 775 
-Wire Wire Line
-	5675 1325 5675 1525
-Wire Wire Line
-	5675 1525 6050 1525
-Connection ~ 6050 1525
-Wire Wire Line
-	6050 1525 6050 1475
-$Comp
-L Device:R R10
-U 1 1 5F10FED3
-P 4275 1825
-F 0 "R10" H 4205 1779 50  0000 R CNN
-F 1 "1k" H 4205 1870 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4205 1825 50  0001 C CNN
-F 3 "~" H 4275 1825 50  0001 C CNN
-	1    4275 1825
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3900 1625 3825 1625
-Connection ~ 3825 1625
-Wire Wire Line
-	4200 1625 4275 1625
-Wire Wire Line
-	4275 1625 4275 1675
-$Comp
-L Bertha_main-eagle-import:TLV6004PW U2
-U 3 1 5F14CF60
-P 5075 1725
-F 0 "U2" H 5075 2092 50  0000 C CNN
-F 1 "TLV6004PW" H 5075 2001 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5075 1725 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 5125 1925 50  0001 C CNN
-	3    5075 1725
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5F14EE0A
-P 4500 2025
-F 0 "R12" H 4430 1979 50  0000 R CNN
-F 1 "1k" H 4430 2070 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 2025 50  0001 C CNN
-F 3 "~" H 4500 2025 50  0001 C CNN
-	1    4500 2025
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4775 1625 4275 1625
-Connection ~ 4275 1625
-Wire Wire Line
-	4775 1825 4725 1825
-Wire Wire Line
-	4500 1825 4500 1875
-$Comp
-L Bertha_main-eagle-import:GND #U06
-U 1 1 5F16E9C2
-P 4275 2175
-F 0 "#U06" H 4325 2225 50  0001 C CNN
-F 1 "GND" H 4325 2225 42  0000 L CNN
-F 2 "" H 4275 2175 50  0001 C CNN
-F 3 "" H 4275 2175 50  0001 C CNN
-	1    4275 2175
-	1    0    0    -1  
-$EndComp
-$Comp
-L Bertha_main-eagle-import:GND #U07
-U 1 1 5F16F735
-P 4500 2350
-F 0 "#U07" H 4550 2400 50  0001 C CNN
-F 1 "GND" H 4550 2400 42  0000 L CNN
-F 2 "" H 4500 2350 50  0001 C CNN
-F 3 "" H 4500 2350 50  0001 C CNN
-	1    4500 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 2250 4500 2175
-Wire Wire Line
-	4275 2075 4275 1975
-$Comp
-L Diode_Bridge:MB2S D6
-U 1 1 5F1851F5
-P 5375 2200
-F 0 "D6" H 5125 2375 50  0000 L CNN
-F 1 "MB2S" H 5525 2375 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-269AA" H 5525 2325 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/88661/mb2s.pdf" H 5375 2200 50  0001 C CNN
-	1    5375 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4725 1825 4725 2200
-Wire Wire Line
-	4725 2200 5075 2200
-Connection ~ 4725 1825
-Wire Wire Line
-	4725 1825 4500 1825
-$Comp
-L Device:R R17
-U 1 1 5F1C2C2E
-P 6050 2200
-F 0 "R17" H 5980 2154 50  0000 R CNN
-F 1 "1k" H 5980 2245 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5980 2200 50  0001 C CNN
-F 3 "~" H 6050 2200 50  0001 C CNN
-	1    6050 2200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5675 2200 5750 2200
-Wire Wire Line
-	5750 2200 5750 1725
-Wire Wire Line
-	5750 1725 5375 1725
-Wire Wire Line
-	5375 1900 5375 1850
-Wire Wire Line
-	5375 1850 6050 1850
-Wire Wire Line
-	6050 1850 6050 2050
-Wire Wire Line
-	6350 2050 6350 1850
-Wire Wire Line
-	6350 1850 6050 1850
-Connection ~ 6050 1850
-Wire Wire Line
-	5375 2500 5375 2550
-Wire Wire Line
-	5375 2550 6050 2550
-Wire Wire Line
-	6350 2550 6350 2350
-Wire Wire Line
-	6050 2350 6050 2550
-Connection ~ 6050 2550
-Wire Wire Line
-	6050 2550 6350 2550
-$Comp
-L Device:R R18
-U 1 1 5F22EBC5
-P 6350 1650
-F 0 "R18" H 6280 1604 50  0000 R CNN
-F 1 "1k" H 6280 1695 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6280 1650 50  0001 C CNN
-F 3 "~" H 6350 1650 50  0001 C CNN
-	1    6350 1650
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R19
-U 1 1 5F22F421
-P 6725 2200
-F 0 "R19" H 6655 2154 50  0000 R CNN
-F 1 "1k" H 6655 2245 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6655 2200 50  0001 C CNN
-F 3 "~" H 6725 2200 50  0001 C CNN
-	1    6725 2200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Bertha_main-eagle-import:TLV6004PW U2
-U 4 1 5F2306B2
-P 7100 1525
-F 0 "U2" H 7100 1892 50  0000 C CNN
-F 1 "TLV6004PW" H 7100 1801 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7100 1525 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 7150 1725 50  0001 C CNN
-	4    7100 1525
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 1425 6350 1425
-Wire Wire Line
-	6350 1425 6350 1500
-Wire Wire Line
-	6350 1800 6350 1850
-Connection ~ 6350 1850
-Wire Wire Line
-	6800 1625 6725 1625
-Wire Wire Line
-	6725 1625 6725 1975
-Wire Wire Line
-	6725 2350 6725 2550
-Wire Wire Line
-	6725 2550 6350 2550
-Connection ~ 6350 2550
-$Comp
-L Device:R R22
-U 1 1 5F2D8970
-P 7150 1975
-F 0 "R22" V 7357 1975 50  0000 C CNN
-F 1 "1k" V 7266 1975 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7080 1975 50  0001 C CNN
-F 3 "~" H 7150 1975 50  0001 C CNN
-	1    7150 1975
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7000 1975 6725 1975
-Connection ~ 6725 1975
-Wire Wire Line
-	6725 1975 6725 2050
-Wire Wire Line
-	7300 1975 7475 1975
-Wire Wire Line
-	7475 1975 7475 1525
-Wire Wire Line
-	7475 1525 7400 1525
-Text GLabel 7550 1525 2    50   Input ~ 0
-A+
-Wire Wire Line
-	7550 1525 7475 1525
-Connection ~ 7475 1525
-$Comp
-L Device:R R2
-U 1 1 5EEB704D
-P 1250 1625
-F 0 "R2" V 1150 1625 50  0000 C CNN
-F 1 "10k" V 1075 1625 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1180 1625 50  0001 C CNN
-F 3 "~" H 1250 1625 50  0001 C CNN
-	1    1250 1625
-	0    1    -1   0   
-$EndComp
-$Sheet
-S 11575 2225 750  525 
-U 5ED99FB6
-F0 "Memory" 50
-F1 "Memory.sch" 50
-F2 "CE" I L 11575 2475 50 
-F3 "MISO" I R 12325 2350 50 
-F4 "3.3V" I L 11575 2300 50 
-F5 "GND" I L 11575 2650 50 
-F6 "SCK" I R 12325 2600 50 
-F7 "MOSI" I R 12325 2475 50 
-$EndSheet
-Text GLabel 11450 2175 1    50   Input ~ 0
-3.3V
-$Comp
-L Bertha_main-eagle-import:GND #U014
-U 1 1 5EDBD34B
-P 11450 2825
-F 0 "#U014" H 11500 2875 50  0001 C CNN
-F 1 "GND" H 11553 2863 42  0000 L CNN
-F 2 "" H 11450 2825 50  0001 C CNN
-F 3 "" H 11450 2825 50  0001 C CNN
-	1    11450 2825
-	-1   0    0    -1  
-$EndComp
-Text GLabel 11425 2475 0    50   Input ~ 0
-TX
-Wire Wire Line
-	11575 2300 11450 2300
-Wire Wire Line
-	11450 2300 11450 2175
-Wire Wire Line
-	11575 2475 11425 2475
-Wire Wire Line
-	11575 2650 11450 2650
-Wire Wire Line
-	11450 2650 11450 2725
-Text GLabel 12425 2350 2    50   Input ~ 0
-MISO
-Text GLabel 12425 2475 2    50   Input ~ 0
-MOSI
-Text GLabel 12425 2600 2    50   Input ~ 0
-SCK
-Wire Wire Line
-	12325 2350 12425 2350
-Wire Wire Line
-	12425 2475 12325 2475
-Wire Wire Line
-	12325 2600 12425 2600
-Text Notes 1150 3100 0    100  ~ 0
-pH
-Text Notes 3050 850  0    100  ~ 0
-Conductometer
 Wire Notes Line
 	475  2800 8275 2800
 Wire Notes Line
@@ -1499,10 +577,10 @@ F 3 "~" H 5650 3750 50  0001 C CNN
 	1    5650 3750
 	1    0    0    -1  
 $EndComp
-Text GLabel 11200 5200 0    50   Input ~ 0
+Text GLabel 4300 10525 0    50   Input ~ 0
 A+
 Wire Wire Line
-	11200 5200 11350 5200
+	4300 10525 4450 10525
 $Comp
 L Bertha_main-eagle-import:+12V #P+01
 U 1 1 5EE6010A
@@ -1663,31 +741,9 @@ $EndComp
 Text GLabel 8600 2975 0    50   Input ~ 0
 D12
 Wire Wire Line
-	12675 5125 12500 5125
+	5775 10450 5600 10450
 Wire Wire Line
-	12675 5025 12500 5025
-$Comp
-L BSP75:BSP75 Q1
-U 1 1 5F12C3CE
-P 9275 1425
-F 0 "Q1" H 9381 1471 50  0000 L CNN
-F 1 "BSP75" H 9381 1380 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 9375 1350 50  0001 L CIN
-F 3 "" H 9375 1500 50  0001 L CNN
-	1    9275 1425
-	1    0    0    -1  
-$EndComp
-$Comp
-L BSP75:BSP75 Q2
-U 1 1 5F12DA6C
-P 9275 2975
-F 0 "Q2" H 9381 3021 50  0000 L CNN
-F 1 "BSP75" H 9381 2930 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 9375 2900 50  0001 L CIN
-F 3 "" H 9375 3050 50  0001 L CNN
-	1    9275 2975
-	1    0    0    -1  
-$EndComp
+	5775 10350 5600 10350
 Text GLabel 8575 1425 0    50   Input ~ 0
 D8
 $Comp
@@ -1962,17 +1018,6 @@ Wire Notes Line
 	475  7075 10225 7075
 Wire Notes Line
 	10225 475  10225 7075
-$Comp
-L bioreactor:FDN340P Q3
-U 1 1 5EE2FC2B
-P 14150 7625
-F 0 "Q3" H 14354 7579 50  0000 L CNN
-F 1 "FDN340P" H 14354 7670 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 14350 7550 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/FDN340P-D.PDF" H 14150 7625 50  0001 L CNN
-	1    14150 7625
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	14750 8425 14650 8425
 $Comp
@@ -2104,8 +1149,6 @@ F 3 "" H 15700 8125 50  0001 C CNN
 	1    15700 8125
 	-1   0    0    -1  
 $EndComp
-Text GLabel 13425 7625 0    50   Input ~ 0
-D13
 Wire Wire Line
 	14250 9625 14250 9525
 $Comp
@@ -2130,50 +1173,8 @@ F 3 "http://www.wincomlcd.com/pdf/WC1602A-SFYLYHTC06.pdf" H 14950 8725 50  0001 
 	1    14250 8725
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R30
-U 1 1 5EECAA0A
-P 13900 7425
-F 0 "R30" H 13970 7471 50  0000 L CNN
-F 1 "220k" H 13970 7380 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13900 7425 50  0001 C CNN
-F 3 "" H 13900 7425 50  0001 C CNN
-	1    13900 7425
-	1    0    0    -1  
-$EndComp
-Text GLabel 14250 7125 1    50   Input ~ 0
-3.3V
 Wire Wire Line
-	14250 7125 14250 7225
-$Comp
-L Device:R R29
-U 1 1 5EFDC83F
-P 13675 7625
-F 0 "R29" H 13745 7671 50  0000 L CNN
-F 1 "1k" H 13745 7580 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13675 7625 50  0001 C CNN
-F 3 "" H 13675 7625 50  0001 C CNN
-	1    13675 7625
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	13900 7275 13900 7225
-Connection ~ 14250 7225
-Wire Wire Line
-	14250 7225 14250 7425
-Wire Wire Line
-	13900 7225 14250 7225
-Wire Wire Line
-	13900 7575 13900 7625
-Wire Wire Line
-	13900 7625 13950 7625
-Wire Wire Line
-	13825 7625 13900 7625
-Connection ~ 13900 7625
-Wire Wire Line
-	13425 7625 13525 7625
-Wire Wire Line
-	14250 7825 14250 7925
+	14150 7825 14250 7825
 $Comp
 L Device:LED D12
 U 1 1 5EE4C333
@@ -2293,26 +1294,577 @@ F 3 "" H 1100 5575 50  0001 C CNN
 $EndComp
 Text Notes 5500 3050 0    100  ~ 0
 POWER LED
+Text GLabel 14450 2825 2    50   Input ~ 0
+A5
+Text GLabel 14450 2925 2    50   Input ~ 0
+A4
+Text GLabel 14450 3025 2    50   Input ~ 0
+A3
+Text GLabel 14450 3125 2    50   Input ~ 0
+A2
+Text GLabel 14450 3225 2    50   Input ~ 0
+A1
+Text GLabel 14450 3325 2    50   Input ~ 0
+A0
 $Comp
-L Bertha_main-eagle-import:TLV6004PW U2
-U 1 1 5ED3B50E
-P 1800 1525
-F 0 "U2" H 1800 1892 50  0000 C CNN
-F 1 "TLV6004PW" H 1800 1801 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 1800 1525 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv9004.pdf" H 1850 1725 50  0001 C CNN
-	1    1800 1525
+L Device:R R?
+U 1 1 5EED4BB5
+P 14750 3525
+AR Path="/5ECFEBAC/5EED4BB5" Ref="R?"  Part="1" 
+AR Path="/5EED4BB5" Ref="R36"  Part="1" 
+F 0 "R36" V 14675 3525 50  0000 C CNN
+F 1 "10k" V 14750 3525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14680 3525 50  0001 C CNN
+F 3 "~" H 14750 3525 50  0001 C CNN
+	1    14750 3525
+	0    1    1    0   
+$EndComp
+Text GLabel 14350 3450 2    50   Input ~ 0
+HWB
+Wire Wire Line
+	14300 3325 14450 3325
+Wire Wire Line
+	14450 3225 14300 3225
+Wire Wire Line
+	14300 3125 14450 3125
+Wire Wire Line
+	14450 3025 14300 3025
+Wire Wire Line
+	14300 2925 14450 2925
+Wire Wire Line
+	14450 2825 14300 2825
+Wire Wire Line
+	14300 3525 14350 3525
+Wire Wire Line
+	14350 3450 14350 3525
+Connection ~ 14350 3525
+Wire Wire Line
+	14350 3525 14600 3525
+Text GLabel 14975 3525 2    50   Input ~ 0
+GND
+Wire Wire Line
+	14975 3525 14900 3525
+Text GLabel 14450 3625 2    50   Input ~ 0
+D7
+Text GLabel 14450 3825 2    50   Input ~ 0
+D5
+Text GLabel 14450 3925 2    50   Input ~ 0
+D13
+Text GLabel 14450 4125 2    50   Input ~ 0
+D11
+Text GLabel 14450 4225 2    50   Input ~ 0
+D10
+Text GLabel 14450 4325 2    50   Input ~ 0
+D9
+Text GLabel 14450 4425 2    50   Input ~ 0
+D8
+Text GLabel 14450 4525 2    50   Input ~ 0
+MISO
+Text GLabel 14450 4625 2    50   Input ~ 0
+MOSI
+Wire Wire Line
+	14300 3625 14450 3625
+Wire Wire Line
+	14450 3825 14300 3825
+Wire Wire Line
+	14300 3925 14450 3925
+Wire Wire Line
+	14450 4125 14300 4125
+Wire Wire Line
+	14300 4225 14450 4225
+Wire Wire Line
+	14450 4325 14300 4325
+Wire Wire Line
+	14300 4425 14450 4425
+Wire Wire Line
+	14450 4525 14300 4525
+Wire Wire Line
+	14300 4625 14450 4625
+Text GLabel 14450 4725 2    50   Input ~ 0
+SCK
+Text GLabel 14450 4825 2    50   Input ~ 0
+RXLED
+Text GLabel 14450 5025 2    50   Input ~ 0
+D6
+Text GLabel 14450 5125 2    50   Input ~ 0
+D12
+Text GLabel 14450 5225 2    50   Input ~ 0
+TXLED
+Text GLabel 14450 5325 2    50   Input ~ 0
+A6
+Text GLabel 14450 5425 2    50   Input ~ 0
+TX
+Wire Wire Line
+	14450 4725 14300 4725
+Wire Wire Line
+	14300 4825 14450 4825
+Wire Wire Line
+	14450 5025 14300 5025
+Wire Wire Line
+	14300 5125 14450 5125
+Wire Wire Line
+	14450 5225 14300 5225
+Wire Wire Line
+	14300 5325 14450 5325
+Wire Wire Line
+	14450 5425 14300 5425
+Text GLabel 14450 5525 2    50   Input ~ 0
+RX
+Text GLabel 14450 5625 2    50   Input ~ 0
+SDA
+Text GLabel 14450 5725 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	14450 5525 14300 5525
+Wire Wire Line
+	14300 5625 14450 5625
+Wire Wire Line
+	14450 5725 14300 5725
+Text GLabel 13875 6025 2    50   Input ~ 0
+3.3V
+Text GLabel 12275 5475 0    50   Input ~ 0
+GND
+Wire Wire Line
+	12350 5425 12400 5425
+Wire Wire Line
+	12350 5725 12400 5725
+Wire Wire Line
+	12350 5525 12400 5525
+Connection ~ 12350 5525
+Wire Wire Line
+	12350 5525 12350 5475
+Wire Wire Line
+	12400 5625 12350 5625
+Connection ~ 12350 5625
+Wire Wire Line
+	12350 5625 12350 5725
+Wire Wire Line
+	12350 5425 12350 5225
+Wire Wire Line
+	12350 5225 12400 5225
+Connection ~ 12350 5425
+Wire Wire Line
+	12350 5525 12350 5625
+Wire Wire Line
+	12275 5475 12350 5475
+Connection ~ 12350 5475
+Wire Wire Line
+	12350 5475 12350 5425
+$Comp
+L Device:C C?
+U 1 1 5EED4BFF
+P 11725 6075
+AR Path="/5ECFEBAC/5EED4BFF" Ref="C?"  Part="1" 
+AR Path="/5EED4BFF" Ref="C16"  Part="1" 
+F 0 "C16" H 11840 6121 50  0000 L CNN
+F 1 "100nF" H 11840 6030 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11763 5925 50  0001 C CNN
+F 3 "~" H 11725 6075 50  0001 C CNN
+	1    11725 6075
+	1    0    0    -1  
+$EndComp
+Text GLabel 11725 5825 0    50   Input ~ 0
+AREF
+Text GLabel 11725 6325 0    50   Input ~ 0
+GND
+Wire Wire Line
+	11725 6225 11725 6325
+$Comp
+L Device:R R?
+U 1 1 5EED4C08
+P 12175 4775
+AR Path="/5ECFEBAC/5EED4C08" Ref="R?"  Part="1" 
+AR Path="/5EED4C08" Ref="R35"  Part="1" 
+F 0 "R35" V 12275 4650 50  0000 L CNN
+F 1 "1M" V 12175 4725 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12105 4775 50  0001 C CNN
+F 3 "~" H 12175 4775 50  0001 C CNN
+	1    12175 4775
+	1    0    0    -1  
+$EndComp
+Text Notes 11750 4900 1    55   ~ 0
+8MHz\n
+$Comp
+L Device:C C?
+U 1 1 5EED4C0F
+P 11475 4675
+AR Path="/5ECFEBAC/5EED4C0F" Ref="C?"  Part="1" 
+AR Path="/5EED4C0F" Ref="C13"  Part="1" 
+F 0 "C13" V 11275 4675 50  0000 C CNN
+F 1 "22pF" V 11350 4675 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11513 4525 50  0001 C CNN
+F 3 "~" H 11475 4675 50  0001 C CNN
+	1    11475 4675
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EED4C15
+P 11475 4875
+AR Path="/5ECFEBAC/5EED4C15" Ref="C?"  Part="1" 
+AR Path="/5EED4C15" Ref="C14"  Part="1" 
+F 0 "C14" V 11675 4875 50  0000 C CNN
+F 1 "22pF" V 11600 4900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11513 4725 50  0001 C CNN
+F 3 "~" H 11475 4875 50  0001 C CNN
+	1    11475 4875
+	0    1    1    0   
+$EndComp
+Text GLabel 11275 4775 0    50   Input ~ 0
+GND
+Wire Wire Line
+	11325 4675 11325 4775
+Wire Wire Line
+	11275 4775 11325 4775
+Connection ~ 11325 4775
+Wire Wire Line
+	11325 4775 11325 4875
+Wire Wire Line
+	12025 4625 12175 4625
+Wire Wire Line
+	12025 4925 12175 4925
+Wire Wire Line
+	12175 4625 12400 4625
+Connection ~ 12175 4625
+Wire Wire Line
+	12175 4925 12400 4925
+Connection ~ 12175 4925
+Text GLabel 12300 4425 0    50   Input ~ 0
+AREF
+Wire Wire Line
+	12400 4425 12300 4425
+$Comp
+L Device:C C?
+U 1 1 5EED4C28
+P 11975 4225
+AR Path="/5ECFEBAC/5EED4C28" Ref="C?"  Part="1" 
+AR Path="/5EED4C28" Ref="C18"  Part="1" 
+F 0 "C18" V 11925 4400 50  0000 C CNN
+F 1 "100nF" V 12025 4400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12013 4075 50  0001 C CNN
+F 3 "~" H 11975 4225 50  0001 C CNN
+	1    11975 4225
+	0    1    1    0   
+$EndComp
+Text GLabel 12275 4025 0    50   Input ~ 0
+USB_P
+Text GLabel 12275 3925 0    50   Input ~ 0
+USB_N
+Text GLabel 11750 4225 0    50   Input ~ 0
+GND
+Wire Wire Line
+	11750 4225 11825 4225
+Wire Wire Line
+	12125 4225 12400 4225
+Wire Wire Line
+	12275 4025 12400 4025
+Wire Wire Line
+	12400 3925 12275 3925
+Text GLabel 12275 3025 0    50   Input ~ 0
+VUSB
+Wire Wire Line
+	12275 3025 12400 3025
+Text GLabel 12275 3250 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	12275 3250 12275 3325
+Wire Wire Line
+	12275 3325 12400 3325
+Wire Wire Line
+	12275 3325 12275 3425
+Wire Wire Line
+	12275 3425 12400 3425
+Connection ~ 12275 3325
+Wire Wire Line
+	12275 3425 12275 3525
+Wire Wire Line
+	12275 3525 12400 3525
+Connection ~ 12275 3425
+Wire Wire Line
+	12275 3525 12275 3725
+Wire Wire Line
+	12275 3725 12400 3725
+Connection ~ 12275 3525
+Text GLabel 12175 3450 0    50   Input ~ 0
+3.3V
+$Comp
+L Device:C C?
+U 1 1 5EED4C44
+P 11975 3625
+AR Path="/5ECFEBAC/5EED4C44" Ref="C?"  Part="1" 
+AR Path="/5EED4C44" Ref="C17"  Part="1" 
+F 0 "C17" V 12175 3625 50  0000 C CNN
+F 1 "100nF" V 12100 3625 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12013 3475 50  0001 C CNN
+F 3 "~" H 11975 3625 50  0001 C CNN
+	1    11975 3625
+	0    1    1    0   
+$EndComp
+Text GLabel 11750 3625 0    50   Input ~ 0
+GND
+Wire Wire Line
+	12125 3625 12175 3625
+Wire Wire Line
+	12175 3450 12175 3625
+Connection ~ 12175 3625
+Wire Wire Line
+	12175 3625 12400 3625
+Wire Wire Line
+	11825 3625 11750 3625
+Text GLabel 12000 2750 2    50   Input ~ 0
+RESET
+Wire Wire Line
+	12000 2750 11950 2750
+Wire Wire Line
+	11950 2750 11950 2825
+Wire Wire Line
+	11950 2825 12400 2825
+Connection ~ 11950 2825
+Wire Wire Line
+	11425 2825 11650 2825
+Connection ~ 11425 2825
+Wire Wire Line
+	11425 2775 11425 2825
+Wire Wire Line
+	11500 2475 11425 2475
+Text GLabel 11500 2475 2    50   Input ~ 0
+3.3V
+$Comp
+L Device:R R?
+U 1 1 5EED4C5A
+P 11425 2625
+AR Path="/5ECFEBAC/5EED4C5A" Ref="R?"  Part="1" 
+AR Path="/5EED4C5A" Ref="R34"  Part="1" 
+F 0 "R34" V 11525 2500 50  0000 L CNN
+F 1 "10k" V 11425 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11355 2625 50  0001 C CNN
+F 3 "~" H 11425 2625 50  0001 C CNN
+	1    11425 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11425 3125 11425 3200
+Connection ~ 11425 3125
+Wire Wire Line
+	11650 3125 11425 3125
+Wire Wire Line
+	11425 3075 11425 3125
+Text GLabel 11425 3200 0    50   Input ~ 0
+GND
+Connection ~ 11650 2825
+Wire Wire Line
+	11425 2825 11425 2875
+Wire Wire Line
+	11650 2825 11950 2825
+$Comp
+L Bertha_main-eagle-import:SJ J?
+U 1 1 5EED4C68
+P 11425 2975
+AR Path="/5ECFEBAC/5EED4C68" Ref="J?"  Part="1" 
+AR Path="/5EED4C68" Ref="J7"  Part="1" 
+F 0 "J7" V 11350 2800 59  0000 L CNN
+F 1 "SJ" V 11475 2800 59  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 11425 2975 50  0001 C CNN
+F 3 "" H 11425 2975 50  0001 C CNN
+	1    11425 2975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5EED4C6E
+P 11650 2975
+AR Path="/5ECFEBAC/5EED4C6E" Ref="C?"  Part="1" 
+AR Path="/5EED4C6E" Ref="C15"  Part="1" 
+F 0 "C15" H 11500 2900 50  0000 C CNN
+F 1 "100nF" H 11525 3075 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11688 2825 50  0001 C CNN
+F 3 "~" H 11650 2975 50  0001 C CNN
+	1    11650 2975
+	-1   0    0    1   
+$EndComp
+$Comp
+L Bertha_main-eagle-import:M02JST-PTH-2 JP?
+U 1 1 5EED4C74
+P 13425 6025
+AR Path="/5ECFEBAC/5EED4C74" Ref="JP?"  Part="1" 
+AR Path="/5EED4C74" Ref="JP5"  Part="1" 
+F 0 "JP5" H 13297 6022 59  0000 R CNN
+F 1 "M02JST-PTH-2" H 13297 6127 59  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13425 6025 50  0001 C CNN
+F 3 "" H 13425 6025 50  0001 C CNN
+	1    13425 6025
+	1    0    0    1   
+$EndComp
+Text GLabel 13875 6125 2    50   Input ~ 0
+GND
+Wire Wire Line
+	13875 6025 13725 6025
+Wire Wire Line
+	13875 6125 13725 6125
+Wire Wire Line
+	11725 5925 11725 5825
+$Comp
+L bioreactor:ATMEGA32U4-AU U?
+U 1 1 5EED4C7E
+P 13300 4525
+AR Path="/5ECFEBAC/5EED4C7E" Ref="U?"  Part="1" 
+AR Path="/5EED4C7E" Ref="U3"  Part="1" 
+F 0 "U3" H 13350 6511 59  0000 C CNN
+F 1 "ATMEGA32U4-AU" H 13350 6406 59  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 13300 4525 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 13300 4525 50  0001 C CNN
+	1    13300 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11875 4550 12025 4550
+Wire Wire Line
+	12025 4550 12025 4625
+Wire Wire Line
+	11875 5000 12025 5000
+Wire Wire Line
+	12025 5000 12025 4925
+Wire Wire Line
+	11875 4550 11625 4550
+Wire Wire Line
+	11625 4550 11625 4675
+Connection ~ 11875 4550
+Wire Wire Line
+	11625 5000 11875 5000
+Wire Wire Line
+	11625 4875 11625 5000
+Connection ~ 11875 5000
+$Comp
+L Device:Crystal Y?
+U 1 1 5EED4C8E
+P 11875 4775
+AR Path="/5ECFEBAC/5EED4C8E" Ref="Y?"  Part="1" 
+AR Path="/5EED4C8E" Ref="Y1"  Part="1" 
+F 0 "Y1" V 11725 4650 50  0000 L CNN
+F 1 "Crystal" V 12175 4650 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_0603-2Pin_6.0x3.5mm_HandSoldering" H 11875 4775 50  0001 C CNN
+F 3 "~" H 11875 4775 50  0001 C CNN
+	1    11875 4775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11875 4550 11875 4625
+Wire Wire Line
+	11875 4925 11875 5000
+Text GLabel 14150 7825 0    50   Input ~ 0
+D13
+Wire Wire Line
+	14250 7825 14250 7925
+$Sheet
+S 1175 3725 550  350 
+U 5F15ED5B
+F0 "pH" 50
+F1 "pH.sch" 50
+F2 "Vin" I L 1175 3900 50 
+F3 "pH+" I R 1725 3850 50 
+F4 "pH-" I R 1725 3950 50 
+$EndSheet
+Text GLabel 1100 3825 1    50   Input ~ 0
+3.3V
+Wire Wire Line
+	1175 3900 1100 3900
+Wire Wire Line
+	1100 3900 1100 3825
+Text GLabel 1825 3850 2    50   Input ~ 0
+B+
+Text GLabel 1825 3950 2    50   Input ~ 0
+B-
+Wire Wire Line
+	1725 3850 1825 3850
+Wire Wire Line
+	1825 3950 1725 3950
+Wire Wire Line
+	5425 7925 5525 7925
+Wire Wire Line
+	5525 7800 5425 7800
+Wire Wire Line
+	5425 7675 5525 7675
+Text GLabel 5525 7925 2    50   Input ~ 0
+SCK
+Text GLabel 5525 7800 2    50   Input ~ 0
+MOSI
+Text GLabel 5525 7675 2    50   Input ~ 0
+MISO
+Wire Wire Line
+	4550 7975 4550 8050
+Wire Wire Line
+	4675 7975 4550 7975
+Wire Wire Line
+	4675 7800 4525 7800
+Wire Wire Line
+	4550 7625 4550 7500
+Wire Wire Line
+	4675 7625 4550 7625
+Text GLabel 4525 7800 0    50   Input ~ 0
+TX
+$Comp
+L Bertha_main-eagle-import:GND #U014
+U 1 1 5EDBD34B
+P 4550 8150
+F 0 "#U014" H 4600 8200 50  0001 C CNN
+F 1 "GND" H 4653 8188 42  0000 L CNN
+F 2 "" H 4550 8150 50  0001 C CNN
+F 3 "" H 4550 8150 50  0001 C CNN
+	1    4550 8150
+	-1   0    0    -1  
+$EndComp
+Text GLabel 4550 7500 1    50   Input ~ 0
+3.3V
+$Sheet
+S 4675 7550 750  525 
+U 5ED99FB6
+F0 "Memory" 50
+F1 "Memory.sch" 50
+F2 "CE" I L 4675 7800 50 
+F3 "MISO" I R 5425 7675 50 
+F4 "3.3V" I L 4675 7625 50 
+F5 "GND" I L 4675 7975 50 
+F6 "SCK" I R 5425 7925 50 
+F7 "MOSI" I R 5425 7800 50 
+$EndSheet
+$Sheet
+S 2325 3725 650  350 
+U 5F3634CD
+F0 "Conductometer" 50
+F1 "Conductometer.sch" 50
+F2 "VIn" I L 2325 3900 50 
+F3 "VOut" I R 2975 3900 50 
+$EndSheet
+Text GLabel 2250 3825 1    50   Input ~ 0
+3.3V
+Wire Wire Line
+	2250 3825 2250 3900
+Wire Wire Line
+	2250 3900 2325 3900
+Text GLabel 3075 3900 2    50   Input ~ 0
+A+
+Wire Wire Line
+	3075 3900 2975 3900
+$Comp
+L ZXMS6004:ZXMS6004 Q1
+U 1 1 5F42008D
+P 9275 1425
+F 0 "Q1" H 9381 1471 50  0000 L CNN
+F 1 "ZXMS6004" H 9381 1380 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9375 1350 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ZXMS6004FF.pdf" H 9375 1500 50  0001 L CNN
+	1    9275 1425
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
-U 1 1 5ED3F6BA
-P 1775 4375
-F 0 "R4" H 1845 4421 50  0000 L CNN
-F 1 "10k" H 1845 4330 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1705 4375 50  0001 C CNN
-F 3 "~" H 1775 4375 50  0001 C CNN
-	1    1775 4375
+L ZXMS6004:ZXMS6004 Q2
+U 1 1 5F425F8E
+P 9275 2975
+F 0 "Q2" H 9381 3021 50  0000 L CNN
+F 1 "ZXMS6004" H 9381 2930 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9375 2900 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ZXMS6004FF.pdf" H 9375 3050 50  0001 L CNN
+	1    9275 2975
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
