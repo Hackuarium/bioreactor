@@ -1880,4 +1880,15 @@ Wire Wire Line
 	4175 1625 3625 1625
 Wire Wire Line
 	3625 1625 3625 1725
+$Comp
+L LTC4089EDJCPBF:LTC4089EDJCPBF U4
+U 1 1 5EE628DC
+P 11350 7750
+F 0 "U4" H 12650 8137 60  0000 C CNN
+F 1 "LTC4089EDJCPBF" H 12650 8031 60  0000 C CNN
+F 2 "pHMeter:QFN-22-1EP_6x3mm_P0.5mm_EP1.65x5.35_ThermalVias" H 12650 7990 60  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/40891fb.pdf" H 12650 8031 60  0001 C CNN
+	1    11350 7750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

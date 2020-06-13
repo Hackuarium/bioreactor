@@ -6,4 +6,5 @@
   (lib (name bioreactor)(type Legacy)(uri ${KIPRJMOD}/library/bioreactor.lib)(options "")(descr ""))
   (lib (name pHMeter-rescue)(type Legacy)(uri ${KIPRJMOD}/pHMeter-rescue.lib)(options "")(descr ""))
   (lib (name ZXMS6004)(type Legacy)(uri ${KIPRJMOD}/library/ZXMS6004.lib)(options "")(descr ""))
+  (lib (name LTC4089EDJCPBF)(type Legacy)(uri ${KIPRJMOD}/library/LTC4089EDJCPBF.lib)(options "")(descr ""))
 )
