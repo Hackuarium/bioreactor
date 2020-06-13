@@ -567,7 +567,7 @@ F 3 "" H 7825 4225 50  0001 C CNN
 	1    7825 4225
 	0    1    1    0   
 $EndComp
-Text Notes 7950 4450 0    59   ~ 0
+Text Notes 8850 4450 0    59   ~ 0
 BLUE\nRED\nGREEN\nBLACK
 Wire Wire Line
 	6975 4025 7350 4025
@@ -600,20 +600,20 @@ Connection ~ 7350 4525
 $Comp
 L Device:C C?
 U 1 1 5E670402
-P 8950 4275
+P 9825 3275
 AR Path="/5DE76ABA/5E670402" Ref="C?"  Part="1" 
 AR Path="/5E654A6D/5E670402" Ref="C27"  Part="1" 
-F 0 "C27" H 9000 4375 50  0000 L CNN
-F 1 "100nF" H 8975 4175 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8988 4125 50  0001 C CNN
-F 3 "~" H 8950 4275 50  0001 C CNN
-	1    8950 4275
+F 0 "C27" H 9875 3375 50  0000 L CNN
+F 1 "100nF" H 9850 3175 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9863 3125 50  0001 C CNN
+F 3 "~" H 9825 3275 50  0001 C CNN
+	1    9825 3275
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 4025 8950 4125
+	9825 3025 9825 3125
 Wire Wire Line
-	8950 4425 8950 4500
+	9825 3425 9825 3500
 $Comp
 L Device:C C?
 U 1 1 5E67040C
@@ -735,7 +735,7 @@ Text HLabel 6275 5275 0    59   Input ~ 0
 GND
 Text HLabel 6950 5275 0    59   Input ~ 0
 GND
-Text HLabel 8950 4500 0    59   Input ~ 0
+Text HLabel 9825 3500 0    59   Input ~ 0
 GND
 Text HLabel 8175 3550 0    59   Input ~ 0
 GND
@@ -764,7 +764,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 4175 3500 4175
 Connection ~ 3550 4175
-Text HLabel 8950 4025 0    59   Input ~ 0
+Text HLabel 9825 3025 0    59   Input ~ 0
 3.3V
 Text HLabel 3725 3725 0    59   Input ~ 0
 STEP
@@ -852,4 +852,79 @@ F 3 "~" H 3100 2525 50  0001 C CNN
 $EndComp
 Text Notes 8100 7000 0    315  ~ 0
 Stepper
+$Comp
+L Bertha_main-eagle-import:JP4E JP?
+U 1 1 5F08EE82
+P 8375 4225
+AR Path="/5DE76ABA/5F08EE82" Ref="JP?"  Part="1" 
+AR Path="/5E654A6D/5F08EE82" Ref="JP11"  Part="1" 
+F 0 "JP11" V 8150 4175 59  0000 L CNN
+F 1 "JP4E" V 8650 4150 59  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8375 4225 50  0001 C CNN
+F 3 "" H 8375 4225 50  0001 C CNN
+	1    8375 4225
+	0    1    1    0   
+$EndComp
+$Comp
+L Bertha_main-eagle-import:JP4E JP?
+U 1 1 5F0904BC
+P 8650 4225
+AR Path="/5DE76ABA/5F0904BC" Ref="JP?"  Part="1" 
+AR Path="/5E654A6D/5F0904BC" Ref="JP12"  Part="1" 
+F 0 "JP12" V 8425 4175 59  0000 L CNN
+F 1 "JP4E" V 8925 4150 59  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8650 4225 50  0001 C CNN
+F 3 "" H 8650 4225 50  0001 C CNN
+	1    8650 4225
+	0    1    1    0   
+$EndComp
+$Comp
+L Bertha_main-eagle-import:JP4E JP?
+U 1 1 5F0957D2
+P 8100 4225
+AR Path="/5DE76ABA/5F0957D2" Ref="JP?"  Part="1" 
+AR Path="/5E654A6D/5F0957D2" Ref="JP10"  Part="1" 
+F 0 "JP10" V 7875 4175 59  0000 L CNN
+F 1 "JP4E" V 8375 4150 59  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8100 4225 50  0001 C CNN
+F 3 "" H 8100 4225 50  0001 C CNN
+	1    8100 4225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7725 4125 8000 4125
+Connection ~ 7725 4125
+Wire Wire Line
+	8000 4225 7725 4225
+Connection ~ 7725 4225
+Wire Wire Line
+	7725 4325 8000 4325
+Connection ~ 7725 4325
+Wire Wire Line
+	8000 4425 7725 4425
+Connection ~ 7725 4425
+Wire Wire Line
+	8000 4125 8275 4125
+Connection ~ 8000 4125
+Wire Wire Line
+	8275 4225 8000 4225
+Connection ~ 8000 4225
+Wire Wire Line
+	8000 4325 8275 4325
+Connection ~ 8000 4325
+Connection ~ 8000 4425
+Wire Wire Line
+	8000 4425 8275 4425
+Wire Wire Line
+	8550 4425 8275 4425
+Connection ~ 8275 4425
+Wire Wire Line
+	8550 4325 8275 4325
+Connection ~ 8275 4325
+Wire Wire Line
+	8550 4225 8275 4225
+Connection ~ 8275 4225
+Wire Wire Line
+	8550 4125 8275 4125
+Connection ~ 8275 4125
 $EndSCHEMATC
