@@ -12,6 +12,12 @@ K Microcontroller, 8-bit
 F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
 $ENDCMP
 #
+$CMP DMP1045
+D -4.0A Id, -12V Vds, P-Channel MOSFET, SOT-23
+K P-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/DMP1045U.pdf
+$ENDCMP
+#
 $CMP FDN340P
 D -2A Id, -20V Vds, P-Channel MOSFET, SOT-23
 K P-Channel MOSFET

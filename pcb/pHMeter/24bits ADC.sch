@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -55,37 +55,35 @@ Wire Wire Line
 $Comp
 L Device:C C28
 U 1 1 5E3C280F
-P 4825 3400
-F 0 "C28" H 4875 3475 50  0000 L CNN
-F 1 "100nF" H 4850 3300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4863 3250 50  0001 C CNN
-F 3 "~" H 4825 3400 50  0001 C CNN
-	1    4825 3400
+P 4825 3450
+F 0 "C28" H 4875 3525 50  0000 L CNN
+F 1 "100nF" H 4850 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4863 3300 50  0001 C CNN
+F 3 "~" H 4825 3450 50  0001 C CNN
+	1    4825 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C29
 U 1 1 5E3C2815
-P 5150 3400
-F 0 "C29" H 5200 3475 50  0000 L CNN
-F 1 "10uF" H 5175 3300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5188 3250 50  0001 C CNN
-F 3 "~" H 5150 3400 50  0001 C CNN
-	1    5150 3400
+P 5150 3450
+F 0 "C29" H 5200 3525 50  0000 L CNN
+F 1 "10uF" H 5175 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5188 3300 50  0001 C CNN
+F 3 "~" H 5150 3450 50  0001 C CNN
+	1    5150 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4825 3050 4825 3250
-Connection ~ 4825 3050
+	4825 3200 4825 3300
+Connection ~ 4825 3200
 Wire Wire Line
-	5150 3550 5150 3700
+	5150 3600 5150 3700
 Wire Wire Line
-	4825 3550 4825 3700
+	4825 3600 4825 3700
 Connection ~ 5150 3700
 Wire Wire Line
-	4825 3050 5150 3050
-Wire Wire Line
-	5900 3050 5900 3200
+	4825 3200 5150 3200
 Connection ~ 4825 3700
 Wire Wire Line
 	4825 3700 5150 3700
@@ -96,27 +94,27 @@ VCC: 2.7 - 5.5V\nIO: 2.7 - 5.5V\n
 $Comp
 L Bertha_main-eagle-import:SJ J8
 U 1 1 5E3C285D
-P 7725 3000
-F 0 "J8" H 7725 2900 59  0000 C CNN
-F 1 "SJ" H 7725 3100 59  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7725 3000 50  0001 C CNN
-F 3 "" H 7725 3000 50  0001 C CNN
-	1    7725 3000
+P 7825 3000
+F 0 "J8" H 7825 2900 59  0000 C CNN
+F 1 "SJ" H 7825 3100 59  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7825 3000 50  0001 C CNN
+F 3 "" H 7825 3000 50  0001 C CNN
+	1    7825 3000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7825 3000 7925 3000
-Text HLabel 7325 3200 2    59   Input ~ 0
+	7925 3000 8025 3000
+Text HLabel 7475 3200 2    59   Input ~ 0
 GND
-Text HLabel 7925 3000 2    59   Input ~ 0
+Text HLabel 8025 3000 2    59   Input ~ 0
 GND
 Text HLabel 3550 5175 3    59   Input ~ 0
 GND
-Text HLabel 6125 2650 1    59   Input ~ 0
+Text HLabel 5950 2650 1    59   Input ~ 0
 3.3V
-Text HLabel 7275 2650 1    59   Input ~ 0
+Text HLabel 7425 2650 1    59   Input ~ 0
 3.3V
-Text HLabel 7475 2575 1    59   Input ~ 0
+Text HLabel 7575 2575 1    59   Input ~ 0
 3.3V
 Text HLabel 3950 4550 1    59   Input ~ 0
 3.3V
@@ -128,67 +126,49 @@ Text Label 3550 4600 0    59   ~ 0
 LGND
 Text Notes 7100 7000 0    315  ~ 0
 24bits HX711
-Text HLabel 7300 4000 2    50   Input ~ 0
+Text HLabel 7475 4000 2    50   Input ~ 0
 B+
-Text HLabel 7300 4200 2    50   Input ~ 0
+Text HLabel 7475 4200 2    50   Input ~ 0
 B-
-Text HLabel 4825 2950 1    59   Input ~ 0
+Text HLabel 4825 3100 1    59   Input ~ 0
 3.3V
 Wire Wire Line
-	4825 2950 4825 3050
+	4825 3100 4825 3200
 Wire Wire Line
 	5150 3700 5500 3700
 Wire Wire Line
 	5500 3400 5500 3700
-Connection ~ 5650 3700
+Connection ~ 5600 3700
 Wire Wire Line
-	7225 4200 7300 4200
+	7475 3200 7325 3200
+NoConn ~ 7325 3400
 Wire Wire Line
-	5650 3600 6125 3600
-Wire Wire Line
-	6125 3400 5500 3400
-Wire Wire Line
-	5900 3200 6125 3200
-Wire Wire Line
-	7325 3200 7225 3200
-NoConn ~ 7225 3400
-Wire Wire Line
-	7225 4000 7300 4000
-Wire Wire Line
-	6125 2650 6125 2800
-Wire Wire Line
-	6050 4200 6125 4200
-Text HLabel 6050 4200 0    50   Input ~ 0
+	5925 4200 6025 4200
+Text HLabel 5925 4200 0    50   Input ~ 0
 A+
 $Comp
 L Device:R R41
 U 1 1 5E3C2866
-P 7475 2800
-F 0 "R41" V 7575 2700 50  0000 L CNN
-F 1 "10k" V 7475 2725 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7405 2800 50  0001 C CNN
-F 3 "~" H 7475 2800 50  0001 C CNN
-	1    7475 2800
+P 7575 2800
+F 0 "R41" V 7675 2700 50  0000 L CNN
+F 1 "10k" V 7575 2725 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7505 2800 50  0001 C CNN
+F 3 "~" H 7575 2800 50  0001 C CNN
+	1    7575 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7625 3000 7475 3000
+	7725 3000 7575 3000
 Wire Wire Line
-	7475 2650 7475 2575
+	7575 2650 7575 2575
 Wire Wire Line
-	7475 2950 7475 3000
-Connection ~ 7475 3000
+	7575 2950 7575 3000
+Connection ~ 7575 3000
 Wire Wire Line
-	7475 3000 7225 3000
+	7575 3000 7325 3000
 Wire Wire Line
-	7225 2800 7275 2800
-Wire Wire Line
-	7275 2800 7275 2650
-Wire Wire Line
-	5150 3250 5150 3050
-Connection ~ 5150 3050
-Wire Wire Line
-	5150 3050 5900 3050
+	5150 3300 5150 3200
+Connection ~ 5150 3200
 Wire Wire Line
 	3800 5025 3800 5100
 Wire Wire Line
@@ -211,15 +191,39 @@ Wire Wire Line
 	3800 4725 3800 4675
 Wire Wire Line
 	3800 4675 3950 4675
-Wire Wire Line
-	7225 3600 7325 3600
-Wire Wire Line
-	7225 3800 7325 3800
-Text HLabel 7325 3800 2    50   Input ~ 0
+Text HLabel 7475 3800 2    50   Input ~ 0
 PD_SCK
-Text HLabel 7325 3600 2    50   Input ~ 0
+Text HLabel 7475 3600 2    50   Input ~ 0
 DOUT
-NoConn ~ 6125 3000
+NoConn ~ 6025 3000
+Wire Wire Line
+	5600 3800 5650 3800
+$Comp
+L Device:C C30
+U 1 1 5E3C27FC
+P 5800 3800
+F 0 "C30" V 5950 3700 50  0000 L CNN
+F 1 "100nF" V 5675 3675 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5838 3650 50  0001 C CNN
+F 3 "~" H 5800 3800 50  0001 C CNN
+	1    5800 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5600 3700 5600 3800
+Connection ~ 5500 3700
+Wire Wire Line
+	5500 3700 5600 3700
+Wire Wire Line
+	5600 3600 5600 3700
+Text Label 5650 4000 2    50   ~ 0
+LGND
+Wire Wire Line
+	5650 4000 6025 4000
+Wire Wire Line
+	5500 3400 6025 3400
+Wire Wire Line
+	5600 3600 6025 3600
 $Comp
 L bioreactor:HX711 U6
 U 1 1 5EDF981C
@@ -232,29 +236,23 @@ F 3 "https://components101.com/sites/default/files/component_datasheet/HX711%20D
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6025 3800 6125 3800
+	6025 2800 5950 2800
 Wire Wire Line
-	5650 3800 5725 3800
-$Comp
-L Device:C C30
-U 1 1 5E3C27FC
-P 5875 3800
-F 0 "C30" V 6025 3700 50  0000 L CNN
-F 1 "100nF" V 5750 3675 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5913 3650 50  0001 C CNN
-F 3 "~" H 5875 3800 50  0001 C CNN
-	1    5875 3800
-	0    -1   -1   0   
-$EndComp
+	5950 2800 5950 2650
 Wire Wire Line
-	5650 3700 5650 3800
-Connection ~ 5500 3700
+	5950 3800 6025 3800
 Wire Wire Line
-	5500 3700 5650 3700
+	5150 3200 6025 3200
 Wire Wire Line
-	5650 3600 5650 3700
-Text Label 5650 4000 2    50   ~ 0
-LGND
+	7425 2650 7425 2800
 Wire Wire Line
-	5650 4000 6125 4000
+	7425 2800 7325 2800
+Wire Wire Line
+	7325 3600 7475 3600
+Wire Wire Line
+	7325 3800 7475 3800
+Wire Wire Line
+	7325 4000 7475 4000
+Wire Wire Line
+	7325 4200 7475 4200
 $EndSCHEMATC

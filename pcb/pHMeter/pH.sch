@@ -34,7 +34,7 @@ AR Path="/5F1CF3DC" Ref="C?"  Part="1"
 AR Path="/5F15ED5B/5F1CF3DC" Ref="C3"  Part="1" 
 F 0 "C3" H 4665 4546 50  0000 L CNN
 F 1 "100n" H 4665 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4588 4350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4588 4350 50  0001 C CNN
 F 3 "~" H 4550 4500 50  0001 C CNN
 	1    4550 4500
 	1    0    0    -1  
@@ -199,7 +199,7 @@ AR Path="/5F1CF42C" Ref="C?"  Part="1"
 AR Path="/5F15ED5B/5F1CF42C" Ref="C9"  Part="1" 
 F 0 "C9" H 7915 4446 50  0000 L CNN
 F 1 "22u" H 7915 4355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7838 4250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7838 4250 50  0001 C CNN
 F 3 "~" H 7800 4400 50  0001 C CNN
 	1    7800 4400
 	1    0    0    -1  
@@ -262,7 +262,7 @@ AR Path="/5F1CF44E" Ref="C?"  Part="1"
 AR Path="/5F15ED5B/5F1CF44E" Ref="C1"  Part="1" 
 F 0 "C1" H 3965 4146 50  0000 L CNN
 F 1 "100n" H 3965 4055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3888 3950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3888 3950 50  0001 C CNN
 F 3 "~" H 3850 4100 50  0001 C CNN
 	1    3850 4100
 	1    0    0    -1  

@@ -12,6 +12,18 @@ K Microcontroller, 8-bit
 F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
 $ENDCMP
 #
+$CMP DMP1045
+D -4.0A Id, -12V Vds, P-Channel MOSFET, SOT-23
+K P-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/DMP1045U.pdf
+$ENDCMP
+#
+$CMP FDN340P
+D -2A Id, -20V Vds, P-Channel MOSFET, SOT-23
+K P-Channel MOSFET
+F https://www.onsemi.com/pub/Collateral/FDN340P-D.PDF
+$ENDCMP
+#
 $CMP HX711
 D 24-Bit Analog-to-Digital Converter (ADC) for Weigh Scales
 K ADC
@@ -22,6 +34,12 @@ $CMP SST25VF064C
 D 64 Mbit SPI Serial Dual I/O Flash
 K Flash
 F https://www.microchip.com/wwwproducts/en/SST25VF064C
+$ENDCMP
+#
+$CMP SST26VF064B
+D 64 Mbit SPI Serial Dual I/O Flash
+K Flash
+F http://ww1.microchip.com/downloads/en/DeviceDoc/SST26VF064B-SST26VF064BA-2.5V-3.0V-64-Mbit-Serial-Quad-IO-Flash-Memory-Data-Sheet-DS20005119J.pdf
 $ENDCMP
 #
 $CMP TLV6004PW
