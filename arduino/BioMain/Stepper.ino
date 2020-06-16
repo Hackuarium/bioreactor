@@ -53,25 +53,41 @@ NIL_THREAD(ThreadStepper, arg) {
     } else {
       digitalWrite(STEPPER_DIRECTION, LOW);
     }
-    for (int i = 0; i < getParameter(PARAM_STEPPER_SECONDS); i++) {
-      int speed = getParameter(PARAM_STEPPER_SPEED);
-      if (speed < MIN_STEPPER_SPEED) setParameter(PARAM_STEPPER_SPEED, MIN_STEPPER_SPEED);
-      if (speed > MAX_STEPPER_SPEED) setParameter(PARAM_STEPPER_SPEED, MAX_STEPPER_SPEED);
-      if (isStepperStopped()) {
-        Timer1.stop();
-        break;
-      }
-      Timer1.setPeriod(1000000 / 3200 / getParameter(PARAM_STEPPER_SPEED) * 60);
-      Timer1.start();
-      nilThdSleepMilliseconds(1000);
+
+    // acceleration
+    for (byte i = 0; i <= 10; i++) {
+      int speed = getParameter(PARAM_STEPPER_SPEED) * i / 10;
+      doSteps(speed, 100);
     }
-    Timer1.stop();
+
+    for (int i = 0; i < getParameter(PARAM_STEPPER_SECONDS) - 2; i++) {
+      int speed = getParameter(PARAM_STEPPER_SPEED);
+      doSteps(speed, 1000);
+    }
+
+    // deceleration
+    for (byte i = 10; i >= 0; i--) {
+      int speed = getParameter(PARAM_STEPPER_SPEED) * i / 10;
+      doSteps(speed, 100);
+    }
 
     forward = !forward;
     for (int i = 0; i < getParameter(PARAM_STEPPER_WAIT); i++) {
       nilThdSleepMilliseconds(1000);
     }
   }
+}
+
+void doSteps(int speed, int sleep) {
+  if (speed < MIN_STEPPER_SPEED) speed = MIN_STEPPER_SPEED;
+  if (speed > MAX_STEPPER_SPEED) speed = MAX_STEPPER_SPEED;
+  if (isStepperStopped()) {
+    Timer1.stop();
+  } else {
+    Timer1.setPeriod(1000000 / 3200 / speed * 60);
+    Timer1.start();
+  }
+  nilThdSleepMilliseconds(sleep);
 }
 
 #endif
