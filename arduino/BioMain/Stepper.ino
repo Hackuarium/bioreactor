@@ -55,9 +55,9 @@ NIL_THREAD(ThreadStepper, arg) {
     }
 
     // acceleration
-    for (byte i = 0; i <= 10; i++) {
-      int speed = getParameter(PARAM_STEPPER_SPEED) * i / 10;
-      doSteps(speed, 100);
+    for (byte i = 0; i <= 20; i++) {
+      int speed = getParameter(PARAM_STEPPER_SPEED) * i / 20;
+      doSteps(speed, 50);
     }
 
     for (int i = 0; i < getParameter(PARAM_STEPPER_SECONDS) - 2; i++) {
@@ -66,15 +66,17 @@ NIL_THREAD(ThreadStepper, arg) {
     }
 
     // deceleration
-    for (byte i = 10; i >= 0; i--) {
-      int speed = getParameter(PARAM_STEPPER_SPEED) * i / 10;
-      doSteps(speed, 100);
+    for (int i = 20; i >= 0; i--) {
+      int speed = getParameter(PARAM_STEPPER_SPEED) * i / 20;
+      doSteps(speed, 50);
     }
+    Timer1.stop();
 
     forward = !forward;
     for (int i = 0; i < getParameter(PARAM_STEPPER_WAIT); i++) {
       nilThdSleepMilliseconds(1000);
     }
+
   }
 }
 
