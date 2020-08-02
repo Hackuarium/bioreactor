@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name pHMeter)(type KiCad)(uri ${KIPRJMOD}/pHMeter.pretty)(options "")(descr ""))
-)
