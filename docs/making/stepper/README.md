@@ -33,4 +33,5 @@ Stepper 17hs13-0404s1: 0.4A, 12V
 
 For 0.2A to keep it really cold:
 
-R2 = 350Ω
+R2 = 150Ω (see ticket [#27](https://github.com/Hackuarium/bioreactor/issues/27)
+
