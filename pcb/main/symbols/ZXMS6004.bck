@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ZXMS6004
+D 0.35A Id, 240V Vds, N-Channel MOSFET, SOT-223
+K N-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/ZXMS6004FF.pdf
+$ENDCMP
+#
+#End Doc Library
