@@ -1,4 +1,4 @@
-#if defined(THR_PUMPS) && defined( THR_WEIGHT)
+#if defined(THR_OUTPUTS) && defined( THR_WEIGHT)
 
 NIL_WORKING_AREA(waThreadPumps, 0); 
 

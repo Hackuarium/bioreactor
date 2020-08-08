@@ -8,7 +8,7 @@
 #define THR_FAN         1
 #define THR_STEPPER     1
 #define THR_WEIGHT      1
-#define THR_PUMPS       1
+#define THR_OUTPUTS       1
 
 #include "A_Parameters.h"
 #include "BioMain.h"

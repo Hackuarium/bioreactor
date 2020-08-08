@@ -54,7 +54,7 @@ NIL_THREADS_TABLE_ENTRY(NULL, ThreadWeight, NULL, waThreadWeight, sizeof(waThrea
   #endif         
 #endif
 
-#ifdef THR_PUMPS
+#ifdef THR_OUTPUTS
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadPumps, NULL, waThreadPumps, sizeof(waThreadPumps))
 #endif
 
