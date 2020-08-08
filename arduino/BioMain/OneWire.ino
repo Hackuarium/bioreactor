@@ -41,9 +41,9 @@ OneWire oneWire3(TEMP_PCB);
 void getTemperature(OneWire &ow, int parameter, byte errorFlag);
 void oneWireInfoSS(OneWire &ow, Print* output) ;
 
-NIL_WORKING_AREA(waThreadTemp, 180);  // should be 50 without Serial.println
+NIL_WORKING_AREA(waThreadOneWire, 180);  // should be 50 without Serial.println
 
-NIL_THREAD(ThreadTemp, arg) {
+NIL_THREAD(ThreadOneWire, arg) {
   nilThdSleepMilliseconds(200);
 
   while (true) {

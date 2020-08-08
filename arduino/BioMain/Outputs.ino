@@ -1,8 +1,8 @@
 #if defined(THR_OUTPUTS) && defined( THR_WEIGHT)
 
-NIL_WORKING_AREA(waThreadPumps, 0); 
+NIL_WORKING_AREA(waThreadOutputs, 0); 
 
-NIL_THREAD(ThreadPumps, arg) {
+NIL_THREAD(ThreadOutputs, arg) {
   nilThdSleepMilliseconds(2234); // wait a little bit not everything starts at once
 
   while (true) {

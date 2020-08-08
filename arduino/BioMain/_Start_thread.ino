@@ -45,17 +45,17 @@ NIL_THREADS_TABLE_ENTRY(NULL, ThreadWeight, NULL, waThreadWeight, sizeof(waThrea
 #endif
 
 #ifdef THR_ONEWIRE
-  NIL_THREADS_TABLE_ENTRY(NULL, ThreadTemp, NULL, waThreadTemp, sizeof(waThreadTemp))  
+  NIL_THREADS_TABLE_ENTRY(NULL, ThreadOneWire, NULL, waThreadOneWire, sizeof(waThreadOneWire))  
   #ifdef THR_PID
-  NIL_THREADS_TABLE_ENTRY(NULL, Thread_PID, NULL, waThread_PID, sizeof(waThread_PID))  
+  NIL_THREADS_TABLE_ENTRY(NULL, ThreadPID, NULL, waThreadPID, sizeof(waThreadPID))  
   #endif  
   #ifdef THR_FAN
-  NIL_THREADS_TABLE_ENTRY(NULL, Thread_FAN, NULL, waThread_FAN, sizeof(waThread_FAN))  
+  NIL_THREADS_TABLE_ENTRY(NULL, ThreadFan, NULL, waThreadFan, sizeof(waThreadFan))  
   #endif         
 #endif
 
 #ifdef THR_OUTPUTS
-NIL_THREADS_TABLE_ENTRY(NULL, ThreadPumps, NULL, waThreadPumps, sizeof(waThreadPumps))
+NIL_THREADS_TABLE_ENTRY(NULL, ThreadOutputs, NULL, waThreadOutputs, sizeof(waThreadOutputs))
 #endif
 
 #ifdef THR_SERIAL

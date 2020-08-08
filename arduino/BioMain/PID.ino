@@ -22,8 +22,8 @@ double heatingRegSetpoint;
 //Specify the heating regulation links and initial tuning parameters
 PID heatingRegPID(&heatingRegInput, &heatingRegOutput, &heatingRegSetpoint, 1, 0.0002, 5, DIRECT);
 
-NIL_WORKING_AREA(waThread_PID, 120); //tune the allocated mem (here extra is provided)
-NIL_THREAD(Thread_PID, arg)
+NIL_WORKING_AREA(waThreadPID, 120); //tune the allocated mem (here extra is provided)
+NIL_THREAD(ThreadPID, arg)
 {
   nilThdSleepMilliseconds(5000);
   pinMode(PID_CONTROL, OUTPUT);

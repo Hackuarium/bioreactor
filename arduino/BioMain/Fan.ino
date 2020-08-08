@@ -1,8 +1,8 @@
 #ifdef THR_FAN
 
 
-NIL_WORKING_AREA(waThread_FAN, 0); //tune the allocated mem (here extra is provided)
-NIL_THREAD(Thread_FAN, arg)
+NIL_WORKING_AREA(waThreadFan, 0); //tune the allocated mem (here extra is provided)
+NIL_THREAD(ThreadFan, arg)
 {
   nilThdSleepMilliseconds(1000);
   pinMode(OUT_FAN, OUTPUT);
