@@ -29,7 +29,7 @@ NIL_THREAD(Thread_PID, arg)
   pinMode(PID_CONTROL, OUTPUT);
   heatingSetup();
 
-  while (TRUE) {
+  while (true) {
     pid_ctrl();
     nilThdSleepMilliseconds(500);  //refresh every 500ms --> the faster the better the control
   }
@@ -38,7 +38,8 @@ NIL_THREAD(Thread_PID, arg)
 /*Temperature PID Control addressing relay*/
 
 void pid_ctrl() {
-  saveAndLogError(getParameter(PARAM_TEMP_LIQ) < SAFETY_MIN_LIQ_TEMP || getParameter(PARAM_TEMP_LIQ) > SAFETY_MAX_LIQ_TEMP, FLAG_TEMP_LIQ_RANGE_ERROR);
+  saveAndLogError(getParameter(PARAM_TEMP_EXT1) < SAFETY_MIN_LIQ_TEMP || getParameter(PARAM_TEMP_EXT1) > SAFETY_MAX_LIQ_TEMP, FLAG_TEMP_EXT1_RANGE_ERROR);
+  saveAndLogError(getParameter(PARAM_TEMP_EXT2) < SAFETY_MIN_LIQ_TEMP || getParameter(PARAM_TEMP_EXT2) > SAFETY_MAX_LIQ_TEMP, FLAG_TEMP_EXT2_RANGE_ERROR);
   saveAndLogError(getParameter(PARAM_TEMP_PCB) < SAFETY_MIN_PCB_TEMP || getParameter(PARAM_TEMP_PCB) > SAFETY_MAX_PCB_TEMP, FLAG_TEMP_PCB_RANGE_ERROR);
   saveAndLogError(getParameter(PARAM_TEMP_TARGET) < SAFETY_MIN_LIQ_TEMP || getParameter(PARAM_TEMP_TARGET) > SAFETY_MAX_LIQ_TEMP, FLAG_TEMP_TARGET_RANGE_ERROR);
 
@@ -58,7 +59,7 @@ void pid_ctrl() {
   }
 
 
-  heatingRegInput = getParameter(PARAM_TEMP_LIQ);
+  heatingRegInput =max( getParameter(PARAM_TEMP_EXT1), getParameter(PARAM_TEMP_EXT2));
   heatingRegSetpoint = getParameter(PARAM_TEMP_TARGET);
   heatingRegPID.Compute();                                   // the computation takes only 30ms!
   setParameter(PARAM_TEMP_PID, heatingRegOutput);

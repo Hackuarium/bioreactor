@@ -13,7 +13,7 @@ NIL_THREAD(ThreadMonitoring, arg) {
   pinMode(MONITORING_LED, OUTPUT); //diode pin out   
   #endif
   
-  while (TRUE) {
+  while (true) {
     
     #ifdef MONITORING_LED
     digitalWrite(MONITORING_LED,HIGH);
@@ -48,7 +48,10 @@ NIL_THREADS_TABLE_ENTRY(NULL, ThreadWeight, NULL, waThreadWeight, sizeof(waThrea
   NIL_THREADS_TABLE_ENTRY(NULL, ThreadTemp, NULL, waThreadTemp, sizeof(waThreadTemp))  
   #ifdef THR_PID
   NIL_THREADS_TABLE_ENTRY(NULL, Thread_PID, NULL, waThread_PID, sizeof(waThread_PID))  
-  #endif       
+  #endif  
+  #ifdef THR_FAN
+  NIL_THREADS_TABLE_ENTRY(NULL, Thread_FAN, NULL, waThread_FAN, sizeof(waThread_FAN))  
+  #endif         
 #endif
 
 #ifdef THR_PUMPS

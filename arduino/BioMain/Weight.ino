@@ -27,8 +27,8 @@ NIL_THREAD(ThreadWeight, arg) {
     setParameter(PARAM_WEIGHT, weight);
     setParameter(PARAM_WEIGHT_G, convertWeightToG(weight));
 
-    if (! isRunning(FLAG_FOOD_CONTROL) || // Foold control is currently disabled
-        ! isEnabled(FLAG_FOOD_CONTROL)) { // Food control is disabled
+    if (! isRunning(FLAG_OUTPUT_CONTROL) || // Foold control is currently disabled
+        ! isEnabled(FLAG_OUTPUT_CONTROL)) { // Food control is disabled
       stopProcess(FLAG_RELAY_FILLING);    //filling  OFF
       stopProcess(FLAG_RELAY_EMPTYING);   //emptying OFF
       continue;
