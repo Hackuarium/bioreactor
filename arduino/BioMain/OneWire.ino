@@ -26,12 +26,16 @@
 
 byte oneWireAddress[8];
 
-#ifdef TEMP_LIQ
-OneWire oneWire1(TEMP_LIQ);
+#ifdef TEMP_EXT1
+OneWire oneWire1(TEMP_EXT1);
+#endif
+
+#ifdef TEMP_EXT2
+OneWire oneWire2(TEMP_EXT2);
 #endif
 
 #ifdef TEMP_PCB
-OneWire oneWire2(TEMP_PCB);
+OneWire oneWire3(TEMP_PCB);
 #endif
 
 void getTemperature(OneWire &ow, int parameter, byte errorFlag);
@@ -43,12 +47,16 @@ NIL_THREAD(ThreadTemp, arg) {
   nilThdSleepMilliseconds(200);
 
   while (true) {
-#ifdef TEMP_LIQ
-    getTemperature(oneWire1, PARAM_TEMP_LIQ, FLAG_TEMP_LIQ_PROBE_ERROR);
+#ifdef TEMP_EXT1
+    getTemperature(oneWire1, PARAM_TEMP_EXT1, FLAG_TEMP_EXT1_PROBE_ERROR);
+#endif
+
+#ifdef TEMP_EXT2
+    getTemperature(oneWire2, PARAM_TEMP_EXT2, FLAG_TEMP_EXT2_PROBE_ERROR);
 #endif
 
 #ifdef TEMP_PCB
-    getTemperature(oneWire2, PARAM_TEMP_PCB, FLAG_TEMP_PCB_PROBE_ERROR);
+    getTemperature(oneWire3, PARAM_TEMP_PCB, FLAG_TEMP_PCB_PROBE_ERROR);
 #endif
     nilThdSleepMilliseconds(200);
   }
@@ -143,13 +151,17 @@ void getTemperature(OneWire &ow, int parameter, byte errorFlag) {
 
 //bus info function
 void oneWireInfo(Print* output) { // TODO
-#ifdef TEMP_LIQ
-  output->println(F("Liquid"));
+#ifdef TEMP_EXT1
+  output->println(F("Ext1"));
   oneWireInfoSS(oneWire1, output);
+#endif
+#ifdef TEMP_EXT2
+  output->println(F("Ext2"));
+  oneWireInfoSS(oneWire2, output);
 #endif
 #ifdef TEMP_PCB
   output->println(F("PCB"));
-  oneWireInfoSS(oneWire2, output);
+  oneWireInfoSS(oneWire3, output);
 #endif
 }
 
