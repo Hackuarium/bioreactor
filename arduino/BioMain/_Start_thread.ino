@@ -58,6 +58,10 @@ NIL_THREADS_TABLE_ENTRY(NULL, ThreadWeight, NULL, waThreadWeight, sizeof(waThrea
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadOutputs, NULL, waThreadOutputs, sizeof(waThreadOutputs))
 #endif
 
+#ifdef THR_STEPS
+NIL_THREADS_TABLE_ENTRY(NULL, ThreadSteps, NULL, waThreadSteps, sizeof(waThreadSteps))
+#endif
+
 #ifdef THR_SERIAL
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadSerial, NULL, waThreadSerial, sizeof(waThreadSerial))
 #endif

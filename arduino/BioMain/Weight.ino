@@ -14,25 +14,15 @@ NIL_THREAD(ThreadWeight, arg) {
   ********************************************/
   int weight;
 
-  long timeLastEvent = millis() - getParameter(PARAM_WAIT_SINCE_LAST_EVENT) * 60000;
-
   /********************************************
                Thread Loop
   ********************************************/
   while (true) {
     nilThdSleepMilliseconds(1000);
 
-    int sinceLastEvent = (int)((millis() - timeLastEvent) / 60000);
     weight = getWeight(); //sensor read, better to have a higher value if the weight increase
     setParameter(PARAM_WEIGHT, weight);
     setParameter(PARAM_WEIGHT_G, convertWeightToG(weight));
-
-    if (! isRunning(FLAG_OUTPUT_CONTROL) || // Foold control is currently disabled
-        ! isEnabled(FLAG_OUTPUT_CONTROL)) { // Food control is disabled
-      stopProcess(FLAG_RELAY_FILLING);    //filling  OFF
-      stopProcess(FLAG_RELAY_EMPTYING);   //emptying OFF
-      continue;
-    }
 
     // are we outside ranges ?
 
@@ -45,44 +35,6 @@ NIL_THREAD(ThreadWeight, arg) {
       saveAndLogError(false, FLAG_WEIGHT_RANGE_ERROR);
     }
 
-    if (isError(MASK_WEIGHT_ERROR)) {  // weight outside range
-      stopProcess(FLAG_RELAY_FILLING);     //filling  OFF
-      stopProcess(FLAG_RELAY_EMPTYING);    //emptying OFF
-      continue;
-    }
-
-
-    if (isRunning(FLAG_SEDIMENTATION)) {
-      // just to sure in case more than one flag is active we stop the pumps
-      stopProcess(FLAG_RELAY_EMPTYING);
-      stopProcess(FLAG_RELAY_FILLING);
-      if (sinceLastEvent >= getParameter(PARAM_SEDIMENTATION_TIME)) {  //switch to Emptying
-        stopProcess(FLAG_SEDIMENTATION);
-        startProcess(FLAG_RELAY_EMPTYING);
-        timeLastEvent = millis();
-      }
-    } else if (isRunning(FLAG_RELAY_EMPTYING)) {
-      // just to sure in case more than one flag is active we stop the pumps
-      stopProcess(FLAG_RELAY_FILLING);
-      if ((error > 0 && weight <= getParameter(PARAM_WEIGHT_MIN)) ||
-          (error < 0 && weight >= getParameter(PARAM_WEIGHT_MIN))) {      //switch fo Filling
-        stopProcess(FLAG_RELAY_EMPTYING);
-        startProcess(FLAG_RELAY_FILLING);
-      }
-    } else if (isRunning(FLAG_RELAY_FILLING)) {
-      if ((error > 0 && weight >= getParameter(PARAM_WEIGHT_MAX)) ||
-          (error < 0 && weight <= getParameter(PARAM_WEIGHT_MAX))) {
-        stopProcess(FLAG_RELAY_FILLING);
-        timeLastEvent = millis();
-      }
-    } else {
-      if (sinceLastEvent >= getParameter(PARAM_FILLED_TIME)) {          //switch to Sedimentation
-        startProcess(FLAG_SEDIMENTATION);
-        timeLastEvent = millis();
-      }
-    }
-
-    setParameter(PARAM_WAIT_SINCE_LAST_EVENT, sinceLastEvent);
   }
 }
 

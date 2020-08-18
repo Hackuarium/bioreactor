@@ -27,7 +27,7 @@
   SERIAL, LOGGER AND DEBUGGERS
 *******************************/
 
-#define MAX_PARAM       52
+#define MAX_PARAM         68
 
 #ifdef THR_SST_LOGGER
 #define FLASH_SELECT      1 //Flash SS_SPI
@@ -46,17 +46,19 @@
 #define PARAM_TEMP_PID       3   // D - heating amount of energy
 #define PARAM_TEMP_TARGET    4   // E - target temperature of the liquid
 
-
-
 #define PARAM_WEIGHT                  5  // F - in unit of the balance
 #define PARAM_WEIGHT_G                6  // G - in unit of the balance
-#define PARAM_WAIT_SINCE_LAST_EVENT   7  // H
-#define PARAM_WEIGHT_MIN              8  // I
-#define PARAM_WEIGHT_MAX              9  // J
-#define PARAM_SEDIMENTATION_TIME     31  // AF - MINUTES to wait without rotation before emptying
-#define PARAM_FILLED_TIME            32  // AG - MINUTES to stay in the filled state
-#define PARAM_WEIGHT_FACTOR          33  // AH - Weight calibration: conversion factor digital -> gr (weight=FACTOR*dig_unit)
-#define PARAM_WEIGHT_OFFSET          34  // AI - Weight calibration: digital offset value when bioreactor is empty
+#define PARAM_WEIGHT_MIN              7  // I
+#define PARAM_WEIGHT_MAX              8  // J
+#define PARAM_WEIGHT_FACTOR          29  //  - Weight calibration: conversion factor digital -> gr (weight=FACTOR*dig_unit)
+#define PARAM_WEIGHT_OFFSET          30  //  - Weight calibration: digital offset value when bioreactor is empty
+
+#define PARAM_CURRENT_STEP           22
+#define PARAM_CURRENT_WAIT_TIME      23
+// 36-51 is used by the 16 allowed step
+#define FIRST_STEP_PARAMETER         52 // AI
+#define LAST_STEP_PARAMETER          67
+#define NB_STEP_PARAMETERS          LAST_STEP_PARAMETER - FIRST_STEP_PARAMETER + 1
 
 
 
@@ -77,20 +79,16 @@
 #define FLAG_WEIGHT_RANGE_ERROR         7   // the weight is outside range
 #define MASK_WEIGHT_ERROR               0b10000000  // where are the bit for weight error
 
-
 #define PARAM_STATUS             25  // Z - currently active service
 #define PARAM_ENABLED            51  // AZ - enabled service (set by user)
 
 // the following flags are defined for PARAM_STATUS and PARAM_ENABLED
-#define FLAG_STEPPER_CONTROL     0   //0 to stop engine
-#define FLAG_OUTPUT_CONTROL        1   //1 for food ctrl
-#define FLAG_PID_CONTROL         2   //0 to stop PID
-
-
-// the following flags are only defined for PARAM_STATUS
-#define FLAG_SEDIMENTATION       7
-#define FLAG_RELAY_FILLING       8
-#define FLAG_RELAY_EMPTYING      9
+#define FLAG_PID_CONTROL         0   //0 to stop PID
+#define FLAG_STEPPER_CONTROL     1   //0 to stop engine
+#define FLAG_OUTPUT_1            2
+#define FLAG_OUTPUT_2            3
+#define FLAG_OUTPUT_3            4
+#define FLAG_OUTPUT_4            5
 
 
 #include "libino/hack.h"
@@ -100,4 +98,4 @@ boolean clearParameterBit(byte number, byte bitToClear);
 void setupMemory();
 void recoverLastEntryN();
 uint8_t loadLastEntryToParameters();
-uint16_t findSectorOfN( );
+uint16_t findSectorOfN();

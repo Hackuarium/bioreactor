@@ -53,12 +53,6 @@ void pid_ctrl() {
     return;
   }
 
-  if (isRunning(FLAG_SEDIMENTATION) || isRunning(FLAG_RELAY_EMPTYING)) { // when it is in sedimentation or emptying mode we stop the heating
-    analogWrite(PID_CONTROL, 0);
-    return;
-  }
-
-
   heatingRegInput =max( getParameter(PARAM_TEMP_EXT1), getParameter(PARAM_TEMP_EXT2));
   heatingRegSetpoint = getParameter(PARAM_TEMP_TARGET);
   heatingRegPID.Compute();                                   // the computation takes only 30ms!

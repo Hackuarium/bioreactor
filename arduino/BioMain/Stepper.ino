@@ -22,10 +22,6 @@ boolean isStepperStopped() {
   if (isError()) { // any error we should stop heating !
     return true;
   }
-
-  if (isRunning(FLAG_RELAY_EMPTYING) || isRunning(FLAG_SEDIMENTATION)) {
-    return true;
-  }
   return false;
 }
 

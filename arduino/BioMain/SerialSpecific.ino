@@ -17,22 +17,22 @@ void processSpecificCommand(char* data, char* paramValue, Print* output) {
       break;
     case 't':
       output->print(F("Status: "));
-      output->println(getParameter(PARAM_STATUS));
-      for (byte i = 0; i < 10; i++) {
+      output->println(getParameter(PARAM_STATUS),BIN);
+      for (byte i = 0; i < 6; i++) {
         output->print(i);
         output->print(": ");
         output->println(getParameterBit(PARAM_STATUS, i));
       }
       output->print(F("Enabled: "));
-      output->println(getParameter(PARAM_ENABLED));
-      for (byte i = 0; i < 3; i++) {
+      output->println(getParameter(PARAM_ENABLED),BIN);
+      for (byte i = 0; i < 6; i++) {
         output->print(i);
         output->print(": ");
         output->println(getParameterBit(PARAM_ENABLED, i));
       }
       output->print(F("Error: "));
-      output->println(getParameter(PARAM_ERROR));
-      for (byte i = 0; i < 6; i++) {
+      output->println(getParameter(PARAM_ERROR),BIN);
+      for (byte i = 0; i < 8; i++) {
         output->print(i);
         output->print(": ");
         output->println(getParameterBit(PARAM_ERROR, i));
