@@ -15,16 +15,15 @@ Flags:
 
 0xxxx yyy yyyy yyyy
 
-|     | xxxx | Action                                            |
-| --- | ---- | ------------------------------------------------- |
-| 0   | 0000 | Do nothing                                        |
-| 1   | 0001 | Wait in minutes                                   |
-| 2   | 0010 | Wait in hours                                     |
-| 3   | 0011 | Wait for weight reduction to yy%                  |
-| 4   | 0100 | Wait for weight increase to yy%                   |
-| 5   | 0101 | Wait for temperature change (continue if < 0.5°C) |
-| 8   | 1000 | Set all the flags                                 |
-|  |
+|     | xxxx | Action                                                       |
+| --- | ---- | ------------------------------------------------------------ |
+| 0   | 0000 | Do nothing                                                   |
+| 1   | 0001 | Wait in minutes                                              |
+| 2   | 0010 | Wait in hours                                                |
+| 3   | 0011 | Wait for weight reduction to yy grams                        |
+| 4   | 0100 | Wait for weight increase to yy grams                         |
+| 5   | 0101 | Wait for temperature change (continue if delta < yyy °C/100) |
+| 8   | 1000 | Set all the flags                                            |
 
 ### Change parameters
 
@@ -33,8 +32,6 @@ Flags:
 - xxxx the parameter (0 -> 15)
   - 0: target temperature (in °C)
 - yyy yyyy yyyy: the new value (0 to 2043)
-
-We will have a problem with temperature
 
 ### Example
 
