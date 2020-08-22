@@ -34,7 +34,7 @@
 #define LOG_INTERVAL      10  //Interval in (s) between logs logger
 #endif
 
-#define PARAM_STEPPER_SPEED        26   // AA - motor speed, parameter S, IN RPM (v4.5)
+#define PARAM_STEPPER_SPEED        26   // AA - motor speed, in RPM
 #define PARAM_STEPPER_SECONDS      27   // AB   number of seconds before changing direction
 #define PARAM_STEPPER_WAIT         28   // AC   wait time in seconds between change of direction
 

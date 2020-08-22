@@ -14,12 +14,11 @@
 //--------------- IS STEPPER STOPPED ---------------//
 
 boolean isStepperStopped() {
-
   if (! isRunning(FLAG_STEPPER_CONTROL) || ! isEnabled(FLAG_STEPPER_CONTROL)) { // PID is disabled
     return true;
   }
 
-  if (isError()) { // any error we should stop heating !
+  if (isError()) { // any error we should stop stepper !
     return true;
   }
   return false;
@@ -43,7 +42,6 @@ NIL_THREAD(ThreadStepper, arg) {
 
   while (true) {
     //first a check is performed on the motor status
-
     if (forward) {
       digitalWrite(STEPPER_DIRECTION, HIGH);
     } else {
