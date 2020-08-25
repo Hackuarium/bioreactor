@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IPB80N03S4L-03
+D 30V Vds, 80 A Id, N-Channel MOSFET, PG-TO263-3-2
+K N-Channel MOSFET
+F https://www.infineon.com/dgdl/Infineon-IPB80N03S4L-03-DataSheet-v02_01-EN.pdf?fileId=5546d4626cb27db2016ccd4c03921b4c
+$ENDCMP
+#
+#End Doc Library

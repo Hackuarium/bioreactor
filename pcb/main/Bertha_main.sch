@@ -379,7 +379,7 @@ F 3 "" H 12350 6750 50  0001 C CNN
 	1    12350 6750
 	0    1    1    0   
 $EndComp
-Text GLabel 9175 6275 2    50   Input ~ 0
+Text GLabel 8775 6275 2    50   Input ~ 0
 12V
 Wire Notes Line
 	12650 950  10550 950 
@@ -439,32 +439,24 @@ Wire Notes Line
 	12650 2175 12650 950 
 Wire Notes Line
 	10550 950  10550 2175
-Wire Notes Line
-	7975 7825 9825 7825
 Wire Wire Line
-	8125 7200 8400 7200
-Wire Wire Line
-	9125 6400 9125 6900
-Wire Wire Line
-	9125 7500 9400 7500
-Wire Wire Line
-	9125 7300 9125 7500
+	8400 7500 8500 7500
 $Comp
 L Device:R R?
 U 1 1 5E02FA68
-P 8400 7350
+P 8000 7350
 AR Path="/5E0D7B15/5E02FA68" Ref="R?"  Part="1" 
 AR Path="/5E02FA68" Ref="R21"  Part="1" 
-F 0 "R21" V 8325 7225 50  0000 L CNN
-F 1 "10k" V 8400 7275 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8330 7350 50  0001 C CNN
-F 3 "~" H 8400 7350 50  0001 C CNN
-	1    8400 7350
+F 0 "R21" V 7925 7225 50  0000 L CNN
+F 1 "10k" V 8000 7275 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7930 7350 50  0001 C CNN
+F 3 "~" H 8000 7350 50  0001 C CNN
+	1    8000 7350
 	1    0    0    -1  
 $EndComp
-Text GLabel 8125 7200 0    50   Input ~ 0
+Text GLabel 7800 7100 0    50   Input ~ 0
 D6
-Text Notes 8175 6950 0    197  ~ 0
+Text Notes 7600 6300 0    197  ~ 0
 PID
 Wire Notes Line
 	10625 5700 13450 5700
@@ -534,27 +526,27 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J8
 U 1 1 5DEEE6F7
-P 8925 6400
-F 0 "J8" H 8950 6575 50  0000 C CNN
-F 1 "Conn_01x01" H 8975 6500 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm" H 8925 6400 50  0001 C CNN
-F 3 "~" H 8925 6400 50  0001 C CNN
-	1    8925 6400
+P 8525 6400
+F 0 "J8" H 8550 6575 50  0000 C CNN
+F 1 "Conn_01x01" H 8575 6500 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm" H 8525 6400 50  0001 C CNN
+F 3 "~" H 8525 6400 50  0001 C CNN
+	1    8525 6400
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J7
 U 1 1 5DEF8E40
-P 8925 6275
-F 0 "J7" H 8850 6075 50  0000 C CNN
-F 1 "Conn_01x01" H 8875 6175 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm" H 8925 6275 50  0001 C CNN
-F 3 "~" H 8925 6275 50  0001 C CNN
-	1    8925 6275
+P 8525 6275
+F 0 "J7" H 8450 6075 50  0000 C CNN
+F 1 "Conn_01x01" H 8475 6175 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm" H 8525 6275 50  0001 C CNN
+F 3 "~" H 8525 6275 50  0001 C CNN
+	1    8525 6275
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9125 6275 9175 6275
+	8725 6275 8775 6275
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5DF3ACAB
@@ -823,17 +815,16 @@ $EndComp
 $Comp
 L Device:LED D?
 U 1 1 5E92F43F
-P 8975 7500
+P 8250 7500
 AR Path="/5E0005EE/5E92F43F" Ref="D?"  Part="1" 
 AR Path="/5E92F43F" Ref="D10"  Part="1" 
-F 0 "D10" H 8975 7425 50  0000 C CNN
-F 1 "RED" H 8975 7600 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8975 7500 50  0001 C CNN
-F 3 "~" H 8975 7500 50  0001 C CNN
-	1    8975 7500
+F 0 "D10" H 8250 7425 50  0000 C CNN
+F 1 "RED" H 8250 7600 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8250 7500 50  0001 C CNN
+F 3 "~" H 8250 7500 50  0001 C CNN
+	1    8250 7500
 	-1   0    0    -1  
 $EndComp
-Connection ~ 9125 7500
 $Comp
 L Connector:Conn_Coaxial_Power J2
 U 1 1 5E9C940B
@@ -949,11 +940,9 @@ Wire Notes Line
 Wire Notes Line
 	7950 3200 7950 5150
 Wire Notes Line
-	7975 6025 7975 7825
+	7575 6025 7575 7825
 Wire Notes Line
-	9825 7825 9825 6025
-Wire Notes Line
-	9825 6025 7975 6025
+	10625 7825 10625 6025
 Wire Notes Line
 	5250 3275 5250 7550
 Wire Notes Line
@@ -1713,17 +1702,6 @@ $EndComp
 Wire Wire Line
 	5600 6975 5850 6975
 $Comp
-L Bertha_main-eagle-import:GND #020
-U 1 1 5E54DBF3
-P 9400 7600
-F 0 "#020" H 9450 7650 50  0001 C CNN
-F 1 "GND" H 9503 7638 42  0000 L CNN
-F 2 "" H 9400 7600 50  0001 C CNN
-F 3 "" H 9400 7600 50  0001 C CNN
-	1    9400 7600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Bertha_main-eagle-import:GND #U05
 U 1 1 5E54E01E
 P 12275 7550
@@ -1777,39 +1755,25 @@ Wire Wire Line
 	12050 7350 12050 7450
 Wire Wire Line
 	11675 8300 11875 8300
-$Comp
-L Device:Q_NPN_Darlington_BCE Q3
-U 1 1 5E1B6F78
-P 9025 7100
-F 0 "Q3" H 9215 7146 50  0000 L CNN
-F 1 "MJH6284" H 9215 7055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-247-3_Vertical" H 9225 7200 50  0001 C CNN
-F 3 "~" H 9025 7100 50  0001 C CNN
-	1    9025 7100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8400 7200 8400 7100
-Connection ~ 8400 7200
+	8000 7200 8000 7100
 Wire Wire Line
-	8400 7500 8825 7500
+	8000 7500 8100 7500
 $Comp
 L Device:R R?
 U 1 1 5E2163A8
-P 8625 7100
+P 8250 7100
 AR Path="/5E0D7B15/5E2163A8" Ref="R?"  Part="1" 
 AR Path="/5E2163A8" Ref="R19"  Part="1" 
-F 0 "R19" V 8550 6975 50  0000 L CNN
-F 1 "100" V 8625 7025 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8555 7100 50  0001 C CNN
-F 3 "~" H 8625 7100 50  0001 C CNN
-	1    8625 7100
+F 0 "R19" V 8175 6975 50  0000 L CNN
+F 1 "330" V 8250 7025 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8180 7100 50  0001 C CNN
+F 3 "~" H 8250 7100 50  0001 C CNN
+	1    8250 7100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8475 7100 8400 7100
-Wire Wire Line
-	8775 7100 8825 7100
+	8100 7100 8000 7100
 Text Label 4275 6450 0    50   ~ 0
 D12
 Text GLabel 4425 4650 2    50   Input ~ 0
@@ -2249,4 +2213,131 @@ Wire Wire Line
 	12025 3150 12550 3150
 Wire Wire Line
 	12025 4050 12550 4050
+$Comp
+L Bertha_main:IPB80N03S4L-03 Q8
+U 1 1 5F48D945
+P 9550 6675
+F 0 "Q8" H 9754 6721 50  0000 L CNN
+F 1 "IPB80N03S4L-03" H 9754 6630 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 9750 6600 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IPB80N03S4L-03-DataSheet-v02_01-EN.pdf?fileId=5546d4626cb27db2016ccd4c03921b4c" H 9550 6675 50  0001 L CNN
+	1    9550 6675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F4777DE
+P 9275 6875
+AR Path="/5E02557B/5F4777DE" Ref="C?"  Part="1" 
+AR Path="/5F4777DE" Ref="C35"  Part="1" 
+F 0 "C35" H 9075 6850 50  0000 L CNN
+F 1 "4n" H 9075 6775 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9313 6725 50  0001 C CNN
+F 3 "~" H 9275 6875 50  0001 C CNN
+	1    9275 6875
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F4B2886
+P 8225 6675
+AR Path="/5E0D7B15/5F4B2886" Ref="R?"  Part="1" 
+AR Path="/5F4B2886" Ref="R54"  Part="1" 
+F 0 "R54" V 8150 6550 50  0000 L CNN
+F 1 "330" V 8225 6600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8155 6675 50  0001 C CNN
+F 3 "~" H 8225 6675 50  0001 C CNN
+	1    8225 6675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 6675 9275 6675
+Wire Wire Line
+	9275 6725 9275 6675
+Connection ~ 9275 6675
+Wire Wire Line
+	9275 6675 8375 6675
+Wire Wire Line
+	9275 7025 9275 7100
+Wire Wire Line
+	9275 7100 9650 7100
+Wire Wire Line
+	9650 7100 9650 6875
+Wire Wire Line
+	8075 6675 8000 6675
+Wire Wire Line
+	8000 6675 8000 7100
+Connection ~ 8000 7100
+$Comp
+L Device:C C?
+U 1 1 5F59928D
+P 8500 7300
+AR Path="/5E02557B/5F59928D" Ref="C?"  Part="1" 
+AR Path="/5F59928D" Ref="C34"  Part="1" 
+F 0 "C34" H 8300 7275 50  0000 L CNN
+F 1 "4n" H 8300 7200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8538 7150 50  0001 C CNN
+F 3 "~" H 8500 7300 50  0001 C CNN
+	1    8500 7300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 7100 8500 7100
+Wire Wire Line
+	8500 7150 8500 7100
+Connection ~ 8500 7100
+Wire Wire Line
+	8500 7100 8550 7100
+$Comp
+L Bertha_main:IPB80N03S4L-03 Q3
+U 1 1 5F62A5B7
+P 8750 7100
+F 0 "Q3" H 8954 7146 50  0000 L CNN
+F 1 "IPB80N03S4L-03" H 8954 7055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 8950 7025 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IPB80N03S4L-03-DataSheet-v02_01-EN.pdf?fileId=5546d4626cb27db2016ccd4c03921b4c" H 8750 7100 50  0001 L CNN
+	1    8750 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 7450 8500 7500
+Connection ~ 8500 7500
+Wire Wire Line
+	8500 7500 8850 7500
+Wire Wire Line
+	8850 7300 8850 7500
+Wire Wire Line
+	9650 7100 9650 7500
+Connection ~ 9650 7100
+$Comp
+L Bertha_main-eagle-import:GND #020
+U 1 1 5E54DBF3
+P 8850 7650
+F 0 "#020" H 8900 7700 50  0001 C CNN
+F 1 "GND" H 8953 7688 42  0000 L CNN
+F 2 "" H 8850 7650 50  0001 C CNN
+F 3 "" H 8850 7650 50  0001 C CNN
+	1    8850 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 7550 8850 7500
+Connection ~ 8850 7500
+Wire Wire Line
+	9650 7500 8850 7500
+Wire Wire Line
+	8850 6900 8850 6400
+Wire Wire Line
+	8850 6400 8725 6400
+Wire Wire Line
+	9650 6475 9650 6400
+Wire Wire Line
+	9650 6400 8850 6400
+Connection ~ 8850 6400
+Wire Wire Line
+	7800 7100 8000 7100
+Wire Notes Line
+	7575 7825 10625 7825
+Wire Notes Line
+	7575 6025 10625 6025
 $EndSCHEMATC

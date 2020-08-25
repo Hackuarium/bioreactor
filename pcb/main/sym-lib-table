@@ -4,4 +4,5 @@
   (lib (name BSP75)(type Legacy)(uri ${KIPRJMOD}/symbols/BSP75.lib)(options "")(descr ""))
   (lib (name Bertha_main-rescue)(type Legacy)(uri ${KIPRJMOD}/Bertha_main-rescue.lib)(options "")(descr ""))
   (lib (name ZXMS6004)(type Legacy)(uri ${KIPRJMOD}/symbols/ZXMS6004.lib)(options "")(descr ""))
+  (lib (name Bertha_main)(type Legacy)(uri ${KIPRJMOD}/Bertha_main.lib)(options "")(descr ""))
 )
