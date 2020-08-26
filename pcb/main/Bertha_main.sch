@@ -1766,7 +1766,7 @@ P 8250 7100
 AR Path="/5E0D7B15/5E2163A8" Ref="R?"  Part="1" 
 AR Path="/5E2163A8" Ref="R19"  Part="1" 
 F 0 "R19" V 8175 6975 50  0000 L CNN
-F 1 "330" V 8250 7025 50  0000 L CNN
+F 1 "100" V 8250 7025 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8180 7100 50  0001 C CNN
 F 3 "~" H 8250 7100 50  0001 C CNN
 	1    8250 7100
@@ -1794,7 +1794,6 @@ Wire Wire Line
 	4275 4450 4425 4450
 Wire Wire Line
 	4275 4550 4425 4550
-NoConn ~ 4425 4250
 NoConn ~ 4425 4350
 Wire Wire Line
 	8150 2375 8150 2400
@@ -2118,51 +2117,49 @@ Text GLabel 4425 6650 2    55   Input ~ 0
 A6
 Wire Wire Line
 	4275 6650 4425 6650
-Text GLabel 6325 8825 0    55   Input ~ 0
+Text GLabel 6800 8700 0    55   Input ~ 0
 12V
 Wire Wire Line
-	6200 8925 6400 8925
-Wire Wire Line
-	6200 9525 6200 9425
+	6675 8800 6875 8800
 $Comp
 L Bertha_main-eagle-import:JP1E JP?
 U 1 1 5F60B538
-P 6500 8825
+P 6975 8700
 AR Path="/5E0D793B/5F60B538" Ref="JP?"  Part="1" 
 AR Path="/5F60B538" Ref="JP13"  Part="1" 
-F 0 "JP13" V 6575 8925 59  0000 L CNN
-F 1 "IO4" V 6450 8950 59  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 6500 8825 50  0001 C CNN
-F 3 "" H 6500 8825 50  0001 C CNN
-	1    6500 8825
+F 0 "JP13" V 7050 8800 59  0000 L CNN
+F 1 "IO4" V 6925 8825 59  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 6975 8700 50  0001 C CNN
+F 3 "" H 6975 8700 50  0001 C CNN
+	1    6975 8700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6325 8825 6400 8825
+	6800 8700 6875 8700
 Wire Wire Line
-	6200 9025 6200 8925
+	6675 8900 6675 8800
 $Comp
 L Bertha_main-eagle-import:GND #U0103
 U 1 1 5F60B547
-P 6200 9625
-F 0 "#U0103" H 6250 9675 50  0001 C CNN
-F 1 "GND" H 6303 9663 42  0000 L CNN
-F 2 "" H 6200 9625 50  0001 C CNN
-F 3 "" H 6200 9625 50  0001 C CNN
-	1    6200 9625
+P 6675 9625
+F 0 "#U0103" H 6725 9675 50  0001 C CNN
+F 1 "GND" H 6778 9663 42  0000 L CNN
+F 2 "" H 6675 9625 50  0001 C CNN
+F 3 "" H 6675 9625 50  0001 C CNN
+	1    6675 9625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 9225 6000 9225
+	5675 9100 5950 9100
 $Comp
 L ZXMS6004:ZXMS6004 Q7
 U 1 1 5F60B54F
-P 6200 9225
-F 0 "Q7" H 6306 9271 50  0000 L CNN
-F 1 "ZXMS6004" H 6306 9180 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6300 9150 50  0001 L CIN
-F 3 "https://www.diodes.com/assets/Datasheets/ZXMS6004FF.pdf" H 6300 9300 50  0001 L CNN
-	1    6200 9225
+P 6675 9100
+F 0 "Q7" H 6781 9146 50  0000 L CNN
+F 1 "ZXMS6004" H 6781 9055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6775 9025 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ZXMS6004FF.pdf" H 6775 9175 50  0001 L CNN
+	1    6675 9100
 	1    0    0    -1  
 $EndComp
 Text Notes 5425 8600 0    157  ~ 0
@@ -2170,16 +2167,12 @@ FAN
 Wire Notes Line
 	5400 8375 5400 9750
 Wire Notes Line
-	5400 9750 6925 9750
-Wire Notes Line
-	6925 9750 6925 8375
-Wire Notes Line
-	6925 8375 5400 8375
+	7375 9750 7375 8375
 Text GLabel 4425 5450 2    55   Input ~ 0
 D11
 Wire Wire Line
 	4275 5450 4425 5450
-Text GLabel 5800 9225 0    55   Input ~ 0
+Text GLabel 5675 9100 0    55   Input ~ 0
 D11
 Wire Wire Line
 	13700 7450 13925 7450
@@ -2221,7 +2214,7 @@ P 8500 7300
 AR Path="/5E02557B/5F59928D" Ref="C?"  Part="1" 
 AR Path="/5F59928D" Ref="C34"  Part="1" 
 F 0 "C34" H 8250 7275 50  0000 L CNN
-F 1 "4n" H 8300 7200 50  0000 L CNN
+F 1 "100n" H 8300 7200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8538 7150 50  0001 C CNN
 F 3 "~" H 8500 7300 50  0001 C CNN
 	1    8500 7300
@@ -2276,4 +2269,157 @@ Wire Notes Line
 	7575 7825 10625 7825
 Wire Notes Line
 	7575 6025 10625 6025
+$Comp
+L Device:R R?
+U 1 1 5F4B01F7
+P 5950 9300
+AR Path="/5E0D7B15/5F4B01F7" Ref="R?"  Part="1" 
+AR Path="/5F4B01F7" Ref="R55"  Part="1" 
+F 0 "R55" V 5875 9175 50  0000 L CNN
+F 1 "10k" V 5950 9225 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5880 9300 50  0001 C CNN
+F 3 "~" H 5950 9300 50  0001 C CNN
+	1    5950 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F4B2617
+P 6400 9300
+AR Path="/5E02557B/5F4B2617" Ref="C?"  Part="1" 
+AR Path="/5F4B2617" Ref="C35"  Part="1" 
+F 0 "C35" H 6150 9275 50  0000 L CNN
+F 1 "100n" H 6200 9200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6438 9150 50  0001 C CNN
+F 3 "~" H 6400 9300 50  0001 C CNN
+	1    6400 9300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 9300 6675 9500
+Wire Wire Line
+	6400 9450 6400 9500
+Wire Wire Line
+	6400 9500 6675 9500
+Connection ~ 6675 9500
+Wire Wire Line
+	6675 9500 6675 9525
+Connection ~ 6400 9500
+Wire Wire Line
+	6325 9500 6400 9500
+$Comp
+L Device:LED D?
+U 1 1 5F4B1306
+P 6175 9500
+AR Path="/5E0005EE/5F4B1306" Ref="D?"  Part="1" 
+AR Path="/5F4B1306" Ref="D21"  Part="1" 
+F 0 "D21" H 6175 9425 50  0000 C CNN
+F 1 "RED" H 6175 9600 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6175 9500 50  0001 C CNN
+F 3 "~" H 6175 9500 50  0001 C CNN
+	1    6175 9500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 9150 6400 9100
+Wire Wire Line
+	6400 9100 6475 9100
+Wire Wire Line
+	6025 9500 5950 9500
+Wire Wire Line
+	5950 9500 5950 9450
+Wire Wire Line
+	5950 9150 5950 9100
+Connection ~ 5950 9100
+Wire Wire Line
+	5950 9100 6400 9100
+Connection ~ 6400 9100
+Wire Notes Line
+	5400 9750 7375 9750
+Wire Notes Line
+	5400 8375 7375 8375
+Text Notes 975  8000 0    157  ~ 0
+ERROR
+$Comp
+L Bertha_main-eagle-import:JP1E JP?
+U 1 1 5F6B070F
+P 2075 8200
+AR Path="/5E0D793B/5F6B070F" Ref="JP?"  Part="1" 
+AR Path="/5F6B070F" Ref="JP14"  Part="1" 
+F 0 "JP14" V 2150 8300 59  0000 L CNN
+F 1 "IO4" V 2025 8325 59  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 2075 8200 50  0001 C CNN
+F 3 "" H 2075 8200 50  0001 C CNN
+	1    2075 8200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F6B0F69
+P 1575 8600
+AR Path="/5E0005EE/5F6B0F69" Ref="D?"  Part="1" 
+AR Path="/5F6B0F69" Ref="D20"  Part="1" 
+F 0 "D20" H 1575 8525 50  0000 C CNN
+F 1 "RED" H 1575 8700 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1575 8600 50  0001 C CNN
+F 3 "~" H 1575 8600 50  0001 C CNN
+	1    1575 8600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F6B1D75
+P 1350 8400
+AR Path="/5E0D7B15/5F6B1D75" Ref="R?"  Part="1" 
+AR Path="/5F6B1D75" Ref="R54"  Part="1" 
+F 0 "R54" V 1275 8275 50  0000 L CNN
+F 1 "10k" V 1350 8325 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1280 8400 50  0001 C CNN
+F 3 "~" H 1350 8400 50  0001 C CNN
+	1    1350 8400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4425 4250 2    50   Input ~ 0
+A4
+Text GLabel 1175 8200 0    50   Input ~ 0
+A4
+Wire Wire Line
+	1975 8200 1350 8200
+Wire Wire Line
+	1350 8250 1350 8200
+Connection ~ 1350 8200
+Wire Wire Line
+	1350 8200 1175 8200
+Wire Wire Line
+	1425 8600 1350 8600
+Wire Wire Line
+	1350 8600 1350 8550
+$Comp
+L Bertha_main-eagle-import:GND #0102
+U 1 1 5F75493A
+P 1925 8750
+F 0 "#0102" H 1975 8800 50  0001 C CNN
+F 1 "GND" H 2028 8788 42  0000 L CNN
+F 2 "" H 1925 8750 50  0001 C CNN
+F 3 "" H 1925 8750 50  0001 C CNN
+	1    1925 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1975 8300 1925 8300
+Wire Wire Line
+	1925 8300 1925 8600
+Wire Wire Line
+	1725 8600 1925 8600
+Connection ~ 1925 8600
+Wire Wire Line
+	1925 8600 1925 8650
+Wire Notes Line
+	875  7750 2475 7750
+Wire Notes Line
+	2475 7750 2475 8850
+Wire Notes Line
+	2475 8850 875  8850
+Wire Notes Line
+	875  8850 875  7750
 $EndSCHEMATC
