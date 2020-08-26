@@ -2213,60 +2213,6 @@ Wire Wire Line
 	12025 3150 12550 3150
 Wire Wire Line
 	12025 4050 12550 4050
-$Comp
-L Bertha_main:IPB80N03S4L-03 Q8
-U 1 1 5F48D945
-P 9550 6675
-F 0 "Q8" H 9754 6721 50  0000 L CNN
-F 1 "IPB80N03S4L-03" H 9754 6630 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-263-2" H 9750 6600 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IPB80N03S4L-03-DataSheet-v02_01-EN.pdf?fileId=5546d4626cb27db2016ccd4c03921b4c" H 9550 6675 50  0001 L CNN
-	1    9550 6675
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5F4777DE
-P 9275 6875
-AR Path="/5E02557B/5F4777DE" Ref="C?"  Part="1" 
-AR Path="/5F4777DE" Ref="C35"  Part="1" 
-F 0 "C35" H 9075 6850 50  0000 L CNN
-F 1 "4n" H 9075 6775 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9313 6725 50  0001 C CNN
-F 3 "~" H 9275 6875 50  0001 C CNN
-	1    9275 6875
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F4B2886
-P 8225 6675
-AR Path="/5E0D7B15/5F4B2886" Ref="R?"  Part="1" 
-AR Path="/5F4B2886" Ref="R54"  Part="1" 
-F 0 "R54" V 8150 6550 50  0000 L CNN
-F 1 "330" V 8225 6600 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8155 6675 50  0001 C CNN
-F 3 "~" H 8225 6675 50  0001 C CNN
-	1    8225 6675
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9350 6675 9275 6675
-Wire Wire Line
-	9275 6725 9275 6675
-Connection ~ 9275 6675
-Wire Wire Line
-	9275 6675 8375 6675
-Wire Wire Line
-	9275 7025 9275 7100
-Wire Wire Line
-	9275 7100 9650 7100
-Wire Wire Line
-	9650 7100 9650 6875
-Wire Wire Line
-	8075 6675 8000 6675
-Wire Wire Line
-	8000 6675 8000 7100
 Connection ~ 8000 7100
 $Comp
 L Device:C C?
@@ -2274,7 +2220,7 @@ U 1 1 5F59928D
 P 8500 7300
 AR Path="/5E02557B/5F59928D" Ref="C?"  Part="1" 
 AR Path="/5F59928D" Ref="C34"  Part="1" 
-F 0 "C34" H 8300 7275 50  0000 L CNN
+F 0 "C34" H 8250 7275 50  0000 L CNN
 F 1 "4n" H 8300 7200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8538 7150 50  0001 C CNN
 F 3 "~" H 8500 7300 50  0001 C CNN
@@ -2306,9 +2252,6 @@ Wire Wire Line
 	8500 7500 8850 7500
 Wire Wire Line
 	8850 7300 8850 7500
-Wire Wire Line
-	9650 7100 9650 7500
-Connection ~ 9650 7100
 $Comp
 L Bertha_main-eagle-import:GND #020
 U 1 1 5E54DBF3
@@ -2324,16 +2267,9 @@ Wire Wire Line
 	8850 7550 8850 7500
 Connection ~ 8850 7500
 Wire Wire Line
-	9650 7500 8850 7500
-Wire Wire Line
 	8850 6900 8850 6400
 Wire Wire Line
 	8850 6400 8725 6400
-Wire Wire Line
-	9650 6475 9650 6400
-Wire Wire Line
-	9650 6400 8850 6400
-Connection ~ 8850 6400
 Wire Wire Line
 	7800 7100 8000 7100
 Wire Notes Line
