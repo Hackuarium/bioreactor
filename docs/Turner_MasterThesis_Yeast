@@ -1,0 +1,60 @@
+
+# Master Thesis project description
+
+Student: Tomas Erland Turner, MA4, EPFL
+
+Supervising professor: prof. Howard Riezman, University of Geneva
+
+IMX supervising professor: Prof. Maartje Bastings, EPFL
+
+
+# Goal:
+
+Metabolic engineering of _Yarrowia Lypolitica_ for production of lipid composition mimicking milkfat.
+
+
+# Background
+
+Biomanufacturing has in recent years gained more attention as an alternative way of producing materials<sup>1</sup>. Developed at first for pharmaceuticals, the principles of designing microorganisms, has now been expanded to create biofuels, textiles and even food. 
+
+This latest is the topic of the project and in particular the application of biomanufacturing to dairy. Dairy is responsible for approximately 3% of the global GHG emissions<sup>2</sup>, and several companies are trying to solve the problem by the creation of milk by biomanufacturing<sup>3</sup>. 
+
+
+# Motivation
+
+The development of microbial lipids mimicking the properties of animal-derived fat is an area where innovation is needed, according to the Good Food Institute<sup>4</sup>. No effort has been done yet by the academic community to mimic the lipid composition of milkfat using biomanufacturing techniques, even if it has high potential of increasing the sustainability of food production.
+
+
+# State of the art
+
+The project will be based on metabolic engineering of the yeast _Yarrowia lypolitica_. This yeast has been chosen as being the most well-studied oleaginous yeast. Many strategies have been developed to allow lipid production in this yeast<sup>4</sup>. Examples of metabolic engineering to produce lipids are _Yu et al._ and _Souza et al._ who respectively produced free fatty acids and cholesterol in _Saccharomyces cerevisiae<sup>5,6</sup>_. Start-ups like Geltor and C16 Biosciences are using metabolic engineering to manufacture respectively. collagen and palm oil<sup>7,8</sup>.
+
+
+# Bibliography
+
+
+    [1.	Clomburg, J. M., Crumbley, A. M. & Gonzalez, R. Industrial biomanufacturing: The future of chemical production. Science 355, (2017).](https://www.zotero.org/google-docs/?F45U9u)
+
+
+    [2.	FAO - News Article: New FAO report assesses dairy greenhouse gas emissions. http://www.fao.org/news/story/en/item/41348/icode/.](https://www.zotero.org/google-docs/?F45U9u)
+
+
+    [3.	Sheikh, K. Got Impossible Milk? The Quest for Lab-Made Dairy. The New York Times (2019).](https://www.zotero.org/google-docs/?F45U9u)
+
+
+    [4.	Lazar, Z., Liu, N. & Stephanopoulos, G. Holistic Approaches in Lipid Production by Yarrowia lipolytica. Trends Biotechnol. 36, 1157–1170 (2018).](https://www.zotero.org/google-docs/?F45U9u)
+
+
+    [5.	Souza, C. M. et al. A stable yeast strain efficiently producing cholesterol instead of ergosterol is functional for tryptophan uptake, but not weak organic acid resistance. Metab. Eng. 13, 555–569 (2011).](https://www.zotero.org/google-docs/?F45U9u)
+
+
+    [6.	Yu, T. et al. Reprogramming Yeast Metabolism from Alcoholic Fermentation to Lipogenesis. Cell 174, 1549-1558.e14 (2018).](https://www.zotero.org/google-docs/?F45U9u)
+
+
+    [7.	Products | Geltor | Conscious Biodesign for Advanced Proteins. Geltor https://geltor.com/products/.](https://www.zotero.org/google-docs/?F45U9u)
+
+
+    [8.	c16 Biosciences. c16 Biosciences https://www.c16bio.com.](https://www.zotero.org/google-docs/?F45U9u)
+
+
+    [9.	Ochsenreither, K., Glück, C., Stressler, T., Fischer, L. & Syldatk, C. Production Strategies and Applications of Microbial Single Cell Oils. Front. Microbiol. 7, (2016).](https://www.zotero.org/google-docs/?F45U9u)
