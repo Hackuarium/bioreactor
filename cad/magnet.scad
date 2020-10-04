@@ -1,7 +1,7 @@
 $fn=50;
 
 magnetDiameter=20;
-magnetThickness=5;
+magnetThickness=5.2;
 
 thickness=2;
 
