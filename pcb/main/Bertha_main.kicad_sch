@@ -1765,14 +1765,14 @@
   (junction (at 347.98 189.23) (diameter 1.016) (color 0 0 0 0))
   (junction (at 347.98 219.075) (diameter 1.016) (color 0 0 0 0))
 
-  (no_connect (at 318.77 85.09))
-  (no_connect (at 112.395 110.49))
   (no_connect (at 215.265 59.69))
-  (no_connect (at 285.115 41.275))
-  (no_connect (at 116.205 173.99))
-  (no_connect (at 215.265 38.735))
-  (no_connect (at 318.77 107.95))
   (no_connect (at 318.77 113.03))
+  (no_connect (at 285.115 41.275))
+  (no_connect (at 318.77 107.95))
+  (no_connect (at 116.205 173.99))
+  (no_connect (at 318.77 85.09))
+  (no_connect (at 215.265 38.735))
+  (no_connect (at 112.395 110.49))
 
   (wire (pts (xy 22.86 54.61) (xy 36.83 54.61))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -5440,7 +5440,7 @@
     (in_bom yes) (on_board yes)
     (uuid "00000000-0000-0000-0000-00005df7026e")
     (property "Reference" "C8" (id 0) (at 53.975 139.7 90))
-    (property "Value" "100n" (id 1) (at 53.975 142.24 90))
+    (property "Value" "1u" (id 1) (at 53.975 142.24 90))
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (id 2) (at 45.72 141.9352 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6373,7 +6373,7 @@
       (reference "C7") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-00005df7026e"
-      (reference "C8") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
+      (reference "C8") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-00005df7024b"
       (reference "C9") (unit 1) (value "22p") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")

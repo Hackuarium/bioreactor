@@ -311,6 +311,7 @@
       "global_label_dangling": "error",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
+      "lib_symbol_issues": "warning",
       "multiple_net_names": "error",
       "net_not_bus_member": "error",
       "no_connect_connected": "error",
@@ -416,7 +417,7 @@
   },
   "sheets": [
     [
-      "5a6cce3c-64ca-46b4-9b83-8cc7c4080c3e",
+      "92f4864f-76a6-4fa3-bc78-411e499a52a1",
       ""
     ],
     [
