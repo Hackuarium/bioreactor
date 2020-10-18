@@ -11,7 +11,7 @@
 #define SAFETY_MAX_LIQ_TEMP 6000  // liquid temperature is max 60°C
 #define SAFETY_MIN_LIQ_TEMP 1000  // liquid temperature is min 10°C
 
-#define PID_OUTPUT_LIMIT    200  //200 is ~80% of max PWM --> Limits max avg power to ~8A
+#define PID_OUTPUT_LIMIT    100  //200 is ~80% of max PWM --> Limits max avg power to ~8A
 
 void pid_ctrl();
 void heatingSetup();

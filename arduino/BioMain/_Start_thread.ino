@@ -66,6 +66,10 @@ NIL_THREADS_TABLE_ENTRY(NULL, ThreadSteps, NULL, waThreadSteps, sizeof(waThreadS
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadSerial, NULL, waThreadSerial, sizeof(waThreadSerial))
 #endif
 
+#ifdef THR_ERROR
+NIL_THREADS_TABLE_ENTRY(NULL, ThreadError, NULL, waThreadError, sizeof(waThreadError))  
+#endif    
+
 #ifdef THR_MONITORING
 NIL_THREADS_TABLE_ENTRY(NULL, ThreadMonitoring, NULL, waThreadMonitoring, sizeof(waThreadMonitoring))
 #endif

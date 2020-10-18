@@ -7,6 +7,7 @@
 #define OUT_4              12
 
 #define OUT_FAN            11
+#define OUT_ERROR          A4
 
 #define WEIGHT_DATA        A1
 #define WEIGHT_CLK         A0     //need to redefine the calibration parameters and process (see "HX711")

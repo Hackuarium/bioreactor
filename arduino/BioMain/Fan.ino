@@ -18,12 +18,8 @@ NIL_THREAD(ThreadFan, arg)
 
 void setFan() {
   int temperature = getParameter(PARAM_TEMP_PCB);
-  if (temperature > 6000) {
+  if (temperature > 3500) {
     analogWrite(OUT_FAN, 255);
-  } else if (temperature > 4000) {
-    analogWrite(OUT_FAN, 170);
-  } else if (temperature > 3000) {
-    analogWrite(OUT_FAN, 100);
   } else {
     analogWrite(OUT_FAN, 0);
   }
