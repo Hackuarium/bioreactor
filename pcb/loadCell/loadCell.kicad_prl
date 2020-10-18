@@ -60,7 +60,7 @@
       36,
       37
     ],
-    "visible_layers": "3ffff_80000001"
+    "visible_layers": "003ffff_80000001"
   },
   "meta": {
     "filename": "loadCell.kicad_prl",
