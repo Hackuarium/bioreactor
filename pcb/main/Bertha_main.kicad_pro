@@ -50,9 +50,9 @@
       },
       "diff_pair_dimensions": [
         {
-          "gap": 0.25,
-          "via_gap": 0.25,
-          "width": 0.2
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
         }
       ],
       "drc_exclusions": [],
@@ -110,6 +110,7 @@
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
+        "min_silk_clearance": 0.0,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.049999999999999996,
@@ -417,7 +418,7 @@
   },
   "sheets": [
     [
-      "92f4864f-76a6-4fa3-bc78-411e499a52a1",
+      "0b7ee97d-f8a6-40d7-a902-473d16723498",
       ""
     ],
     [
