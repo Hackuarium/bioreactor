@@ -1,62 +1,60 @@
-"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
-1;"C9,C10";"C_1206_3216Metric_Pad1.42x1.75mm_HandSolder";2;"22pF";;;
-2;"C8,C15,C18,C20,C16,C5,C6,C11,C7,C2,C19,C27,C29,C24,C33,C28,C32";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";17;"100nF";;;
-3;"C3,C21,C17,C4,C1";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";5;"10uF";;;
-4;"D7,D4,D5";"LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder";3;"YELLOW";;;
-5;"H2,H4,H1,H3";"MountingHole_3.2mm_M3";4;"MountingHole";;;
-6;"J6";"PinHeader_1x02_P2.54mm_Vertical";1;"SJ";;;
-7;"J8,J7";"SolderWirePad_1x01_SMD_5x10mm";2;"Conn_01x01";;;
-8;"JP1";"PinHeader_1x02_P2.54mm_Vertical";1;"Test 3.3V";;;
-9;"JP2";"PinHeader_1x02_P2.54mm_Vertical";1;"Test 12V";;;
-10;"JP5";"PinHeader_1x05_P2.54mm_Vertical";1;"M05PTH";;;
-11;"JP6";"PinHeader_1x02_P2.54mm_Vertical";1;"M02PTH";;;
-12;"Q4";"SOT-23_Handsoldering";1;"MMBT4403";;;
-13;"R10,R21,R28,R27,R17,R20,R22,R29,R52,R49,R40,R39,R42,R36,R34,R53,R1,R15,R55,R54,R2";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";21;"10k";;;
-14;"R18";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"1M";;;
-15;"R7,R14,R16,R26,R9,R23,R51,R11,R13";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";9;"1k";;;
-16;"R32,R33,R5,R8,R19";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";5;"100";;;
-17;"R12,R6,R50";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";3;"4.7k";;;
-18;"U4";"STC_SOP-16_3.9x9.9mm_P1.27mm";1;"HX711";;;
-19;"Y1";"Crystal_SMD_0603-2Pin_6.0x3.5mm_HandSoldering";1;"Crystal";;;
-20;"JP4";"Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical";1;"IO2";;;
-21;"D9,D8,D19,D18";"LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder";4;"BLUE";;;
-22;"D13,D11";"LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"GREEN";;;
-23;"D12";"D_SOD-123";1;"B240A";;;
-24;"C12";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"22nF";;;
-25;"C13";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"10µF";;;
-26;"U3";"SOT-23-6_Handsoldering";1;"ACT4088";;;
-27;"R24";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"49.9k";;;
-28;"R25";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"16.23k";;;
-29;"L1";"L_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"4.7µH";;;
-30;"J9,J11,J10";"SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm";3;"SJ";;;
-31;"R31";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"8.2k";;;
-32;"R30";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"20k";;;
-33;"D2,D3,D1";"D_SOD-123";3;"Schottky";;;
-34;"J3";"Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical";1;"02x03";;;
-35;"U2";"TQFP-44_10x10mm_P0.8mm";1;"ATMEGA32U4-AU";;;
-36;"C14";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"22µF";;;
-37;"IC1";"SOIJ-8_5.3x5.3mm_P1.27mm";1;"SST26VF064B";;;
-38;"J12,J5";"Jack_3.5mm_Ledino_KB3SPRS_Horizontal";2;"AudioJack3_SwitchTR";;;
-39;"Q1,Q6,Q5,Q2,Q7,Q8";"SOT-23";6;"ZXMS6004";;;
-40;"JP10,JP11,JP12,JP7";"PinHeader_1x04_P2.54mm_Vertical";4;"JP4E";;;
-41;"J2";"BarrelJack_Horizontal";1;"Barel";;;
-42;"X1";"USB_Mini-B_Lumberg_2486_01_Horizontal";1;"MINI-USB-SCHIELD-32005-201";;;
-43;"R3,R4";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"22";;;
-44;"J4,J1";"E5566-Q0LK22-L";2;"RJ12";;;
-45;"R44,R43";"R_2010_5025Metric_Pad1.52x2.65mm_HandSolder";2;"0.1R 1W";;;
-46;"R48,R46,R45";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";3;"47k";;;
-47;"R47";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"Rlim";;;
-48;"R41";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"3.3k";;;
-49;"C30,C31";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"1nF";;;
-50;"C25";"CP_Elec_8x10";1;"100uF 50V";;;
-51;"D17,D16,D15,D14,D10,D21,D20";"LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder";7;"RED";;;
-52;"C26,C23,C22";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";3;"220nF";;;
-53;"JP3";"Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical";1;"IO1";;;
-54;"JP9,JP13,JP14";"Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical";3;"IO4";;;
-55;"D6";"LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"WHITE";;;
-56;"U1";"MSOP-8_3x3mm_P0.65mm";1;"DS18B20";;;
-57;"JP8";"Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical";1;"IO3";;;
-58;"SJ1";"SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm";1;"JP";;;
-59;"C34,C36,C35,C37,C38";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";5;"100n";;;
-60;"Q3";"TO-263-2";1;"IPB80N03S4L-03";;;
-61;"IC2";"HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.4x9.5mm_ThermalVias";1;"DRV8811";;;
+Reference, Quantity, Value, Footprint, Datasheet, Description, MFN, MFP, S1PL, S1PN
+C1 C3 C4 C13 C17 C21 ,6,"10u","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/585/MLCC-1837944.pdf","Multilayer Ceramic Capacitors MLCC - SMD/SMT 16V 10uF X5R 0805 10%","Samsung Electro-Mechanics ","CL21A106KOQNNNG ","https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21A106KOQNNNG?qs=hqM3L16%252BxlcMWI7QbqH0LA%3D%3D"," 187-CL21A106KOQNNNG "
+C12 ,1,"22n","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/445/885012207094-1727634.pdf","Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V WCAP-CSGP 0.022uF 0805 10% MLCC ","Wurth Elektronik ","885012207094 ","https://www.mouser.com/ProductDetail/Wurth-Elektronik/885012207094?qs=0KOYDY2FL2868KFEJBLp3w%3D%3D"," 710-885012207094 "
+C14 ,1,"22u","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/585/MLCC-1837944.pdf","Multilayer Ceramic Capacitors MLCC - SMD/SMT 6.3V 22uF X5R 10% 0805","Samsung Electro-Mechanics ","CL21A226KQCLRNC","https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21A226KQCLRNC?qs=xZ%2FP%252Ba9zWqYG0ePGTF%2FymQ%3D%3D"," 187-CL21A226KQCLRNC "
+C2 C5 C6 C7 C11 C15 C16 C18 C19 C20 C24 C27 C28 C29 C32 C33 C34 C35 C36 C37 C38 ,21,"100n","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/40/X7RDielectric-777024.pdf","Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V .1uF X7R 0805 10%TOL","AVX ","08055C104KAT2A ","https://www.mouser.com/ProductDetail/AVX/08055C104KAT2A?qs=2ujN4bDBNE9mJvapP%252BjopA%3D%3D"," 581-08055C104K "
+C22 C23 C26 ,3,"220n","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/585/MLCC-1837944.pdf","Multilayer Ceramic Capacitors MLCC - SMD/SMT 25V 220nF X7R 10% 0805","Samsung Electro-Mechanics ","CL21B224KAFNNNE ","https://www.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL21B224KAFNNNE?qs=349EhDEZ59pKL14yZNNAGg%3D%3D"," 187-CL21B224KAFNNNE "
+C25 ,1,"100u","Capacitor_SMD:CP_Elec_8x10","https://www.mouser.com/datasheet/2/231/151002386372-1222327.pdf","Aluminum Electrolytic Capacitors - SMD 100uF 25 Volts 20% ","Lelon ","VZL101M1ETR-0607","https://www.mouser.com/ProductDetail/Lelon/VZL101M1ETR-0607?qs=sGAEpiMZZMvwFf0viD3Y3fHxNcSaiftwRLyonH7HETJQSk%2FDESmwTg%3D%3D"," 140-VZL101M1ETR-0607 "
+C30 C31 ,2,"1n","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/445/885012207060-1727713.pdf","Multilayer Ceramic Capacitors MLCC - SMD/SMT 25V WCAP-CSGP 1000pF X7R 0805 10%  MLCC","Wurth Elektronik ","885012207060 ","https://www.mouser.com/ProductDetail/Wurth-Elektronik/885012207060?qs=0KOYDY2FL2%252BYUmSrx5mMUA%3D%3D"," 710-885012207060 "
+C8 ,1,"1u","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/40/X7RDielectric-777024.pdf","Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V .1uF X7R 0805 10%TOL","AVX ","08055C104KAT2A ","https://www.mouser.com/ProductDetail/AVX/08055C104KAT2A?qs=2ujN4bDBNE9mJvapP%252BjopA%3D%3D"," 581-08055C104K "
+C9 C10 ,2,"18p","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","https://www.mouser.com/datasheet/2/212/KEM_C1007_X8R_ULTRA_150C_SMD-1102703.pdf","Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V 18pF X8R 0805 10% ","KEMET ","C0805C180K5HACTU ","https://www.mouser.com/ProductDetail/KEMET/C0805C180K5HACTU?qs=W0yvOO0ixfF9BHX%2Fb%2Fp2DA=="," 80-C0805C180K5HACTU "
+D1 D2 D3 D12 ,4,"MBR0520LT1G ","Diode_SMD:D_SOD-123","https://www.mouser.com/datasheet/2/308/MBR0520LT1_D-1810808.pdf","Schottky Diodes & Rectifiers 0.5A 20V ","ON Semiconductor ","MBR0520LT1G ","https://www.mouser.com/ProductDetail/ON-Semiconductor/MBR0520LT1G?qs=3JMERSakebqBWTiPUQp0nw%3D%3D"," 863-MBR0520LT1G "
+D10 D14 D15 D16 D17 D20 D21 ,7,"RED","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/445/150080SS75000-1715426.pdf","Standard LEDs - SMD WL-SMCW SMDMono TpVw Waterclr 0805 SprRed ","Wurth Elektronik ","150080SS75000 ","https://www.mouser.com/ProductDetail/Wurth-Elektronik/150080SS75000?qs=LlUlMxKIyB2zzpiaOzrUdw%3D%3D"," 710-150080SS75000 "
+D4 D5 D7 ,3,"YELLOW","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/445/150080YS75000-1715432.pdf","Standard LEDs - SMD WL-SMCW SMDMono TpVw Waterclr 0805 Yellow ","Wurth Elektronik ","150080YS75000 ","https://www.mouser.com/ProductDetail/Wurth-Elektronik/150080YS75000?qs=LlUlMxKIyB3k0fZGrDMI2w%3D%3D"," 710-150080YS75000 "
+D6 D11 D13 ,3,"GREEN","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/445/150080GS75000-1715657.pdf","Standard LEDs - SMD WL-SMCW SMDMono TpVw Waterclr 0805 Green ","Wurth Elektronik ","150080GS75000 ","https://www.mouser.com/ProductDetail/Wurth-Elektronik/150080GS75000?qs=2kOmHSv6VfQRoTEZVk1mGA%3D%3D"," 710-150080GS75000 "
+D8 D9 D18 D19 ,4,"BLUE","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/445/150080BS75000-1715853.pdf","Standard LEDs - SMD WL-SMCW SMDMono TpVw Waterclr 0805 Blue ","Wurth Elektronik ","150080BS75000 ","https://www.mouser.com/ProductDetail/Wurth-Elektronik/150080BS75000?qs=2kOmHSv6VfT2tBo3UPVqAQ%3D%3D"," 710-150080BS75000 "
+H1 H2 H3 H4 ,4,"MountingHole","MountingHole:MountingHole_3.2mm_M3","~"
+IC1 ,1,"SST26VF064B-104V","Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm","http://ww1.microchip.com/downloads/en/DeviceDoc/SST26VF064B-SST26VF064BA-2.5V-3.0V-64-Mbit-Serial-Quad-IO-Flash-Memory-Data-Sheet-DS20005119J.pdf","2.5V/3.0V 64 Mbit Serial Quad I/O (SQI) Flash Memory","Microchip","","https://www.mouser.com/ProductDetail/Microchip-Technology/SST26VF064B-104V-SM?qs=BA62vJVifGrueLaL24%2Fs8g%3D%3D"," 579-26VF064B-104V/SM "
+IC2 ,1,"DRV8811","Package_SO:HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.4x9.5mm_ThermalVias","https://www.ti.com/lit/ds/symlink/drv8811.pdf?HQS=TI-null-null-mousermode-df-pf-null-wwe&ts=1602173397653&ref_url=https%253A%252F%252Fwww.mouser.com%252F","Motor / Motion / Ignition Controllers & Drivers Stepper motor controller IC ","Texas Instruments ","DRV8811PWPR ","https://www.mouser.com/ProductDetail/Texas-Instruments/DRV8811PWPR?qs=IK5e5L0zOXi5UzzaUCD4lg%3D%3D"," 595-DRV8811PWPR "
+J1 J4 ,2,"RJ12","Bertha_footprints:E5566-Q0LK22-L","https://www.mouser.com/datasheet/2/336/CE553027-LC-1526716.pdf","Modular Connectors / Ethernet Connectors RJ25 6P6C SIDE ENTRY ","Pulse Electronics ","E5566-Q0LK22-L","https://www.mouser.com/ProductDetail/Pulse-Electronics/E5566-Q0LK22-L?qs=%2Fha2pyFaduj%252B%2F1mulJHXWMmHQl2zT2RI86Qsnf%252B7%252ByQ4jR7soZobZQ%3D%3D"," 673-E5566-Q0LK22-L "
+J2 ,1,"Conn_Coaxial_Power","Connector_BarrelJack:BarrelJack_Horizontal","https://www.sparkfun.com/datasheets/Prototyping/Barrel-Connector-PJ-202A.pdf","SparkFun Accessories DC Barrel Power Jack/Connector ","SparkFun","PRT-00119 ","https://www.mouser.com/ProductDetail/SparkFun/PRT-00119?qs=WyAARYrbSnbnQpS9xf%252Bx5A%3D%3D","474-PRT-00119 "
+J3 ,1,"Conn_02x03_Odd_Even","Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical","~"
+J5 J12 ,2,"AudioJack3_SwitchTR","Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal","~","Headphone Jack 5 Pin PCB Mount Female 3.5mm Stereo Jack Socket Connector Headphone Jacks","","","https://www.aliexpress.com/item/33004214640.html?spm=a2g0s.9042311.0.0.6 efd4c4d7S5uUt",""
+J6 ,1,"SJ","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",""
+J7 J8 ,2,"Conn_01x01","Connector_Wire:SolderWirePad_1x01_SMD_5x10mm","~"
+J9 J10 J11 ,3,"SJ","Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",""
+JP1 ,1,"Test 3.3V","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","https://www.mouser.com/datasheet/2/276/0022284020_PCB_HEADERS-228358.pdf","Test 3.3V","Molex ","22-28-4020","https://www.mouser.com/ProductDetail/Molex/22-28-4020?qs=d9fIA1aNikTifpx8PDmVSA%3D%3D"," 538-22-28-4020 "
+JP2 ,1,"Test 12V","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","https://www.mouser.com/datasheet/2/276/0022284020_PCB_HEADERS-228358.pdf","Test 12V","Molex ","22-28-4020","https://www.mouser.com/ProductDetail/Molex/22-28-4020?qs=d9fIA1aNikTifpx8PDmVSA%3D%3D"," 538-22-28-4020 "
+JP3 ,1,"IO1","Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical","https://www.mouser.com/datasheet/2/276/022232023_sd-590068.pdf","","Molex ","22-23-2023","https://www.mouser.com/ProductDetail/Molex/22-23-2023?qs=52ipEG6BoUHegR7NRmymbQ%3D%3D"," 538-22-23-2023 "
+JP4 ,1,"IO2","Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical","https://www.mouser.com/datasheet/2/276/022232023_sd-590068.pdf","","Molex ","22-23-2023","https://www.mouser.com/ProductDetail/Molex/22-23-2023?qs=52ipEG6BoUHegR7NRmymbQ%3D%3D"," 538-22-23-2023 "
+JP5 ,1,"M05PTH","Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical","https://www.mouser.com/datasheet/2/276/0022284053_PCB_HEADERS-228163.pdf","","Molex ","22-28-4053","https://www.mouser.com/ProductDetail/Molex/22-28-4053?qs=d9fIA1aNikRgHwv0ZIzelw%3D%3D"," 538-22-28-4053 "
+JP6 ,1,"M02PTH","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","https://www.mouser.com/datasheet/2/276/0022284020_PCB_HEADERS-228358.pdf","","Molex ","22-28-4020","https://www.mouser.com/ProductDetail/Molex/22-28-4020?qs=d9fIA1aNikTifpx8PDmVSA%3D%3D"," 538-22-28-4020 "
+JP7 JP10 JP11 JP12 ,4,"JP4E","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","https://www.mouser.com/datasheet/2/276/0022284040_PCB_HEADERS-228199.pdf","","Molex ","22-28-4040","https://www.mouser.com/ProductDetail/Molex/22-28-4040?qs=MuwpYaHj751TT7oLDTEzqg%3D%3D"," 538-22-28-4040 "
+JP8 ,1,"IO3","Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical","https://www.mouser.com/datasheet/2/276/022232023_sd-590068.pdf","","Molex ","22-23-2023","https://www.mouser.com/ProductDetail/Molex/22-23-2023?qs=52ipEG6BoUHegR7NRmymbQ%3D%3D"," 538-22-23-2023 "
+JP9 JP13 JP14 ,3,"IO4","Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical","https://www.mouser.com/datasheet/2/276/022232023_sd-590068.pdf","","Molex ","22-23-2023","https://www.mouser.com/ProductDetail/Molex/22-23-2023?qs=52ipEG6BoUHegR7NRmymbQ%3D%3D"," 538-22-23-2023 "
+L1 ,1,"4.7u","Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/396/mlci03_e-1523425.pdf","Fixed Inductors 0805 4.7uH 280mOhms +/-20% 700mA HiCur","Taiyo Yuden ","CKP2012N4R7M-T","https://www.mouser.com/ProductDetail/Taiyo-Yuden/CKP2012N4R7M-T?qs=I6KAKw0tg2yv0trrzbAvhA%3D%3D"," 963-CKP2012N4R7M-T "
+Q1 Q2 Q5 Q6 Q7 Q8 ,6,"ZXMS6004","Package_TO_SOT_SMD:SOT-23","https://www.diodes.com/assets/Datasheets/ZXMS6004FF.pdf","MOSFET 60V N-Channel 500mohm 1.3A 90mJ","Diodes Incorporated ","ZXMS6004FFQTA","https://www.mouser.com/ProductDetail/Diodes-Incorporated/ZXMS6004FFQTA?qs=nVS1qgv%252BQrk3b3Yw041IKA%3D%3D"," 621-ZXMS6004FFQTA "
+Q3 ,1,"IPB80N03S4L-03","Package_TO_SOT_SMD:TO-263-2","https://www.infineon.com/dgdl/Infineon-IPB80N03S4L-03-DataSheet-v02_01-EN.pdf?fileId=5546d4626cb27db2016ccd4c03921b4c","MOSFET N-Ch 30V 80A D2PAK-2 OptiMOS-T2","Infineon Technologies ","IPB80N03S4L-03","https://www.mouser.com/ProductDetail/Infineon-Technologies/IPB80N03S4L-03?qs=9Vqdt%252BdHmfJ57UE%252BtEYJhg%3D%3D"," 726-IPB80N03S4L-03 "
+Q4 ,1,"TRANSISTOR_PNPMMBT4403","Package_TO_SOT_SMD:SOT-23_Handsoldering","https://www.mouser.com/datasheet/2/308/MMBT4403WT1-D-1811904.pdf","Bipolar Transistors - BJT 600mA 40V PNP","ON Semiconductor ","MMBT4403WT1G ","https://www.mouser.com/ProductDetail/ON-Semiconductor/MMBT4403WT1G?qs=HVbQlW5zcXXliRimP8G%2FVA%3D%3D"," 863-MMBT4403WT1G "
+R1 R2 R10 R15 R17 R20 R21 R22 R27 R28 R29 R34 R36 R39 R40 R42 R49 R52 R53 R54 R55 ,21,"10k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf","Thick Film Resistors - SMD 1/4W 10K OHM 1%","KOA Speer ","RK73H2ATTD1002F","https://www.mouser.com/ProductDetail/KOA-Speer/RK73H2ATTD1002F?qs=sGAEpiMZZMtlubZbdhIBIADEshVnklemK%252BhrLNEuMe8%3D"," 660-RK73H2ATTD1002F "
+R18 ,1,"1M","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/427/crcwce3-1762584.pdf","Thick Film Resistors - SMD 1/8Watt 1Mohms 1% Commercial Use","Vishay / Dale ","CRCW08051M00FKEAC ","https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW08051M00FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWumBK5p1HGl0%3D"," 71-CRCW08051M00FKEAC "
+R24 ,1,"49.9k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf","Thick Film Resistors - SMD .125watt 49.9kohms 1% 0805 100ppm","KOA Speer ","RK73H2ATTD4992F ","https://www.mouser.com/ProductDetail/KOA-Speer/RK73H2ATTD4992F?qs=sGAEpiMZZMtlubZbdhIBIPHHA4tSuOuyusuxPBWaS8c%3D"," 660-RK73H2ATTD4992F "
+R25 ,1,"16.23k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/315/AOA0000C304-1149620.pdf","Thick Film Resistors - SMD 0805 16.2Kohms 1% AEC-Q200","Panasonic ","ERJ-6ENF1622V","https://www.mouser.com/ProductDetail/Panasonic/ERJ-6ENF1622V?qs=sGAEpiMZZMtlubZbdhIBINbsJb0hdM3zKmmABjaHwtM%3D"," 667-ERJ-6ENF1622V "
+R3 R4 ,2,"22","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/427/crcwce3-1762584.pdf","Thick Film Resistors - SMD 1/8Watt 22ohms 1% Commercial Use","Vishay / Dale ","CRCW080522R0FKEAC ","https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW080522R0FKEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWetFEtFS3dhw%3D"," 71-CRCW080522R0FKEAC "
+R30 ,1,"20k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf","Thick Film Resistors - SMD 1/4watts 20Kohms 1%","KOA Speer ","RK73H2ATTD2002F","https://www.mouser.com/ProductDetail/KOA-Speer/RK73H2ATTD2002F?qs=sGAEpiMZZMtlubZbdhIBIMXh9e%2F%2F%2F5dzn%2FVOqHcJlxA%3D"," 660-RK73H2ATTD2002F "
+R31 ,1,"8.2k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf","Thick Film Resistors - SMD 1/4W 8.2K OHM 1% ","KOA Speer ","RK73H2ATTD8201F","https://www.mouser.com/ProductDetail/KOA-Speer/RK73H2ATTD8201F?qs=sGAEpiMZZMtlubZbdhIBIIqLs7HsJDS2YP1fNBux264%3D"," 660-RK73H2ATTD8201F "
+R41 ,1,"3.3k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf","Thick Film Resistors - SMD 1/4W 3.3K OHM 1%","KOA Speer ","RK73H2ATTD3301F","https://www.mouser.com/ProductDetail/KOA-Speer/RK73H2ATTD3301F?qs=sGAEpiMZZMtlubZbdhIBICrrsNZHBc0zY%252Bt6xXNR0UM%3D"," 660-RK73H2ATTD3301F "
+R43 R44 ,2,"0.1","Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder","https://www.mouser.com/datasheet/2/414/LR-1528312.pdf","Current Sense Resistors - SMD 1W .100 1% 100ppm","IRC / TT Electronics ","LRC-LR2010LF-01-R100-F","https://www.mouser.com/ProductDetail/IRC-TT-Electronics/LRC-LR2010LF-01-R100-F?qs=T4ZxkLPjgMPqp2Zxswn%252Brg%3D%3D"," 66-LR2010LF-01-R100 "
+R45 R46 R48 ,3,"47k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf","Thick Film Resistors - SMD 1/4W 47K OHM 1%","KOA Speer ","RK73H2ATTD4702F ","https://www.mouser.com/ProductDetail/KOA-Speer/RK73H2ATTD4702F?qs=sGAEpiMZZMtlubZbdhIBILQdJXPOl2CPhxQhw0ysYoo%3D"," 660-RK73H2ATTD4702F "
+R47 ,1,"180","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf","Thick Film Resistors - SMD 1/4W 180 OHM 1%","KOA Speer ","RK73H2ATTD1800F ","https://www.mouser.com/ProductDetail/KOA-Speer/RK73H2ATTD1800F?qs=gzQjdNGfstz2MTsVPzvA9w%3D%3D"," 660-RK73H2ATTD1800F "
+R5 R8 R19 R32 R33 ,5,"100","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/54/Bourns_CMP_Datasheet_05.28.20-1854233.pdf","Thick Film Resistors - SMD 100 OHM 1% 1/2W TC100","Bourns ","CMP0805-FX-1000ELF","https://www.mouser.com/ProductDetail/Bourns/CMP0805-FX-1000ELF?qs=sGAEpiMZZMtlubZbdhIBIIPWN1VQSu3wb553eGoanZQ%3D"," 652-CMP0805-FX-1000L "
+R6 R12 R50 ,3,"4.7k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/219/RK73H-1825326.pdf","Thick Film Resistors - SMD 1/4watts 4.7Kohms 1%
+","KOA Speer ","RK73H2ATTD4701F","https://www.mouser.com/ProductDetail/KOA-Speer/RK73H2ATTD4701F?qs=sGAEpiMZZMtlubZbdhIBIDy5tslNVG7gwbfvlR%2FSa3E%3D"," 660-RK73H2ATTD4701F "
+R7 R9 R11 R13 R14 R16 R23 R26 R51 ,9,"1k","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","https://www.mouser.com/datasheet/2/427/crcwce3-1762584.pdf","Thick Film Resistors - SMD 1/8Watt 1Kohms 5% Commercial Use","Vishay / Dale ","CRCW08051K00JNEAC ","https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW08051K00JNEAC?qs=sGAEpiMZZMtlubZbdhIBIIZe04wfiaJWy7nwcSDiXks%3D"," 71-CRCW08051K00JNEAC "
+SJ1 ,1,"JUMPER-PAD-2-NC_BY_TRACE","Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",""
+U1 ,1,"DS18B20","Package_SO:MSOP-8_3x3mm_P0.65mm","https://www.mouser.com/datasheet/2/256/DS18B20-370043.pdf","Board Mount Temperature Sensors Programmable Resolution 1-Wire Digital Thermometer ","Maxim Integrated ","DS18B20U+T&R","https://www.mouser.com/ProductDetail/Maxim-Integrated/DS18B20U%2bTR?qs=7H2Jq%252ByxpJI1ACKb6RIQLA%3D%3D"," 700-DS18B20UT&R "
+U2 ,1,"ATMEGA32U4-AU","Package_QFP:TQFP-44_10x10mm_P0.8mm","http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf","8-bit Microcontrollers - MCU AVR USB 32K FL 16MHz Ind Temp Grn ","Microchip Technology / Atmel ","ATMEGA32U4RC-AU","https://www.mouser.com/ProductDetail/Microchip-Technology-Atmel/ATMEGA32U4RC-AU?qs=7AReRZHh%2FSt%252BRqfzkW8%2FkA%3D%3D"," 556-ATMEGA32U4RC-AU "
+U3 ,1,"ACT4088","Package_TO_SOT_SMD:SOT-23-6_Handsoldering","https://www.mouser.com/datasheet/2/412/ACT4088_Data_Sheet-1714846.pdf","Switching Voltage Regulators DC70DZUST, 12Vin Buck Converter ","Qorvo ","ACT4088US-T","https://www.mouser.com/ProductDetail/Qorvo/ACT4088US-T?qs=%2Fha2pyFaduj3zC6esU%2F8%252BfzWZ4716qD%252Byca2A%252BeLaTI%3D"," 107-ACT4088US-T "
+U4 ,1,"HX711","Package_SO:STC_SOP-16_3.9x9.9mm_P1.27mm","https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf","24-Bit Analog-to-Digital Converter (ADC) for Weigh Scales","Avia Semiconductor","HX711","https://www.aliexpress.com/item/33012086165.html?spm=a2g0s.9042311.0.0.6efd4c4d7S5uUt",""
+X1 ,1,"MINI-USB-SCHIELD-32005-201","Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal","https://www.mouser.com/datasheet/2/276/1/0675031020_IO_CONNECTORS-172123.pdf","USB Connectors USB Mini-B Recept On-The-Go Rt.Angle","Molex ","67503-1020","https://www.mouser.com/ProductDetail/Molex/67503-1020?qs=7zcQ9RRVJlhHWuXYKEhKMg%3D%3D"," 538-67503-1020 "
+Y1 ,1,"Crystal","Crystal:Crystal_SMD_0603-2Pin_6.0x3.5mm_HandSoldering","https://www.mouser.com/datasheet/2/122/ECS-23G-1115642.pdf","Crystals 8MHz 18pF -40C +85C 20 PPM 30 PPM in frequency stability","ECS","ECS-080-18-23G-JGN-TR","https://www.mouser.com/ProductDetail/ECS/ECS-080-18-23G-JGN-TR?qs=HXFqYaX1Q2w96I4MjMnYbA%3D%3D"," 520-8.0-18-23G-JGNT "
