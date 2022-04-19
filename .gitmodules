@@ -1,6 +1,6 @@
 [submodule "arduino/BioMain/libino"]
 	path = arduino/BioMain/libino
-	url = git://github.com/Hackuarium/libino.git
+	url = https://github.com/Hackuarium/libino.git
 [submodule "cad/case/laser-cut-box"]
 	path = cad/case/laser-cut-box
 	url = https://github.com/Hackuarium/laser-cut-box
