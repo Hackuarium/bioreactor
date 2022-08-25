@@ -1590,7 +1590,7 @@
       (net 76 "Net-(J9-Pad2)") (pinfunction "RATE") (tstamp 7f11d63a-4073-487c-8745-01a3f719bd83))
     (pad "16" smd roundrect locked (at 2.65 -4.445 270) (size 1.6 0.55) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 4 "3.3V") (pinfunction "DVDD") (tstamp 0d3059a8-1104-402d-b486-63c759cfe34b))
-    (model "${KISYS3DMOD}/Package_SO.3dshapes/STC_SOP-16_3.9x9.9mm_P1.27mm.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-16_3.9x9.9mm_P1.27mm.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1647,7 +1647,7 @@
       (net 36 "Net-(C9-Pad1)") (pinfunction "1") (tstamp 5cbcf254-e686-4aeb-9af7-6ac2250b1675))
     (pad "2" smd rect locked (at 2.9125 0 270) (size 3.325 2.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 37 "Net-(C10-Pad1)") (pinfunction "2") (tstamp 0833794a-1af8-43cb-b75f-90b9671c7e7a))
-    (model "${KISYS3DMOD}/Crystal.3dshapes/Crystal_SMD_0603-2Pin_6.0x3.5mm_HandSoldering.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_0603-2Pin_6.0x3.5mm.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
