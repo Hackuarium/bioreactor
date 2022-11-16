@@ -84,6 +84,9 @@ authors:
   - family-names: 'Stojanovic'
     given-names: 'Natasa'
     # orcid: 'https://orcid.org/0000-0002-4943-2643'
+  - family-names: 'Soukouti'
+    given-names: 'Line'
+    # orcid: 'https://orcid.org/0000-0002-4943-2643'
 keywords:
   - Bioreactor
   - Do It Together
