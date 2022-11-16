@@ -2,6 +2,9 @@
 
 Please refer to the [documentation](https://hackuarium.github.io/bioreactor/) for all useful information.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7326908.svg)](https://doi.org/10.5281/zenodo.7326908)
+
+
 ## Cloning the project
 
 This project uses SUBMODULES.
