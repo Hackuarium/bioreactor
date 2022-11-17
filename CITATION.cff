@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: 'If you use this software, please cite it as below.'
 title: 'Open-source Bioreactor'
-abstract: 'This project present the main generic design and construction of an open-source and open-hardware bioreactor that was designed between Hackuarium organization (Switzerland) and Universidad del Valle (Colombia).'
+abstract: 'This project present the main generic design and construction of an open-source and open-hardware bioreactor that was designed between Hackuarium organization (Switzerland) and Universidad del Valle (Colombia). More information can be found on https://docs.hackuarium.org/docs/bioreactor/.'
 repository-artifact: https://docs.hackuarium.org/docs/bioreactor/
 repository-code: https://github.com/Hackuarium/bioreactor
 authors:
